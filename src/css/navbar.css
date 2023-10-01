@@ -1,0 +1,48 @@
+.font-link {
+    font-family: 'montserrat', bold;
+  }
+
+.navbar {
+    position: fixed;
+    padding: 15px 30px;
+    width: 100%;
+    background-color: #FFFEFD;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'montserrat';
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0;
+    z-index: 100;
+    word-spacing: 30px;
+    color: #8b008b;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.navletter-logo {
+    font-family: 'Kalam';
+    color: #8b008b;
+    font-size: 30px;
+    padding-right: 20%;
+    margin-left: 1%;
+  }
+  
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+.navbar .links {
+    text-align: center;
+    padding: 30px;
+    color: var(--main-color);
+  }
+  
+.navbar a:hover {
+    color: var(--second-main-color)
+  }
+  
+  .links a {
+    color: var(--main-color);
+  }

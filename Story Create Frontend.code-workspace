@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "front-end-1",
+			"path": "../../../../Web Development/storycreate repo clone/front-end-1"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "storycreate"
+	}
+}

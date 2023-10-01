@@ -1,0 +1,144 @@
+.footer {
+    width: 100%;
+    padding: 15px 30px;
+    height: 520px;
+    background-color: #005d8b;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'montserrat';
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 40px;
+    color: #ffffff;
+    font-family: 'kalam';
+    margin-top: 75px;
+    margin-left: 50px;
+    padding-bottom: 40px;
+}
+
+.logo a {
+    font-family: 'kalam';
+    font-size: 40px;
+}
+
+.text-wrapper-21 {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 25px;
+    margin-right: 100px;
+    padding-bottom: 40px;
+}
+
+.text-wrapper-22 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 25px;
+    margin-left: 50px;
+    padding-bottom: 5px;
+}
+
+.text-wrapper-23 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 25px;
+    padding-bottom: 40px;
+    margin-right: 175px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    margin-left: 50px;
+}
+
+.about-us {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 27px;
+    padding-top: 110px;
+}
+
+.text-wrapper-24 {
+    padding-bottom: 20px;
+}
+
+.text-wrapper-25 {
+    padding-bottom: 20px;
+}
+
+.text-wrapper-26 {
+    padding-bottom: 20px;
+}
+
+.text-wrapper-27 {
+    padding-bottom: 20px;
+}
+
+.line {
+    margin-top: 170px;
+    padding-left: 30px;
+    padding-right: 0px;
+}
+
+.line-2 {
+    margin-top: 170px;
+}
+
+
+.follow {
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: 300;
+    margin-top: 160px;
+    margin-bottom: 15px;
+}
+
+.social-media-icons {
+    padding-bottom: 150px;
+    font-size: 25px;
+    font-weight: 300;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.email-input {
+    width: 320px;
+    height: 70px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+.subscribe {
+    width: 140px;
+    height: 70px;
+    background-color: #C710C7;
+    color: #ffffff;
+    font-size: medium;
+    font-weight: 700;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 5px;
+}
+
+.apple {
+    padding-top: 385px;
+    width: 230px;
+    margin-right: 50px;
+}
+
+.google {
+    padding-top: 385px;
+    width: 230px;
+    color: #ffffff;
+}
+
