@@ -8,7 +8,7 @@
     width: 100%;
     background-color: #FFFEFD;
     align-items: center;
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'montserrat';
     font-style: normal;
     font-weight: 700;
@@ -23,26 +23,151 @@
 .navletter-logo {
     font-family: 'Kalam';
     color: #8b008b;
-    font-size: 30px;
+    font-size: 27px;
     padding-right: 20%;
-    margin-left: 1%;
+    margin-left: 2%;
   }
   
-.nav-logo{
+.nav-logo {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
+    margin-left: 2.5%;
   }
+
 .navbar .links {
     text-align: center;
     padding: 30px;
     color: var(--main-color);
+    margin-right: 13px;
   }
-  
-.navbar a:hover {
-    color: var(--second-main-color)
-  }
-  
-  .links a {
+
+.navbar .links a {
     color: var(--main-color);
+    transition: .3s;
+  }
+
+.links a:hover,
+.links a.active {
+  color: var(--second-main-color);
+}
+
+.me-button {
+    background: transparent;
+    color: #8b008b;
+    font-weight: 700;
+    font-size: medium;
+  }
+
+#me-drop-arrow {
+    position: absolute;
+  }
+
+.nav-me {
+  font-size: small;
+  margin-left: -112px;
+  margin-top: 10px;
+  }
+
+.memenu {
+  background-color: #FFFEFD;
+  padding: 20px 30px 20px 30px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.me-user-name {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    font-weight: 600;
+  }
+
+.me-user-name a:hover {
+    color: var(--second-main-color);
+  }
+
+.me-profile {
+    color: black;
+    font-weight: 600;
+  }
+
+#me-user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+.me-message {
+    color: black;
+    font-weight: 600;
+  }
+
+#me-user-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+
+.me-notifications {
+    color: black;
+    font-weight: 600;
+  }
+
+#me-user-notifications {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+
+.me-gigs {
+    color: black;
+    font-weight: 600;
+  }
+
+#me-user-gigs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+
+.me-community {
+    color: black;
+    font-weight: 600;
+  }
+
+#me-user-community {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+
+.me-settings {
+    color: black;
+    font-weight: 600;
+  }
+
+#me-user-settings {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+
+.me-log-out {
+    color: black;
+    font-weight: 600;
+  }
+
+#me-user-logout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 15px;
   }

@@ -1,0 +1,287 @@
+.myposts {
+    background-color: #ffffff;
+    height: 1324px;
+    position: relative;
+    width: 1300px;
+    top: -140px;
+}
+
+.myposts .title {
+    color: #000000;
+    font-size: x-large;
+    font-weight: 700;
+    position: absolute;
+    margin-left: 77px;
+    margin-top: 320px;
+}
+
+.myposts .p {
+    color: #000000;
+    font-size: medium;
+    font-weight: 600;
+    left: 130px;
+    letter-spacing: var(--montserrat-25-regular-letter-spacing);
+    line-height: var(--montserrat-25-regular-line-height);
+    position: absolute;
+    top: -46px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.myposts .post-content {
+    color: #000000;
+    position: absolute;
+    font-size: medium;
+    font-weight: 500;
+    left: 200px;
+    letter-spacing: var(--montserrat-25-regular-letter-spacing);
+    line-height: var(--montserrat-25-regular-line-height);
+    top: 7px;
+    text-align: left;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 1px solid #6d6d6e;
+    border-radius: 0px 10px 10px 0px;
+    padding: 15px 30px 15px 30px;
+}
+
+.myposts .overlap-3 {
+  height: 1050px;
+  left: 435px;
+  position: absolute;
+  top: 375px;
+  width: 537px;
+}
+
+.myposts .ariana {
+    left: 0px;
+    position: absolute;
+}
+
+.myposts .reactions {
+    color: #6d6d6e;
+    position: absolute;
+    font-size: small;
+    font-weight: 500;
+    top: 90px;
+    left: 130px;
+}
+
+.myposts .comments {
+    color: #6d6d6e;
+    position: absolute;
+    font-size: small;
+    font-weight: 500;
+    top: 90px;
+    left: 230px;
+}
+
+.myposts .dot {
+    color: #6d6d6e;;
+    position: absolute;
+    font-size: xx-large;
+    font-weight: 700;
+    left: 215px;
+    top: 71px;
+}
+
+.myposts .chess {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    left: 130px;
+    top: 7px;
+    border: 20px 0px 0px 20px;
+}
+
+.myposts .overlap-4 {
+  height: 1050px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 537px;
+}
+
+.myposts .group-1 {
+  height: 953px;
+  left: 0;
+  position: absolute;
+  top: 77px;
+  width: 537px;
+}
+
+.myposts .group-2 {
+  height: 181px;
+  left: 57px;
+  position: relative;
+  top: 38px;
+  width: 539px;
+}
+
+.myposts .group-3 {
+  height: 100px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 537px;
+}
+
+.myposts .group-4 {
+  height: 50px;
+  left: 795px;
+  position: absolute;
+  top: 5px;
+  width: 42px;
+}
+
+.myposts .text-wrapper-11 {
+    color: #000000;
+    font-size: medium;
+    font-weight: 500;
+    left: -30px;
+    letter-spacing: var(--body-medium-18-letter-spacing);
+    line-height: var(--body-medium-18-line-height);
+    position: absolute;
+    top: 0;
+}
+
+.myposts .group-5 {
+  height: 30px;
+  left: -42px;
+  position: absolute;
+  top: 40px;
+  width: 40px;
+}
+
+.myposts .notification_more {
+    width: 20px;
+    height: 5px;
+}
+
+.myposts .span {
+  color: #000000;
+  font-size: medium;
+  font-weight: 500;
+  text-align: left;
+}
+
+.myposts .overlap-5 {
+  height: 80px;
+  position: relative;
+}
+
+.myposts .overlap-group-3 {
+  background-color: var(--magenta-100);
+  height: 69px;
+  position: relative;
+  width: 69px;
+}
+
+.myposts .overlap-group-4 {
+  height: 86px;
+  position: relative;
+}
+
+.myposts .line-3 {
+  height: 1050px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 2px;
+}
+
+.myposts .group-6 {
+  height: 45px;
+  left: 57px;
+  position: absolute;
+  top: 0;
+  width: 503px;
+}
+
+.myposts .group-7 {
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 60px;
+}
+
+.myposts .text-wrapper-16 {
+  color: #b2b2b4;
+  font-size: large;
+  font-weight: 600;
+  left: 10px;
+  letter-spacing: var(--body-medium-30-letter-spacing);
+  line-height: var(--body-medium-30-line-height);
+  position: absolute;
+  text-align: center;
+  top: 0;
+}
+
+.myposts .text-wrapper-17 {
+    color: #000000;
+    font-size: large;
+    font-weight: 600;
+    left: 78px;
+    letter-spacing: var(--body-medium-30-letter-spacing);
+    line-height: var(--body-medium-30-line-height);
+    position: absolute;
+    text-align: center;
+    top: 16px;
+  }
+
+.myposts .line-4 {
+  height: 4px;
+  left: 90px;
+  position: absolute;
+  top: 45px;
+  width: 58px;
+}
+
+.myposts .group-8 {
+  height: 45px;
+  left: 268px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+.myposts .group-9 {
+  height: 45px;
+  left: 641px;
+  position: absolute;
+  top: 0;
+}
+
+.myposts .text-wrapper-18 {
+    color: #b2b2b4;
+    font-size: large;
+    font-weight: 600;
+    left: 55px;
+    letter-spacing: var(--body-medium-30-letter-spacing);
+    line-height: var(--body-medium-30-line-height);
+    position: absolute;
+    text-align: center;
+    top: 16px;
+}
+
+.myposts .text-wrapper-19 {
+  color: var(--main-color);
+  font-size: medium;
+  font-weight: 600;
+  left: 77px;
+  letter-spacing: var(--body-semibold-30-letter-spacing);
+  line-height: var(--body-semibold-30-line-height);
+  position: absolute;
+  top: 421px;
+}
+
+.myposts .text-wrapper-20 {
+  color: var(--dark-100);
+  font-size: medium;
+  font-weight: 600;
+  left: 77px;
+  letter-spacing: var(--body-semibold-30-letter-spacing);
+  line-height: var(--body-semibold-30-line-height);
+  position: absolute;
+  top: 374px;
+}

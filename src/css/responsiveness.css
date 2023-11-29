@@ -1,0 +1,5 @@
+@media screen and (min-width: 320px) and (max-width: 725px) {
+    .nav-logo{
+        width: 100px !important;
+    }
+}

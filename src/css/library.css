@@ -1,0 +1,347 @@
+.library {
+    background-color: #ffffff;
+    position: relative;
+    width: 1300px;
+ }
+
+.library-search {
+    margin-top: 150px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 40px;
+    border-radius: 30px;
+    background-color: #D9D9D9;
+    margin-left: 845px;
+    font-size: large;
+}
+
+.library-search-icon {
+    margin-left: 866px;
+    margin-top: 115px;
+    position: absolute;
+ }
+
+.library-search-create {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+.library-create-new-story {
+    margin-top: 110px;
+    padding: 20px 20px;
+    border-radius: 40px;
+    color: #8b008b;
+    font-weight: 700;
+    font-size: larger;
+    background-color: transparent;
+    border: 2px solid #8b008b;
+}
+
+.keep-reading {
+    display: flex;
+    padding-bottom: 30px;
+    margin-left: 60px;
+}
+
+.library-group-1 {
+    display: flex;
+    margin-left: 60px;
+    gap: 52px;
+    padding-bottom: 80px;
+}
+
+.library-title-1 {
+    margin-right: 213px;
+    padding-top: 15px;
+}
+
+.library-author-1 {
+    margin-right: 245px;
+    color: #8b008b;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.library-title-2 {
+    margin-right: 198px;
+    padding-top: 15px;
+}
+
+.library-author-2 {
+    margin-right: 208px;
+    color: #8b008b;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.library-title-3 {
+    margin-right: 158px;
+    padding-top: 15px;
+}
+
+.library-author-3 {
+    margin-right: 250px;
+    color: #8b008b;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.library-continue-reading {
+    padding: 20px 100px 20px 100px;
+    border-radius: 20px;
+    border: #8b008b solid 1.5px;
+    background: transparent;
+    font-weight: 700;
+    font-size: large;
+    color: #8b008b;
+}
+
+.library-continue-writing-header {
+    display: flex;
+    padding-left: 60px;
+    padding-bottom: 30px;
+}
+
+.library-group-2 {
+    display: flex;
+    margin-left: 60px;
+    gap: 52px;
+    padding-bottom: 80px;
+}
+
+.p {
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 82px;
+}
+
+.p-1 {
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin-right: 85px;
+}
+
+.p-2 {
+    font-weight: 600;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin-right: 270px;
+}
+
+.p-1b {
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin-right: 127px;
+}
+
+.p-2b {
+    font-weight: 600;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin-right: 330px;
+}
+
+.library-continue-writing {
+    padding: 20px 100px 20px 100px;
+    border-radius: 20px;
+    border: #8b008b solid 1.5px;
+    background: transparent;
+    font-weight: 700;
+    font-size: large;
+    color: #8b008b;
+}
+
+.library-saved-books {
+    display: flex;
+    padding-left: 60px;
+    padding-bottom: 30px;
+}
+
+.library-group-3 {
+    display: flex;
+    margin-left: 60px;
+    gap: 52px;
+    padding-bottom: 80px;
+}
+
+.library-title-4 {
+    margin-right: 242px;
+    padding-top: 15px;
+ }
+ 
+ .library-author-4 {
+    margin-right: 248px;
+    color: #8b008b;
+    padding-top: 15px;
+ }
+
+ .library-title-5 {
+    margin-right: 213px;
+    padding-top: 15px;
+}
+
+.library-author-5 {
+    margin-right: 245px;
+    color: #8b008b;
+    padding-top: 15px;
+}
+
+.library-title-6 {
+    margin-right: 196px;
+    padding-top: 15px;
+ }
+ 
+ .library-author-6 {
+    margin-right: 207px;
+    color: #8b008b;
+    padding-top: 15px;
+ }
+
+ .library-books-ready {
+    display: flex;
+    padding-left: 60px;
+    padding-bottom: 30px;
+}
+
+.library-title-7 {
+    margin-right: 234px;
+    padding-top: 15px;
+ }
+ 
+ .library-author-7 {
+    margin-right: 232px;
+    color: #8b008b;
+    padding-top: 15px;
+    padding-bottom: 20px;
+ }
+
+ .library-group-4 {
+    margin-right: 850px;
+    gap: 52px;
+    padding-bottom: 80px;
+}
+
+.library-publish-now {
+    padding: 20px 120px 20px 120px;
+    border-radius: 20px;
+    background: #8b008b;
+    font-weight: 700;
+    font-size: large;
+    color: #ffffff;
+}
+
+.library-submitted {
+    display: flex;
+    padding-left: 60px;
+    padding-bottom: 30px;
+}
+
+.library-title-8 {
+    margin-right: 142px;
+    padding-top: 15px;
+ }
+ 
+ .library-author-8 {
+    margin-right: 232px;
+    color: #8b008b;
+    padding-top: 15px;
+    padding-bottom: 20px;
+ }
+
+ .library-group-5 {
+    margin-right: 850px;
+    gap: 52px;
+    padding-bottom: 80px;
+}
+
+.library-read-again {
+    display: flex;
+    margin-left: 60px;
+    padding-bottom: 30px;
+ }
+ 
+ .library-group-6 {
+    display: flex;
+    margin-left: 60px;
+    gap: 52px;
+    padding-bottom: 80px
+ }
+ 
+ .library-title-9 {
+    margin-right: 154px;
+    padding-top: 15px;
+ }
+ 
+ .library-author-9 {
+    margin-right: 260px;
+    color: #8b008b;
+    padding-top: 15px;
+ }
+ 
+ .library-title-10 {
+    margin-right: 175px;
+    padding-top: 15px;
+ }
+ 
+ .library-author-10 {
+    margin-right: 240px;
+    color: #8b008b;
+    padding-top: 15px;
+ }
+ 
+ .library-title-11 {
+    margin-right: 180px;
+    padding-top: 15px;
+ }
+ 
+ .library-author-11 {
+    margin-right: 215px;
+    color: #8b008b;
+    padding-top: 15px;
+ }
+
+ .library-published {
+    display: flex;
+    margin-left: 60px;
+    padding-bottom: 30px;
+ }
+
+ .library-group-7 {
+    display: flex;
+    margin-left: 60px;
+    gap: 52px;
+    padding-bottom: 80px
+ }
+
+ .library-title-12 {
+    margin-right: 154px;
+    padding-top: 15px;
+ }
+ 
+ .library-author-12 {
+    margin-right: 232px;
+    color: #8b008b;
+    padding-top: 15px;
+ }
+
+ .library-title-13 {
+    margin-right: 134px;
+    padding-top: 15px;
+ }
+
+ .library-title-13a {
+    margin-right: 96px;
+ }
+ 
+ .library-author-13 {
+    margin-right: 232px;
+    color: #8b008b;
+    padding-top: 15px;
+ }

@@ -1,0 +1,76 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+export const Friends = () => {
+    return (
+        <div className="profile-network">
+      <div className="text-wrapper">My Network</div>
+      <div className="group">
+        <div className="div">
+          <div className="text-wrapper-2">Friends</div>
+          <img className="line" alt="Line" src="https://c.animaapp.com/ZP50CPgc/img/line-31.svg" />
+        </div>
+        <div className="group-2">
+          <a href="/followers" className="text-wrapper-3a">Followers</a>
+          <img className="img" alt="Line" src="https://c.animaapp.com/ZP50CPgc/img/line-32-1@2x.png" />
+        </div>
+        <div className="group-3">
+          <a href="/following" className="text-wrapper-3a">Following</a>
+          <img className="line-2" alt="Line" src="https://c.animaapp.com/ZP50CPgc/img/line-32-1@2x.png" />
+        </div>
+      </div>
+      <div className="group-4">
+        <div className="group-5">
+          <div className="text-wrapper-4">Corey Park</div>
+          <img className="ellipse" alt="Ellipse" src="https://c.animaapp.com/ZP50CPgc/img/ellipse-1977-9@2x.png" />
+          <div className="text-wrapper-5">Remove</div>
+        </div>
+        <div className="group-6">
+          <div className="text-wrapper-4">Cassidy Klein</div>
+          <img className="ellipse" alt="Ellipse" src="https://c.animaapp.com/ZP50CPgc/img/ellipse-1977-8@2x.png" />
+          <div className="text-wrapper-5">Remove</div>
+        </div>
+        <div className="group-7">
+          <div className="text-wrapper-4">Tommy Cage</div>
+          <img className="ellipse" alt="Ellipse" src="https://c.animaapp.com/ZP50CPgc/img/ellipse-1977-7@2x.png" />
+          <div className="text-wrapper-5">Remove</div>
+        </div>
+        <div className="group-8">
+          <div className="text-wrapper-4">Colt Ben</div>
+          <img className="ellipse" alt="Ellipse" src="https://c.animaapp.com/ZP50CPgc/img/ellipse-1977-6@2x.png" />
+          <div className="text-wrapper-5">Remove</div>
+        </div>
+        <div className="group-9">
+          <div className="text-wrapper-4">Beau George</div>
+          <img className="ellipse" alt="Ellipse" src="https://c.animaapp.com/ZP50CPgc/img/ellipse-1977-5@2x.png" />
+          <div className="text-wrapper-5">Remove</div>
+        </div>
+        <div className="group-10">
+          <div className="text-wrapper-4">Mary Johnson</div>
+          <img className="ellipse" alt="Ellipse" src="https://c.animaapp.com/ZP50CPgc/img/ellipse-1977-4@2x.png" />
+          <div className="text-wrapper-5">Remove</div>
+        </div>
+        <div className="group-11">
+          <div className="text-wrapper-4">Esther Solange</div>
+          <img className="ellipse" alt="Ellipse" src="https://c.animaapp.com/ZP50CPgc/img/ellipse-1977-3@2x.png" />
+          <div className="text-wrapper-5">Remove</div>
+        </div>
+        <div className="group-12">
+          <div className="text-wrapper-4">Cassie Perri</div>
+          <img className="ellipse" alt="Ellipse" src="https://c.animaapp.com/ZP50CPgc/img/ellipse-1977-2@2x.png" />
+          <div className="text-wrapper-5">Remove</div>
+        </div>
+        <div className="group-13">
+          <div className="text-wrapper-4">Andrew Smith</div>
+          <img className="ellipse" alt="Ellipse" src="https://c.animaapp.com/ZP50CPgc/img/ellipse-1977-1@2x.png" />
+          <div className="text-wrapper-5">Remove</div>
+        </div>
+        <div className="group-14">
+          <div className="text-wrapper-4">Angel Code</div>
+          <img className="ellipse" alt="Ellipse" src="https://c.animaapp.com/ZP50CPgc/img/ellipse-1977@2x.png" />
+          <div className="text-wrapper-5">Remove</div>
+        </div>
+      </div>
+    </div>
+    );
+};

@@ -1,0 +1,131 @@
+.profile-reading-list {
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 1000px;
+    position: relative;
+    width: 1024px;
+  }
+
+  .profile-reading-list .readinglist-back-button {
+    margin-left: 820px;
+    margin-top: 150px;
+    font-size: large;
+    font-weight: 600;
+    color: black;
+    background-color: transparent;
+  }
+  
+  .profile-reading-list .text-wrapper {
+    color: var(--dark-100);
+    font-size: x-large;
+    font-weight: 700;
+    margin-left: 96px;
+    letter-spacing: var(--body-medium-30-letter-spacing);
+    line-height: var(--body-medium-30-line-height);
+    position: absolute;
+    top: 15px;
+  }
+  
+  .profile-reading-list .group-wrapper {
+    height: 700px;
+    left: 98px;
+    overflow: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    top: 240px;
+    width: 830px;
+  }
+  
+  .profile-reading-list .group {
+    height: 2476px;
+    position: relative;
+    width: 830px;
+  }
+  
+  .profile-reading-list .div {
+    height: 556px;
+    left: 455px;
+    position: absolute;
+    top: 0;
+    width: 379px;
+  }
+  
+  .profile-reading-list .rectangle {
+    height: 457px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 375px;
+  }
+  
+  .profile-reading-list .text-wrapper-2 {
+    color: var(--dark-100);
+    font-size: medium;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: var(--body-semibold-24-letter-spacing);
+    line-height: var(--body-semibold-24-line-height);
+    position: absolute;
+    top: 489px;
+  }
+  
+  .profile-reading-list .text-wrapper-3 {
+    color: var(--main-color);
+    font-size: small;
+    font-weight: 600;
+    left: 0;
+    letter-spacing: var(--body-medium-18-letter-spacing);
+    line-height: var(--body-medium-18-line-height);
+    position: absolute;
+    top: 534px;
+    white-space: nowrap;
+  }
+  
+  .profile-reading-list .group-2 {
+    height: 556px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 379px;
+  }
+  
+  .profile-reading-list .group-3 {
+    height: 556px;
+    left: 0;
+    position: absolute;
+    top: 636px;
+    width: 379px;
+  }
+  
+  .profile-reading-list .group-4 {
+    height: 556px;
+    left: 455px;
+    position: absolute;
+    top: 636px;
+    width: 379px;
+  }
+  
+  .profile-reading-list .group-5 {
+    height: 556px;
+    left: 0;
+    position: absolute;
+    top: 1272px;
+    width: 379px;
+  }
+  
+  .profile-reading-list .group-6 {
+    height: 556px;
+    left: 455px;
+    position: absolute;
+    top: 1272px;
+    width: 379px;
+  }
+  
+  .profile-reading-list .group-7 {
+    height: 556px;
+    left: 0;
+    position: absolute;
+    top: 1920px;
+    width: 379px;
+  }

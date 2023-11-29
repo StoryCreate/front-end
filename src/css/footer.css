@@ -1,9 +1,8 @@
 .footer {
     width: 100%;
     padding: 15px 30px;
-    height: 520px;
+    height: 530px;
     background-color: #005d8b;
-    display: flex;
     justify-content: space-between;
     font-family: 'montserrat';
     font-style: normal;
@@ -19,9 +18,9 @@
     gap: 40px;
     color: #ffffff;
     font-family: 'kalam';
-    margin-top: 75px;
-    margin-left: 50px;
-    padding-bottom: 40px;
+    margin-top: 65px;
+    margin-left: 70px;
+    padding-bottom: 15px;
 }
 
 .logo a {
@@ -29,28 +28,54 @@
     font-size: 40px;
 }
 
+.p-tags {
+    margin-right: 685px;
+}
+
+.text-about-follow {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-left: 67px;
+    padding-top: 20px;
+}
+
+.about-follow {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+
 .text-wrapper-21 {
     color: #ffffff;
     font-weight: 300;
-    font-size: 25px;
-    margin-right: 100px;
-    padding-bottom: 40px;
+    font-size: 22px;
+    padding-bottom: 30px;
+    margin-right: 148px;
 }
 
 .text-wrapper-22 {
     color: #ffffff;
     font-weight: 700;
-    font-size: 25px;
-    margin-left: 50px;
-    padding-bottom: 5px;
+    font-size: 22px;
+    margin-right: 19px;
 }
 
 .text-wrapper-23 {
     color: #ffffff;
     font-weight: 700;
-    font-size: 25px;
-    padding-bottom: 40px;
-    margin-right: 175px;
+    font-size: 22px;
+    margin-right: 214px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+.div-wrapper-2 {
+    display: flex;
+    margin-left: 20px;
+    gap: 60px;
 }
 
 .input-group {
@@ -58,65 +83,80 @@
     justify-content: center;
     align-items: center;
     gap: 0px;
-    margin-left: 50px;
+    margin-left: 55px;
+}
+
+.footer .line {
+    margin-top: -120px;
+}
+
+.footer .line-2 {
+    position: absolute;
+    margin-top: -120px;
+    margin-left: 330px;
 }
 
 .about-us {
+    position: absolute;
     color: #ffffff;
     font-weight: 300;
-    font-size: 27px;
-    padding-top: 110px;
+    font-size: 22px;
+    padding-bottom: 20px;
+    margin-top: -90px;
+    margin-left: 120px;
 }
 
 .text-wrapper-24 {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    padding-right: 8px;
 }
 
 .text-wrapper-25 {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    margin-right: 31px;
 }
 
 .text-wrapper-26 {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    margin-left: 9px;
 }
 
 .text-wrapper-27 {
-    padding-bottom: 20px;
-}
-
-.line {
-    margin-top: 170px;
-    padding-left: 30px;
-    padding-right: 0px;
-}
-
-.line-2 {
-    margin-top: 170px;
+    padding-bottom: 15px;
+    margin-right: 65px;
 }
 
 
 .follow {
     color: #ffffff;
-    font-size: 27px;
+    font-size: 22px;
     font-weight: 300;
-    margin-top: 160px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-top: -90px;
+    margin-left: 360px;
 }
 
 .social-media-icons {
-    padding-bottom: 150px;
     font-size: 25px;
     font-weight: 300;
     color: #ffffff;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 7px;
+    margin-left: 360px;
 }
 
 .email-input {
     width: 320px;
     height: 70px;
     margin-right: 0px;
-    padding-right: 0px;
+    padding: 12px 20px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.email-input::placeholder{
+    font-size: 18px;
+    padding-left: 28px;
 }
 
 .subscribe {
@@ -133,12 +173,18 @@
 .apple {
     padding-top: 385px;
     width: 230px;
-    margin-right: 50px;
+    padding: 0px;
+    margin-right: 0px;
 }
 
 .google {
-    padding-top: 385px;
+    padding-bottom: 0px;
     width: 230px;
-    color: #ffffff;
 }
 
+.subscribe-apple-google {
+    display: flex;
+    padding-top: 10px;
+    gap: 60px;
+    margin-left: 11px;
+}

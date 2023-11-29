@@ -1,0 +1,388 @@
+.dashboard {
+   background-color: #ffffff;
+   position: relative;
+   width: 1300px;
+}
+
+.search-create {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.dashboard-search {
+    margin-top: 150px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 40px;
+    border-radius: 30px;
+    background-color: #D9D9D9;
+    margin-left: 850px;
+    font-size: medium;
+}
+
+.dashboard-search-icon {
+   margin-left: 872px;
+   margin-top: 115px;
+   position: absolute;
+}
+
+.create-new-story {
+    margin-top: 110px;
+    padding: 20px 20px;
+    border-radius: 40px;
+    color: #8b008b;
+    font-weight: 700;
+    font-size: larger;
+    background-color: transparent;
+    border: 2px solid #8b008b;
+}
+
+.trending-now {
+    display: flex;
+    margin-left: 60px;
+    padding-bottom: 30px;
+}
+
+.dashboard-group-1 {
+    display: flex;
+    margin-left: 60px;
+    gap: 52px;
+    padding-bottom: 80px;
+}
+
+.dashboard-title {
+    margin-right: 213px;
+    padding-top: 15px;
+}
+
+.dashboard-author {
+    margin-right: 245px;
+    color: #8b008b;
+    padding-top: 15px;
+}
+
+.views {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 15px;
+    font-weight: 500;
+}
+
+.dashboard-title-2 {
+   margin-right: 242px;
+   padding-top: 15px;
+}
+
+.dashboard-author-2 {
+   margin-right: 248px;
+   color: #8b008b;
+   padding-top: 15px;
+}
+
+.dashboard-title-3 {
+   margin-right: 172px;
+   padding-top: 15px;
+}
+
+.dashboard-author-3 {
+   margin-right: 216px;
+   color: #8b008b;
+   padding-top: 15px;
+}
+ 
+.sponsored-posts {
+   display: flex;
+   margin-left: 60px;
+   padding-bottom: 30px;
+}
+
+.dashboard-group-2 {
+   display: flex;
+   margin-left: 60px;
+   gap: 52px;
+   padding-bottom: 80px;
+}
+
+.dashboard-title-4 {
+   margin-right: 252px;
+   padding-top: 15px;
+}
+
+.dashboard-author-4 {
+   margin-right: 223px;
+   color: #8b008b;
+   padding-top: 15px;
+}
+
+.dashboard-title-5 {
+   margin-right: 135px;
+   padding-top: 15px;
+}
+
+.dashboard-author-5 {
+   margin-right: 230px;
+   color: #8b008b;
+   padding-top: 15px;
+}
+
+.dashboard-title-6 {
+   margin-right: 224px;
+   padding-top: 15px;
+}
+
+.dashboard-author-6 {
+   margin-right: 250px;
+   color: #8b008b;
+   padding-top: 15px;
+}
+
+.readers-favourite {
+   display: flex;
+   margin-left: 60px;
+   padding-bottom: 30px;
+}
+
+.dashboard-group-3 {
+   display: flex;
+   margin-left: 60px;
+   gap: 52px;
+   padding-bottom: 80px
+}
+
+.dashboard-title-7 {
+   margin-right: 154px;
+   padding-top: 15px;
+}
+
+.dashboard-author-7 {
+   margin-right: 260px;
+   color: #8b008b;
+   padding-top: 15px;
+}
+
+.dashboard-title-8 {
+   margin-right: 175px;
+   padding-top: 15px;
+}
+
+.dashboard-author-8 {
+   margin-right: 240px;
+   color: #8b008b;
+   padding-top: 15px;
+}
+
+.dashboard-title-9 {
+   margin-right: 180px;
+   padding-top: 15px;
+}
+
+.dashboard-author-9 {
+   margin-right: 215px;
+   color: #8b008b;
+   padding-top: 15px;
+}
+
+.highly-rated {
+   display: flex;
+   margin-left: 60px;
+   padding-bottom: 30px;
+}
+
+.dashboard-group-4 {
+   display: flex;
+   margin-left: 60px;
+   gap: 52px;
+   padding-bottom: 80px
+}
+
+.dashboard-title-10 {
+   margin-right: 243px;
+   padding-top: 15px;
+}
+
+.dashboard-author-10 {
+   margin-right: 252px;
+   color: #8b008b;
+   padding-top: 15px;
+}
+
+.dashboard-title-11 {
+   margin-right: 210px;
+   padding-top: 15px;
+}
+
+.dashboard-author-11 {
+   margin-right: 245px;
+   color: #8b008b;
+   padding-top: 15px;
+}
+
+.dashboard-title-12 {
+   margin-right: 196px;
+   padding-top: 15px;
+}
+
+.dashboard-author-12 {
+   margin-right: 207px;
+   color: #8b008b;
+   padding-top: 15px;
+}
+
+.exciting-genre {
+   display: flex;
+   margin-left: 60px;
+   padding-bottom: 30px;
+}
+
+.dashboard-group-5 {
+   display: flex;
+   margin-left: 60px;
+   gap: 52px;
+   padding-bottom: 80px
+}
+
+.Audio-books {
+   display: flex;
+   margin-left: 60px;
+   padding-bottom: 30px;
+}
+
+.dashboard-group-6 {
+   display: flex;
+   margin-left: 60px;
+   gap: 52px;
+   padding-bottom: 80px
+}
+
+.dashboard-title-13 {
+   margin-right: 265px;
+   padding-top: 15px;
+}
+
+.dashboard-author-13 {
+   margin-right: 237px;
+   color: #8b008b;
+   padding-top: 15px;
+}
+
+.dashboard-title-14 {
+   margin-right: 254px;
+   padding-top: 15px;
+}
+
+.dashboard-author-14 {
+   margin-right: 205px;
+   color: #8b008b;
+   padding-top: 15px;
+}
+
+.dashboard-title-15 {
+   margin-right: 215px;
+   padding-top: 15px;
+}
+
+.dashboard-author-15 {
+   margin-right: 242px;
+   color: #8b008b;
+   padding-top: 15px;
+}
+
+.anime-stories {
+   display: flex;
+   margin-left: 60px;
+   padding-bottom: 30px;
+}
+
+.dashboard-group-7 {
+   display: flex;
+   margin-left: 60px;
+   gap: 52px;
+   padding-bottom: 80px
+}
+
+.dashboard-title-16 {
+   margin-right: 195px;
+   padding-top: 15px;
+}
+
+.dashboard-author-16 {
+   margin-right: 221px;
+   color: #8b008b;
+   padding-top: 15px;
+}
+
+.dashboard-title-17 {
+   margin-right: 150px;
+   padding-top: 15px;
+}
+
+.dashboard-author-17 {
+   margin-right: 215px;
+   color: #8b008b;
+   padding-top: 15px;
+}
+
+.dashboard-title-18 {
+   margin-right: 245px;
+   padding-top: 15px;
+}
+
+.dashboard-author-18 {
+   margin-right: 233px;
+   color: #8b008b;
+   padding-top: 15px;
+}
+
+.graphic-novels {
+   display: flex;
+   margin-left: 60px;
+   padding-bottom: 30px;
+}
+
+.dashboard-group-8 {
+   display: flex;
+   margin-left: 60px;
+   gap: 52px;
+   padding-bottom: 100px
+}
+
+.dashboard-title-19 {
+   margin-right: 252px;
+   padding-top: 15px;
+}
+
+.dashboard-author-19 {
+   margin-right: 126px;
+   color: #8b008b;
+   padding-top: 15px;
+}
+
+.dashboard-title-20 {
+   margin-right: 318px;
+   padding-top: 15px;
+}
+
+.dashboard-author-20 {
+   margin-right: 85px;
+   color: #8b008b;
+   padding-top: 15px;
+}
+
+.dashboard-title-21 {
+   margin-right: 315px;
+   padding-top: 15px;
+}
+
+.dashboard-author-21 {
+   margin-right: 223px;
+   color: #8b008b;
+   padding-top: 15px;
+}
+
+.dashboard-and {
+   color: #000000;
+}

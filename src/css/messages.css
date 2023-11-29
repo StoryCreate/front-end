@@ -1,0 +1,587 @@
+.message {
+    background-color: #ffffffbf;
+    height: 1024px;
+    overflow: hidden;
+    position: relative;
+    width: 1300px;
+  }
+  
+  .message .frame {
+    height: 850px;
+    left: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    top: 174px;
+    width: 579px;
+  }
+  
+  .message .group {
+    height: 1378px;
+    width: 579px;
+  }
+  
+  .message .overlap {
+    height: 1378px;
+    position: relative;
+  }
+
+  .message .group-wrapper {
+    border: 1px solid;
+    border-color: #8a8888;
+    border-radius: 20px;
+    left: 50px;
+    position: absolute;
+    top: 0px;
+    height: 70px;
+    width: 400px;
+  }
+  
+  .message .message-search {
+    background-color: var(--white);
+    padding: 20px 220px 20px 20px;
+    left: 60px;
+    position: absolute;
+    top: 2px;
+    font-size: large;
+    font-weight: 600;
+  }
+  
+  .message .message-search::placeholder {
+    color: #8a8888;
+    font-size: medium;
+    font-weight: 500;
+    left: 20px;
+    position: absolute;
+    top: 23px;
+    padding-left: 0px;
+  }
+  
+  .message .messages-search-icon {
+    left: 40px !important;
+    position: absolute !important;
+    top: 27px !important;
+  }
+  
+  .message .group-2 {
+    height: 1254px;
+    left: 0;
+    position: absolute;
+    top: 124px;
+    width: 579px;
+  }
+  
+  .message .div-wrapper {
+    background-color: var(--second-main-color);
+    height: 132px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 579px;
+    box-shadow: 0px 0.83px 0.83px #00000040, inset 0px 0.83px 0.83px #00000026;
+  }
+  
+  .message .group-3 {
+    left: 36px;
+    position: relative;
+    top: 19px;
+    width: 505px;
+  }
+  
+  .message .profile-picture-1 {
+    left: 0;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 10px;
+  }
+
+  .message .profile-picture-2 {
+    left: 0;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 165px;
+  }
+
+  .message .profile-picture-2b {
+    left: 0;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 316px;
+  }
+
+  .message .profile-picture-2c {
+    left: 0;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 470px;
+  }
+
+  .message .profile-picture-2d {
+    left: 0;
+    position: absolute;
+    width: 70px;
+    height: 70;
+    top: 620px;
+  }
+
+  .message .profile-picture-2e {
+    left: 0;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 777px;
+  }
+  
+  .message .group-4 {
+    height: 107px;
+    left: 116px;
+    position: absolute;
+    top: 0;
+    width: 397px;
+  }
+  
+  .message .text-wrapper-3 {
+    color: #ffffff;
+    font-size: x-large;
+    font-weight: 600;
+    left: 0;
+    letter-spacing: var(--body-semibold-30-letter-spacing);
+    position: absolute;
+    top: -8px;
+    white-space: nowrap;
+  }
+  
+  .message .text-wrapper-4 {
+    color: #ffffff;
+    font-size: medium;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: var(--body-medium-25-letter-spacing);
+    line-height: var(--body-medium-25-line-height);
+    position: absolute;
+    top: 26px;
+    white-space: nowrap;
+  }
+  
+  .message .text-wrapper-5 {
+    color: #dbdada;
+    font-size: medium;
+    font-weight: 500;
+    left: 282px;
+    letter-spacing: var(--body-medium-25-letter-spacing);
+    line-height: var(--body-medium-25-line-height);
+    position: absolute;
+    top: -5px;
+    white-space: nowrap;
+  }
+
+  .message .text-wrapper-3a {
+    color: #000000;
+    font-size: x-large;
+    font-weight: 600;
+    left: 156px;
+    letter-spacing: var(--body-semibold-30-letter-spacing);
+    position: absolute;
+    top: 10px;
+    white-space: nowrap;
+  }
+
+  .message .text-wrapper-4a {
+    color: #000000;
+    font-size: medium;
+    font-weight: 500;
+    left: 156px;
+    letter-spacing: var(--body-medium-25-letter-spacing);
+    line-height: var(--body-medium-25-line-height);
+    position: absolute;
+    top: 45px;
+    white-space: nowrap;
+  }
+
+  .message .text-wrapper-5a {
+    color: #8a8888;
+    font-size: medium;
+    font-weight: 500;
+    left: 438px;
+    letter-spacing: var(--body-medium-25-letter-spacing);
+    line-height: var(--body-medium-25-line-height);
+    position: absolute;
+    top: 13px;
+    white-space: nowrap;
+  }
+  
+  .message .p {
+    color: #ffffff;
+    font-family: "Montserrat", Helvetica;
+    font-size: small;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 52px;
+    white-space: nowrap;
+  }
+
+  .message .p2 {
+    color: #000000;
+    font-family: "Montserrat", Helvetica;
+    font-size: small;
+    font-weight: 500;
+    left: 156px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 92px;
+    white-space: nowrap;
+  }
+  
+  .message .group-5 {
+    height: 132px;
+    left: -40px;
+    position: absolute;
+    top: 134px;
+    width: 579px;
+    box-shadow: 0px 0.83px 0.83px #00000040, inset 0px 0.83px 0.83px #00000026;
+  }
+  
+  .message .group-6 {
+    height: 132px;
+    left: -40px;
+    position: absolute;
+    top: 287px;
+    width: 579px;
+    box-shadow: 0px 0.83px 0.83px #00000040, inset 0px 0.83px 0.83px #00000026;
+  }
+  
+  .message .group-7 {
+    height: 132px;
+    left: -40px;
+    position: absolute;
+    top: 440px;
+    width: 579px;
+    box-shadow: 0px 0.83px 0.83px #00000040, inset 0px 0.83px 0.83px #00000026;
+  }
+  
+  .message .group-8 {
+    height: 132px;
+    left: -40px;
+    position: absolute;
+    top: 593px;
+    width: 579px;
+    box-shadow: 0px 0.83px 0.83px #00000040, inset 0px 0.83px 0.83px #00000026;
+  }
+  
+  .message .group-9 {
+    height: 132px;
+    left: -40px;
+    position: absolute;
+    top: 747px;
+    width: 579px;
+    box-shadow: 0px 0.83px 0.83px #00000040, inset 0px 0.83px 0.83px #00000026;
+  }
+  
+  .message .frame-2 {
+    background-color: #ffffff;
+    height: 600px;
+    left: 579px;
+    position: absolute;
+    top: 280px;
+    width: 861px;
+    box-shadow: 0px 1px 1px #00000040;
+  }
+  
+  .message .group-10 {
+    height: 645px;
+    position: relative;
+    width: 861px;
+  }
+  
+  .message .group-11 {
+    background-color: var(--white);
+    height: 215px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 861px;
+  }
+  
+  .message .group-12 {
+    height: 138px;
+    left: 36px;
+    position: relative;
+    top: 19px;
+    width: 737px;
+  }
+  
+  .message .ellipse-3 {
+    background-color: #d9d9d9;
+    border-radius: 40px;
+    height: 80px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 80px;
+  }
+  
+  .message .group-14 {
+    height: 138px;
+    left: 116px;
+    position: absolute;
+    top: 30px;
+    width: 627px;
+  }
+
+  .message .profile-picture-1b {
+    background-color: #8a8888;
+    border-radius: 40px;
+    left: 10px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 34px;
+  }
+
+  .message .profile-picture-1b2 {
+    background-color: #8a8888;
+    border-radius: 40px;
+    left: 10px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 6px;
+  }
+  
+  .message .text-wrapper-6 {
+    color: var(--dark-100);
+    font-size: x-large;
+    font-weight: 600;
+    left: 0;
+    letter-spacing: var(--body-medium-25-letter-spacing);
+    line-height: var(--body-medium-25-line-height);
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+  
+  .message .text-wrapper-7 {
+    color: var(--dark-100);
+    font-size: medium;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: var(--body-medium-18-letter-spacing);
+    line-height: var(--body-medium-18-line-height);
+    position: absolute;
+    top: 50px;
+    width: 540px;
+    text-align: left;
+  }
+  
+  .message .text-wrapper-8 {
+    color: #8a8888;
+    font-size: medium;
+    font-weight: 500;
+    left: 258px;
+    letter-spacing: var(--body-medium-25-letter-spacing);
+    line-height: var(--body-medium-25-line-height);
+    position: absolute;
+    top: -1px;
+    white-space: nowrap;
+  }
+  
+  .message .group-15 {
+    background-color: var(--white);
+    height: 215px;
+    left: 0;
+    position: absolute;
+    top: 190px;
+    width: 861px;
+  }
+  
+  .message .group-16 {
+    height: 182px;
+    left: 36px;
+    position: relative;
+    top: 19px;
+    width: 737px;
+  }
+  
+  .message .group-17 {
+    height: 81px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 80px;
+  }
+  
+  .message .overlap-group-2 {
+    height: 81px;
+    position: relative;
+    left: -90px;
+  }
+  
+  .message .ellipse-4 {
+    height: 80px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 80px;
+  }
+  
+  .message .group-18 {
+    height: 182px;
+    left: 116px;
+    position: absolute;
+    top: 0;
+    width: 627px;
+  }
+  
+  .message .group-19 {
+    background-color: var(--white);
+    height: 215px;
+    left: 0;
+    position: absolute;
+    top: 390px;
+    width: 861px;
+  }
+  
+  .message .group-20 {
+    height: 94px;
+    left: 36px;
+    position: relative;
+    top: 19px;
+    width: 737px;
+  }
+  
+  .message .group-21 {
+    height: 94px;
+    left: 116px;
+    position: absolute;
+    top: 0;
+    width: 627px;
+  }
+  
+  .message .group-22 {
+    background-color: var(--white);
+    box-shadow: 0px 1px 1px #00000040, inset 0px 0.6px 0.6px #00000040;
+    height: 146px;
+    left: 579px;
+    position: absolute;
+    top: 160px;
+    width: 861px;
+  }
+  
+  .message .group-23 {
+    height: 50px;
+    left: 635px;
+    position: absolute;
+    top: 46px;
+    width: 152px;
+  }
+  
+  .message .contract-button {
+    color: var(--main-color);
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 30px;
+    padding: 15px 30px 15px 30px;
+    font-size: medium;
+    font-weight: 600;
+    left: -82px;
+    position: absolute;
+    top: 12px;
+  }
+  
+  .message .group-24 {
+    height: 121px;
+    left: 79px;
+    position: absolute;
+    top: 7px;
+    width: 271px;
+  }
+  
+  .message .text-wrapper-10 {
+    color: var(--dark-100);
+    font-size: x-large;
+    font-weight: 600;
+    left: 0;
+    letter-spacing: var(--body-medium-30-letter-spacing);
+    line-height: var(--body-medium-30-line-height);
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+  
+  .message .text-wrapper-11 {
+    color: #8a8888;
+    font-size: medium;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: var(--body-medium-25-letter-spacing);
+    line-height: var(--body-medium-25-line-height);
+    position: absolute;
+    top: 49px;
+    white-space: nowrap;
+  }
+  
+  .message .text-wrapper-12 {
+    color: var(--dark-100);
+    font-size: medium;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: var(--montserrat-25-regular-letter-spacing);
+    line-height: var(--montserrat-25-regular-line-height);
+    position: absolute;
+    top: 81px;
+    white-space: nowrap;
+  }
+  
+  .message .overlap-wrapper {
+    height: 148px;
+    left: 579px;
+    top: 876px;
+    width: 864px;
+    position: absolute;
+  }
+  
+  .message .type-message {
+    color: var(--dark-50);
+    font-size: medium;
+    font-weight: 500;
+    left: 57px;
+    position: absolute;
+    top: 10px;
+    
+    height: 70px;
+    width: 600px;
+  }
+
+  .message .group-25 {
+    height: 30px;
+    left: 57px;
+    position: absolute;
+    top: 94px;
+    width: 128px;
+  }
+  
+  .message .attach-button {
+    color: #8a8888;
+    padding: 5px 20px 5px 20px;
+    background-color: transparent;
+    border: 1.5px solid #8a8888;
+    font-size: medium;
+    font-weight: 600;
+    left: 0px;
+    position: absolute;
+    top: 10px;
+  }
+
+  .message .send-icon {
+    position: absolute;
+    top: 20px;
+    left: 670px;
+  }

@@ -1,0 +1,363 @@
+.wallet {
+    background-color: #ffffff;
+    height: 2108px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+.wallet .group {
+    height: 1454px;
+    left: 126px;
+    position: absolute;
+    top: 202px;
+    width: 1269px;
+  }
+  
+.wallet .overlap-wrapper {
+    height: 658px;
+    left: 0;
+    position: absolute;
+    top: 117px;
+    width: 965px;
+  }
+  
+  .wallet .overlap {
+    height: 658px;
+    position: relative;
+  }
+  
+  .wallet .overlap-group-wrapper {
+    height: 557px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 965px;
+  }
+
+  .wallet .my-wallet-contest {
+    display: flex;
+    align-items: center;
+    gap: 830px;
+    color: var(--dark-100);
+    font-family: var(--montserrat-40-semibold-font-family);
+    font-size: large;
+    font-weight: 700;
+    margin-right: 20px;
+    position: absolute;
+    top: 20px;
+  }
+
+  .wallet .wallet-contest {
+    padding: 20px 60px 20px 30px;
+    background-color: var(--second-main-color);
+    color: #ffffff;
+    border-radius: 25px 25px 25px 25px;
+    font-size: medium;
+    margin-left: 0px;
+    position: 0;
+  }
+
+  .wallet .contest-arrow {
+    position: absolute;
+    margin-left: 1110px;
+  }
+
+  .wallet .wallet-plus {
+    position: absolute;
+    margin-left: 370px;
+  }
+
+  .wallet .wallet-convert-arrow {
+    position: absolute;
+    margin-top: 92px;
+    margin-left: 125px;
+  }
+  
+  .wallet .overlap-group {
+    height: 557px;
+    position: relative;
+    background-color: var(--second-main-color);
+    border-radius: 20px 20px 0px 0px;
+    margin-right: 20px;
+    padding-right: 0px;
+  }
+  
+  .wallet .element-illustration-wrapper {
+    background-color: var(--magenta-50);
+    height: 557px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 965px;
+  }
+  
+  .wallet .element-illustration {
+    height: 401px;
+    left: 338px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 534px;
+  }
+  
+  .wallet .div {
+    height: 253px;
+    left: 62px;
+    position: absolute;
+    top: 35px;
+    width: 864px;
+  }
+  
+  .wallet .div-wrapper {
+    height: 65px;
+    left: 5px;
+    position: absolute;
+    top: 188px;
+    width: 194px;
+  }
+  
+  .wallet .overlap-group-2 {
+    background-color: var(--white);
+    border-radius: 22.59px;
+    height: 65px;
+    position: relative;
+    width: 192px;
+  }
+
+  .wallet .withdraw-button-2 {
+    position: absolute;
+    margin-left: -432px;
+    margin-top: 135px;
+    padding: 10px 20px 10px 20px;
+    background-color: #ffffff;
+    color: var(--second-main-color);
+    border-radius: 10px;
+    font-weight: 600;
+  }
+  
+  .wallet .text-wrapper {
+    color: var(--magenta-100);
+    font-family: var(--body-medium-25-font-family);
+    font-size: var(--body-medium-25-font-size);
+    font-style: var(--body-medium-25-font-style);
+    font-weight: var(--body-medium-25-font-weight);
+    left: 33px;
+    letter-spacing: var(--body-medium-25-letter-spacing);
+    line-height: var(--body-medium-25-line-height);
+    position: absolute;
+    top: 18px;
+    white-space: nowrap;
+  }
+  
+  .wallet .wallet-total-balance {
+    color: #ffffff;
+    font-weight: 600;
+    height: 136px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 868px;
+  }
+  
+  .wallet .text-wrapper-2 {
+    color: var(--white-50);
+    font-family: var(--body-semibold-30-font-family);
+    font-size: var(--body-semibold-30-font-size);
+    font-style: var(--body-semibold-30-font-style);
+    font-weight: var(--body-semibold-30-font-weight);
+    left: 0;
+    letter-spacing: var(--body-semibold-30-letter-spacing);
+    line-height: var(--body-semibold-30-line-height);
+    position: absolute;
+    top: 22px;
+  }
+  
+  .wallet .text-wrapper-3 {
+    color: var(--white);
+    font-family: var(--body-semibold-30-font-family);
+    font-size: var(--body-semibold-30-font-size);
+    font-weight: var(--body-semibold-30-font-weight);
+    left: 0px;
+    position: absolute;
+    top: 99px;
+  }
+  
+  .wallet .frame {
+    -webkit-backdrop-filter: blur(18.29px) brightness(100%);
+    align-items: flex-start;
+    backdrop-filter: blur(18.29px) brightness(100%);
+    background-color: var(--white);
+    border-radius: 22.59px;
+    display: inline-flex;
+    gap: 10.97px;
+    left: 820px;
+    padding: 10.97px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .wallet .group-3 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: larger;
+    height: 44px;
+    left: 62px;
+    position: absolute;
+    top: 414px;
+    width: 813px;
+  }
+  
+  .wallet .group-4 {
+    height: 44px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 107px;
+  }
+  
+  .wallet .points {
+    color: #cfcdcd;
+    font-family: var(--body-semibold-30-font-family);
+    font-size: var(--body-semibold-30-font-size);
+    font-style: var(--body-semibold-30-font-style);
+    font-weight: var(--body-semibold-30-font-weight);
+    left: 0;
+    letter-spacing: var(--body-semibold-30-letter-spacing);
+    line-height: var(--body-semibold-30-line-height);
+    position: absolute;
+    top: 0;
+  }
+  
+  .wallet .coins-group-5 {
+    height: 44px;
+    left: 354px;
+    position: absolute;
+    margin-top: -30px;
+    width: 107px;
+  }
+  
+  .wallet .text-wrapper-5 {
+    color: #ffffff;
+    font-family: var(--body-semibold-30-font-family);
+    font-size: var(--body-semibold-30-font-size);
+    font-style: var(--body-semibold-30-font-style);
+    font-weight: var(--body-semibold-30-font-weight);
+    left: 8px;
+    letter-spacing: var(--body-semibold-30-letter-spacing);
+    line-height: var(--body-semibold-30-line-height);
+    position: absolute;
+    top: 0;
+  }
+
+  .wallet .points {
+    color: #cfcdcd;
+  }
+
+  .wallet .creds {
+    color: #cfcdcd;
+  }
+
+  .wallet .coins {
+    color: #ffffff;
+  }
+  
+  .wallet .coin-line {
+    height: 2px;
+    position: absolute;
+    width: 56px;
+    margin-top: 5px;
+    margin-left: -27px;
+    background-color: #ffffff;
+  }
+  
+  .wallet .group-6 {
+    height: 44px;
+    left: 708px;
+    position: absolute;
+    top: 0;
+    width: 107px;
+  }
+  
+  .wallet .text-wrapper-6 {
+    color: #cfcdcd;
+    font-family: var(--body-semibold-30-font-family);
+    font-size: var(--body-semibold-30-font-size);
+    font-style: var(--body-semibold-30-font-style);
+    font-weight: var(--body-semibold-30-font-weight);
+    left: 10px;
+    letter-spacing: var(--body-semibold-30-letter-spacing);
+    line-height: var(--body-semibold-30-line-height);
+    position: absolute;
+    top: 15px;
+  }
+  
+  .wallet .group-wrapper {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 3.66px 3.66px #00000040, inset 0px 1.83px 1.83px #00000026;
+    height: 152px;
+    left: 249px;
+    position: absolute;
+    top: 506px;
+    width: 466px;
+  }
+  
+  .wallet .group-7 {
+    height: 122px;
+    left: 6px;
+    position: relative;
+    top: 6px;
+    width: 339px;
+  }
+  
+  .wallet .text-wrapper-7 {
+    color: #000000;
+    font-family: var(--body-medium-25-font-family);
+    font-size: medium;
+    font-style: var(--body-medium-25-font-style);
+    font-weight: 600;
+    left: 181px;
+    letter-spacing: var(--body-medium-25-letter-spacing);
+    line-height: var(--body-medium-25-line-height);
+    position: absolute;
+    top: 18px;
+    white-space: nowrap;
+  }
+  
+  .wallet .gold-coins-falling {
+    height: 90px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 90px;
+  }
+
+  .wallet .convert-creds-button {
+    padding: 10px 30px 10px 15px;
+    color: #ffffff;
+    background-color: var(--second-main-color);
+    position: absolute;
+    margin-top: 80px;
+    border-radius: 10px;
+  }
+  
+  .wallet .text-wrapper-9 {
+    font-weight: 600;
+    color: var(--dark-100);
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .coin-buy-button {
+    font-size: medium;
+    font-weight: 600;
+    padding: 20px 40px 20px 40px;
+    color: #ffffff;
+    background-color: var(--second-main-color);
+    position: absolute;
+    margin-top: 70px;
+    margin-left: -547px;
+    border-radius: 15px 15px 15px 15px;
+  }
