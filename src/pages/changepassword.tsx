@@ -25,13 +25,13 @@ export const Changepassword = () => {
 
             <a href="/settings"> <button className="cancel"> X </button> </a>
 
-            <input className="current-password" placeholder="Current password" />
+            <input type="text" className="current-password" placeholder="Current password" />
 
             <button className="forgot-password"> Forgot password? </button>
 
-            <input className="new-password" placeholder="New password" />
+            <input type="text" className="new-password" placeholder="New password" />
 
-            <input className="confirm-password" placeholder="Confirm password" />
+            <input type="text" className="confirm-password" placeholder="Confirm password" />
 
             <button className="save-button"> Save </button>
         </div>

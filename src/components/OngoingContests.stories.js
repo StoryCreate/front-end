@@ -1,4 +1,4 @@
-import { OngoingContests } from ".";
+import { OngoingContests } from "../component";
 
 export default {
   title: "Components/OngoingContests",

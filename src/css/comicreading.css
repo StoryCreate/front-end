@@ -1,0 +1,506 @@
+.comic-reading {
+    height: 2900px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+ }
+   
+.comic-reading .back {
+    position: absolute;
+    left: 90px;
+    top: 173px;
+    color: var(--main-color);
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+    background-color: transparent;
+ }
+   
+#comic-left-arrow {
+    position: absolute;
+    left: 60px;
+    top: 170px;
+    font-size: 25px;
+    color: var(--main-color);
+ }
+
+.comic-reading .main-frame {
+    height: 1430px;
+    overflow: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    width: 102%;
+    top: 250px;
+}
+
+.comic-reading .comic-1 {
+    position: absolute;
+    left: 100px;
+    top: 0px;
+}
+
+.comic-reading .comic-2 {
+    position: absolute;
+    left: 100px;
+    top: 730px;
+}
+
+.comic-reading .comic-3 {
+    position: absolute;
+    left: 100px;
+    top: 1460px;
+}
+
+.comic-reading .comic-4 {
+    position: absolute;
+    left: 100px;
+    top: 2190px;
+}
+
+.comic-reading .like {
+    position: absolute;
+    left: 1255px;
+    top: 237px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.comic-reading .share {
+    position: absolute;
+    left: 1200px;
+    top: 245px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.comic-reading .plus {
+    position: absolute;
+    left: 1135px;
+    top: 237px;
+    height: 22px;
+    font-size: xx-large;
+    font-weight: 500;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.comic-reading .content {
+    position: absolute;
+    top: 325px;
+    left: 1145px;
+    padding: 35px 35px 15px 35px;
+    background-color: var(--second-main-color);
+    font-size: medium;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.comic-reading .content-icon {
+    position: absolute;
+    top: 340px;
+    left: 1203px;
+    height: 15px;
+}
+
+.comic-reading .premium {
+    position: absolute;
+    top: 445px;
+    left: 1145px;
+    padding: 35px 30px 15px 30px;
+    background-color: var(--second-main-color);
+    font-size: medium;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.comic-reading .premium-icon {
+    position: absolute;
+    top: 455px;
+    left: 1203px;
+    height: 27px;
+}
+
+.comic-reading .subscribe-to {
+    position: absolute;
+    top: 565px;
+    left: 1145px;
+    padding: 15px 21px 15px 21px;
+    background-color: var(--second-main-color);
+    font-size: small;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.comic-reading .p-1 {
+    position: absolute;
+    font-size: xx-large;
+    font-weight: 600;
+    font-style: normal;
+    color: #000000;
+    left: 820px;
+    top: 560px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 2px 2px 0px #00000040, inset 0px 2px 2px 0px #00000040;
+    border-radius: 20px;
+}
+
+.comic-reading .p-2 {
+    position: absolute;
+    font-size: xx-large;
+    font-weight: 600;
+    font-style: normal;
+    color: #000000;
+    left: 820px;
+    top: 1210px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 2px 2px 0px #00000040, inset 0px 2px 2px 0px #00000040;
+    border-radius: 20px;
+}
+
+.comic-reading .p-3 {
+    position: absolute;
+    font-size: xx-large;
+    font-weight: 600;
+    font-style: normal;
+    color: #000000;
+    left: 820px;
+    top: 1980px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 2px 2px 0px #00000040, inset 0px 2px 2px 0px #00000040;
+    border-radius: 20px;
+}
+
+.comic-reading .comments {
+    position: absolute;
+    left: 1040px;
+    top: 660px;
+    height: 30px;
+}
+
+.comic-reading .comments-2 {
+    position: absolute;
+    left: 1040px;
+    top: 1390px;
+    height: 30px;
+}
+
+.comic-reading .comments-3 {
+    position: absolute;
+    left: 1040px;
+    top: 2120px;
+    height: 30px;
+}
+
+.comic-reading .previous {
+    position: absolute;
+    margin-top: 1700px;
+    left: 60px;
+    padding: 15px 25px 15px 70px;
+    border-radius: 15px;
+    color: #7c7c7e;
+    font-weight: 700;
+    font-size: medium;
+    background-color: transparent;
+    border: 1px solid #7c7c7e;
+    cursor: pointer;
+}
+
+.comic-reading .next {
+    position: absolute;
+    margin-top: 1700px;
+    left: 865px;
+    padding: 15px 70px 15px 25px;
+    border-radius: 15px;
+    color: #8b008b;
+    font-weight: 700;
+    font-size: medium;
+    background-color: transparent;
+    border: 1px solid #8b008b;
+    cursor: pointer;
+}
+
+.comic-reading .arrow-right {
+    position: absolute;
+    margin-top: 1717px;
+    left: 1015px;
+    height: 20px;
+}
+
+.comic-reading .arrow-left-chevron {
+    position: absolute;
+    margin-top: 1719px;
+    left: 100px;
+    height: 13px;
+}
+
+.comic-reading .write-comment {
+    position: absolute;
+    left: 60px;
+    top: 1850px;
+    border: 1px solid #00000040;
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 20px 790px 20px 30px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+    color: #000000;
+}
+
+.comic-reading .post-button {
+    position: absolute;
+    left: 1000px;
+    top: 1870px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--second-main-color);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.comic-reading .mercy {
+    position: absolute;
+    left: 60px;
+    top: 1990px;
+    height: 50px;
+    width: 50px;
+}
+
+.comic-reading .user {
+    position: absolute;
+    left: 130px;
+    top: 1990px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.comic-reading .comment {
+    position: absolute;
+    left: 130px;
+    top: 2020px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.comic-reading .reply {
+    position: absolute;
+    left: 130px;
+    top: 2045px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--second-main-color);
+    cursor: pointer;
+}
+
+.comic-reading .love {
+    position: absolute;
+    left: 1050px;
+    top: 2013px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.comic-reading .kindred {
+    position: absolute;
+    left: 60px;
+    top: 2120px;
+    height: 50px;
+    width: 50px;
+}
+
+.comic-reading .user-2 {
+    position: absolute;
+    left: 130px;
+    top: 2120px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.comic-reading .comment-2 {
+    position: absolute;
+    left: 130px;
+    top: 2150px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.comic-reading .reply-2 {
+    position: absolute;
+    left: 130px;
+    top: 2175px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--second-main-color);
+    cursor: pointer;
+}
+
+.comic-reading .love-2 {
+    position: absolute;
+    left: 1050px;
+    top: 2143px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.comic-reading .jojo {
+    position: absolute;
+    left: 60px;
+    top: 2250px;
+    height: 50px;
+    width: 50px;
+}
+
+.comic-reading .user-3 {
+    position: absolute;
+    left: 130px;
+    top: 2250px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.comic-reading .comment-3 {
+    position: absolute;
+    left: 130px;
+    top: 2280px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.comic-reading .reply-3 {
+    position: absolute;
+    left: 130px;
+    top: 2305px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--second-main-color);
+    cursor: pointer;
+}
+
+.comic-reading .love-3 {
+    position: absolute;
+    left: 1050px;
+    top: 2273px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.comic-reading .samson {
+    position: absolute;
+    left: 60px;
+    top: 2380px;
+    height: 50px;
+    width: 50px;
+}
+
+.comic-reading .user-4 {
+    position: absolute;
+    left: 130px;
+    top: 2380px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.comic-reading .comment-4 {
+    position: absolute;
+    left: 130px;
+    top: 2410px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.comic-reading .reply-4 {
+    position: absolute;
+    left: 130px;
+    top: 2435px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--second-main-color);
+    cursor: pointer;
+}
+
+.comic-reading .love-4 {
+    position: absolute;
+    left: 1050px;
+    top: 2403px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.comic-reading .nathaniel {
+    position: absolute;
+    left: 60px;
+    top: 2510px;
+    height: 50px;
+    width: 50px;
+}
+
+.comic-reading .user-5 {
+    position: absolute;
+    left: 130px;
+    top: 2510px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.comic-reading .comment-5 {
+    position: absolute;
+    left: 130px;
+    top: 2540px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.comic-reading .reply-5 {
+    position: absolute;
+    left: 130px;
+    top: 2565px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--second-main-color);
+    cursor: pointer;
+}
+
+.comic-reading .love-5 {
+    position: absolute;
+    left: 1050px;
+    top: 2533px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.comic-reading .view-more-comments {
+    position: absolute;
+    left: 130px;
+    top: 2650px;
+    padding: 20px 250px 20px 250px;
+    border-radius: 30px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffffff;
+    background-color: var(--second-main-color);
+    opacity: 0.5;
+    cursor: pointer;
+}

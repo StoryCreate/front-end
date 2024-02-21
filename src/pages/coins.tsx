@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import arrowup from './../assets/icons/arrowup.png';
 import plus from './../assets/icons/plus.png';
 import chevronright from './../assets/icons/chevronright.png';
+import wallet_with_coins from './../assets/images/wallet_with_coins.png';
+import gold_coins from './../assets/images/gold_coins.png';
 
 export const Coins = () => {
     return (
@@ -16,7 +18,7 @@ export const Coins = () => {
                   <img
                     className="element-illustration"
                     alt="Element illustration"
-                    src="https://c.animaapp.com/3tXRlJSe/img/3d-illustration-wallet-with-coins-credit-cards-removebg-preview-.png"
+                    src={wallet_with_coins}
                   />
                 </div>
                 <div className="div">
@@ -56,7 +58,7 @@ export const Coins = () => {
                 <img
                   className="gold-coins-falling"
                   alt="Gold coins falling"
-                  src="https://c.animaapp.com/3tXRlJSe/img/gold-coins-falling-from-pile-money-man-hand-removebg-preview-1@2x.png"
+                  src={gold_coins}
                 />
                 <div>
                     <div> <button className="convert-creds-button"> convert to USD </button> <img src={chevronright} className="wallet-convert-arrow" height="15px" width="15px" /></div>
@@ -72,7 +74,9 @@ export const Coins = () => {
           </div>
           
         </div>
-        <div className="my-wallet-contest"> <h2> MY WALLET </h2> <a href="/contest"> <button className="wallet-contest"> Contest </button> </a> <img src={arrowup} height="15px" width="15px" className="contest-arrow"/></div>
+        <div className="my-wallet-contest"> <h2> MY WALLET </h2> </div>
+        <div> <a href="/contest"> <button className="wallet-contest"> Contest </button> </a> </div>
+        <img src={arrowup} className="arrow-right" />
       </div>
     </div>
     );

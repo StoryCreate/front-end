@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Popup, PopupState, PopupType } from "../core/interfaces";
 
-export const Following = () => {
+export const Following = ({show, which} : PopupType) => {
     return (
-        <div className="profile-network">
+        <div className={show == PopupState.SHOW && which == Popup.FOLLOWERS ? "profile-network" : "profile-network hide"}>
       <div className="text-wrapper">My Network</div>
       <div className="group">
         <div className="div">
-          <a href="/friends" className="text-wrapper-friends">Friends</a>
+          <div className="text-wrapper-friends">Friends</div>
         </div>
         <div className="group-2">
-          <a href="/followers" className="text-wrapper-3">Followers</a>
+          <div className="text-wrapper-3">Followers</div>
         </div>
         <div className="group-3">
           <div className="text-wrapper-3c">Following</div>

@@ -3,7 +3,7 @@
     height: 1024px;
     overflow: hidden;
     position: relative;
-    width: 1300px;
+    width: 100%;
   }
   
   .message .frame {
@@ -13,7 +13,7 @@
     overflow-y: scroll;
     position: absolute;
     top: 174px;
-    width: 579px;
+    width: 102%;
   }
   
   .message .group {
@@ -77,7 +77,7 @@
     left: 0;
     position: absolute;
     top: 0;
-    width: 579px;
+    width: 529px;
     box-shadow: 0px 0.83px 0.83px #00000040, inset 0px 0.83px 0.83px #00000026;
   }
   
@@ -96,12 +96,26 @@
     top: 10px;
   }
 
+  .message .online-icon {
+    position: absolute;
+    left: 47px;
+    top: 59px;
+    height: 22px;
+  }
+
   .message .profile-picture-2 {
     left: 0;
     position: absolute;
     width: 70px;
     height: 70px;
     top: 165px;
+  }
+
+  .message .offline-icon {
+    position: absolute;
+    left: 47px;
+    top: 214px;
+    height: 22px;
   }
 
   .message .profile-picture-2b {
@@ -171,7 +185,7 @@
     color: #dbdada;
     font-size: medium;
     font-weight: 500;
-    left: 282px;
+    left: 262px;
     letter-spacing: var(--body-medium-25-letter-spacing);
     line-height: var(--body-medium-25-line-height);
     position: absolute;
@@ -206,7 +220,7 @@
     color: #8a8888;
     font-size: medium;
     font-weight: 500;
-    left: 438px;
+    left: 418px;
     letter-spacing: var(--body-medium-25-letter-spacing);
     line-height: var(--body-medium-25-line-height);
     position: absolute;
@@ -245,7 +259,7 @@
     left: -40px;
     position: absolute;
     top: 134px;
-    width: 579px;
+    width: 532px;
     box-shadow: 0px 0.83px 0.83px #00000040, inset 0px 0.83px 0.83px #00000026;
   }
   
@@ -254,7 +268,7 @@
     left: -40px;
     position: absolute;
     top: 287px;
-    width: 579px;
+    width: 532px;
     box-shadow: 0px 0.83px 0.83px #00000040, inset 0px 0.83px 0.83px #00000026;
   }
   
@@ -263,7 +277,7 @@
     left: -40px;
     position: absolute;
     top: 440px;
-    width: 579px;
+    width: 532px;
     box-shadow: 0px 0.83px 0.83px #00000040, inset 0px 0.83px 0.83px #00000026;
   }
   
@@ -272,7 +286,7 @@
     left: -40px;
     position: absolute;
     top: 593px;
-    width: 579px;
+    width: 532px;
     box-shadow: 0px 0.83px 0.83px #00000040, inset 0px 0.83px 0.83px #00000026;
   }
   
@@ -281,14 +295,14 @@
     left: -40px;
     position: absolute;
     top: 747px;
-    width: 579px;
+    width: 532px;
     box-shadow: 0px 0.83px 0.83px #00000040, inset 0px 0.83px 0.83px #00000026;
   }
   
   .message .frame-2 {
     background-color: #ffffff;
     height: 600px;
-    left: 579px;
+    left: 529px;
     position: absolute;
     top: 280px;
     width: 861px;
@@ -330,7 +344,7 @@
   
   .message .group-14 {
     height: 138px;
-    left: 116px;
+    left: 80px;
     position: absolute;
     top: 30px;
     width: 627px;
@@ -339,17 +353,35 @@
   .message .profile-picture-1b {
     background-color: #8a8888;
     border-radius: 40px;
-    left: 10px;
+    left: -10px;
     position: absolute;
     width: 70px;
     height: 70px;
     top: 34px;
   }
 
+  .message .online-icon-2 {
+    position: absolute;
+    top: 80px;
+    left: 35px;
+  }
+
+  .message .online-icon-3 {
+    position: absolute;
+    top: 52px;
+    left: 35px;
+  }
+
+  .message .offline-icon-2 {
+    position: absolute;
+    top: 52px;
+    left: 125px;
+  }
+
   .message .profile-picture-1b2 {
     background-color: #8a8888;
     border-radius: 40px;
-    left: 10px;
+    left: -10px;
     position: absolute;
     width: 70px;
     height: 70px;
@@ -425,8 +457,8 @@
   }
   
   .message .ellipse-4 {
-    height: 80px;
-    left: 0;
+    height: 90px;
+    left: -80px;
     position: absolute;
     top: 0;
     width: 80px;
@@ -434,7 +466,7 @@
   
   .message .group-18 {
     height: 182px;
-    left: 116px;
+    left: 80px;
     position: absolute;
     top: 0;
     width: 627px;
@@ -459,7 +491,7 @@
   
   .message .group-21 {
     height: 94px;
-    left: 116px;
+    left: 80px;
     position: absolute;
     top: 0;
     width: 627px;
@@ -469,7 +501,7 @@
     background-color: var(--white);
     box-shadow: 0px 1px 1px #00000040, inset 0px 0.6px 0.6px #00000040;
     height: 146px;
-    left: 579px;
+    left: 529px;
     position: absolute;
     top: 160px;
     width: 861px;
@@ -491,12 +523,14 @@
     padding: 15px 30px 15px 30px;
     font-size: medium;
     font-weight: 600;
-    left: -82px;
+    left: -142px;
     position: absolute;
     top: 12px;
+    cursor: pointer;
   }
   
   .message .group-24 {
+    background-color: #ffffff;
     height: 121px;
     left: 79px;
     position: absolute;
@@ -542,7 +576,7 @@
   
   .message .overlap-wrapper {
     height: 148px;
-    left: 579px;
+    left: 509px;
     top: 876px;
     width: 864px;
     position: absolute;
@@ -578,10 +612,12 @@
     left: 0px;
     position: absolute;
     top: 10px;
+    cursor: pointer;
   }
 
   .message .send-icon {
     position: absolute;
     top: 20px;
-    left: 670px;
+    left: 615px;
+    cursor: pointer;
   }

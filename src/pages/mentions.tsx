@@ -91,7 +91,7 @@ export const Mentions = () => {
         </div>
       </div>
       <div className="title"> Notifications </div>
-      <div className="text-wrapper-19">View settings</div>
+      <a href="/notification"> <div className="text-wrapper-19">View settings</div> </a>
       <div className="text-wrapper-20">Manage your notifications</div>
       </div>
     );

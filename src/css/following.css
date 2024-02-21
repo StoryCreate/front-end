@@ -1,10 +1,20 @@
 .profile-network {
-    background-color: #ffffff;
-    border-radius: 20px;
-    height: 1424px;
-    position: relative;
-    width: 800px;
-  }
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 95%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55%;
+  overflow-y: auto;
+  z-index: 101;
+  overflow-x: hidden;
+}
+
+.hide{
+  display: none !important;
+}
   
   .profile-network .text-wrapper {
     color: var(--dark-100);
@@ -14,14 +24,14 @@
     letter-spacing: var(--body-medium-30-letter-spacing);
     line-height: var(--body-medium-30-line-height);
     position: absolute;
-    top: -20px;
+    top: -70px;
   }
   
   .profile-network .group {
     height: 46px;
     left: 92px;
     position: absolute;
-    top: 169px;
+    top: 129px;
     width: 656px;
   }
   
@@ -91,7 +101,7 @@
     height: 1088px;
     left: 92px;
     position: absolute;
-    top: 275px;
+    top: 215px;
     width: 542px;
   }
   

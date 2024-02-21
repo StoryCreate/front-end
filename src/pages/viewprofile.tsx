@@ -1,6 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
+import React, { useContext } from "react";
+import { useRef, useState } from "react";
 import location from './../assets/icons/location.png';
 import facebook_profile from './../assets/icons/facebook_profile.png';
 import instagram_profile from './../assets/icons/instagram_profile.png';
@@ -11,13 +10,79 @@ import notebook from './../assets/icons/notebook.png';
 import thumbs_up from './../assets/icons/thumbs_up.png';
 import subscribers from './../assets/icons/subscribers.png';
 import creators from './../assets/icons/creators.png';
+import { PopupContext } from "../context/PopupProvider";
+import { Popup, PopupState } from "../core/interfaces";
 
 export const Viewprofile = () => {
-  const [open, setOpen] = useState (false);
+    const popupContext = useContext(PopupContext);
+    const [open, setOpen] = useState<boolean>(false);
     const dropdownRef = useRef<HTMLDivElement>(null)
-    const handleDropDownFocus=(state: boolean)=> {
+    const handleDropDownFocus = (state: boolean) => {
         setOpen(!state);
     };
+
+    const handleClickOutsideDropdown =(e:any)=>{
+      if(open && !dropdownRef.current?. contains(e.target as Node)){
+        setOpen(false)
+
+      }
+    }
+
+    const showFollowing = ()=>{
+      popupContext?.dispatch({
+        type : PopupState.HIDE,
+        payload : {
+          show : PopupState.HIDE,
+          which: Popup.NONE
+        }
+      });
+      
+      popupContext?.dispatch({
+        type : PopupState.HIDE,
+        payload : {
+          show : PopupState.HIDE,
+          which: Popup.NONE
+        }
+      });
+
+      popupContext?.dispatch({
+        type : PopupState.SHOW,
+        payload : {
+          show : PopupState.SHOW,
+          which: Popup.FOLLOWING
+        }
+      });
+    }
+
+    const showFollowers = ()=>{
+      popupContext?.dispatch({
+        type : PopupState.HIDE,
+        payload : {
+          show : PopupState.HIDE,
+          which: Popup.NONE
+        }
+      });
+      
+      popupContext?.dispatch({
+        type : PopupState.SHOW,
+        payload : {
+          show : PopupState.SHOW,
+          which: Popup.FOLLOWING
+        }
+      })
+    }
+
+    const showFriends = ()=>{
+      popupContext?.dispatch({
+        type : PopupState.SHOW,
+        payload : {
+          show : PopupState.SHOW,
+          which: Popup.FRIENDS
+        }
+      });
+    }
+
+    window.addEventListener("click",handleClickOutsideDropdown)
 
     return (
      <div className="profile">
@@ -44,11 +109,6 @@ export const Viewprofile = () => {
             </div>
             <div>
                 <button className="edit-profile-button"> Edit Profile </button>
-            </div>
-            <div className="group-2">
-              <a href="/friends" className="text-wrapper-3">1000 Friends</a>
-              <a href="/followers"className="text-wrapper-4">900 Followers</a>
-              <a href="/following" className="text-wrapper-5">500 Following</a>
             </div>
           </div>
         </div>
@@ -116,21 +176,34 @@ export const Viewprofile = () => {
           </div>
         </div>
       </div>
-      <div> <a onClick={e=>handleDropDownFocus(open)}> <img className="more_icon" src={more_icon}/> </a>
-      <div className="view-profile-more">
-            <div className="moremenu" ref={dropdownRef}>
-                { open && (
-                <dl>
-                <a id="more-published-stories"> <img src={book_open} height="18px" /> <h5 className="published-stories"> Published Stories </h5> </a>
-                 <a href="/readinglist" id="more-reading-list"> <img src={notebook} height="18px" /> <h5 className="reading-list"> Reading List </h5> </a>
-                 <a id="more-saved-books"> <img src={thumbs_up} height="18px" /> <h5 className="saved-books"> Saved Books </h5> </a>
-                 <a href="/subscribers" id="more-subscribers"> <img src={subscribers} height="18px" /> <h5 className="subscribers"> Subscribers </h5> </a>
-                 <a href="/creators" id="more-creators"> <img src={creators} height="18px" /> <h5 className="creators"> Creators I follow </h5> </a>
-                </dl>
-                )}
-              </div>
-             </div>
+      <div ref={dropdownRef}>
+      <div onClick={(e) => handleDropDownFocus(open)}> <img className="more_icon" src={more_icon}/>
+          <div className="view-profile-more">
+            <div className="moremenu">
+            { open && (
+            <dl>
+            <a id="more-published-stories"> <img src={book_open} height="18px" /> <h5 className="published-stories"> Published Stories </h5> </a>
+              <a href="/readinglist" id="more-reading-list"> <img src={notebook} height="18px" /> <h5 className="reading-list"> Reading List </h5> </a>
+              <a id="more-saved-books"> <img src={thumbs_up} height="18px" /> <h5 className="saved-books"> Saved Books </h5> </a>
+              <a href="/subscribers" id="more-subscribers"> <img src={subscribers} height="18px" /> <h5 className="subscribers"> Subscribers </h5> </a>
+              <a href="/creators" id="more-creators"> <img src={creators} height="18px" /> <h5 className="creators"> Creators I follow </h5> </a>
+            </dl>
+            )}
+          </div>
+          </div>
+          </div>
+          </div>
+
+          <div>
+          <div className="group-2">
+            <div>
+                <div className="text-wrapper-3" onClick={showFriends}> 1000 Friends</div>
+                <div className="text-wrapper-4" onClick={showFollowers}>900 Followers</div>
+                <div className="text-wrapper-5" onClick={showFollowing}>500 Following</div> 
             </div>
+          </div>
+
+        </div>
       </div>
     );
 };

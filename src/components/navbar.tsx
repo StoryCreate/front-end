@@ -11,11 +11,20 @@ import settings from './../assets/icons/settings.png';
 import logout from './../assets/icons/logout.png';
 
 export const Navbar = () => {
-    const [open, setOpen] = useState (false);
-    const dropdownRef = useRef<HTMLDivElement>(null)
-    const handleDropDownFocus=(state: boolean)=> {
-        setOpen(!state);
-    };
+  const [open, setOpen] = useState<boolean>(false);
+  const dropdownRef = useRef<HTMLDivElement>(null)
+  const handleDropDownFocus = (state: boolean) => {
+      setOpen(!state);
+  };
+
+  const handleClickOutsideDropdown =(e:any)=>{
+    if(open && !dropdownRef.current?. contains(e.target as Node)){
+      setOpen(false)
+
+    }
+  }
+
+  window.addEventListener("click",handleClickOutsideDropdown)
 
     return (
      <div className="navbar">
@@ -28,8 +37,9 @@ export const Navbar = () => {
        <Link to="/"> <a> Home </a> </Link>
        <Link to="/library"> <a> Library </a> </Link>
        <Link to="/wallet"> <a> Wallet </a> </Link>
-       <button className='me-button'> <a onClick={e=>handleDropDownFocus(open)}> Me <i className='bx bx-chevron-down' id="me-drop-arrow"></i> </a>
-            <div className="nav-me" ref={dropdownRef}>
+       <div ref={dropdownRef}>
+       <button className='me-button'> <div onClick={e=>handleDropDownFocus(open)}> Me <i className='bx bx-chevron-down' id="me-drop-arrow"></i> </div>
+            <div className="nav-me">
             <div className="memenu">
                 { open && (
                 <dl>
@@ -73,6 +83,7 @@ export const Navbar = () => {
             </div>
            </div>
         </button>
+        </div>
       </div>
      </div>
     )

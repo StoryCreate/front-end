@@ -2,7 +2,7 @@
     background-color: #ffffff;
     position: relative;
     height: 860px;
-    width: 1300px;
+    width: 100%;
 }
 
 .settings .title {
@@ -11,7 +11,7 @@
     font-size: x-large;
     font-weight: 600;
     font-style: normal;
-    left: 100px;
+    left: 62px;
     top: 150px;
 }
 
@@ -22,13 +22,13 @@
     font-size: medium;
     font-weight: 600;
     font-style: normal;
-    left: 100px;
+    left: 62px;
     top: 220px;
 }
 
 .settings .arrow-right {
     position: absolute;
-    left: 370px;
+    left: 300px;
     top: 218px;
 }
 
@@ -39,13 +39,13 @@
     font-size: medium;
     font-weight: 600;
     font-style: normal;
-    left: 100px;
+    left: 62px;
     top: 300px;
 }
 
 .settings .arrow-right-dark-1 {
     position: absolute;
-    left: 370px;
+    left: 300px;
     top: 298px;
 }
 
@@ -56,13 +56,13 @@
     font-size: medium;
     font-weight: 600;
     font-style: normal;
-    left: 100px;
+    left: 62px;
     top: 380px;
 }
 
 .settings .arrow-right-dark-2 {
     position: absolute;
-    left: 370px;
+    left: 300px;
     top: 378px;
 }
 
@@ -73,13 +73,13 @@
     font-size: medium;
     font-weight: 600;
     font-style: normal;
-    left: 100px;
+    left: 62px;
     top: 460px;
 }
 
 .settings .arrow-right-dark-3 {
     position: absolute;
-    left: 370px;
+    left: 300px;
     top: 458px;
 }
 
@@ -90,13 +90,13 @@
     font-size: medium;
     font-weight: 600;
     font-style: normal;
-    left: 100px;
+    left: 62px;
     top: 540px;
 }
 
 .settings .arrow-right-dark-4 {
     position: absolute;
-    left: 370px;
+    left: 300px;
     top: 538px;
 }
 
@@ -107,19 +107,19 @@
     font-size: medium;
     font-weight: 600;
     font-style: normal;
-    left: 100px;
+    left: 62px;
     top: 620px;
 }
 
 .settings .arrow-right-dark-5 {
     position: absolute;
-    left: 370px;
+    left: 300px;
     top: 618px;
 }
 
 .settings .settings-line {
     position: absolute;
-    left: 500px;
+    left: 400px;
     top: 200px;
     height: 500px;
 }
@@ -127,7 +127,7 @@
 .settings .account-info {
     color: #000000;
     position: absolute;
-    left: 570px;
+    left: 480px;
     top: 218px;
     font-size: medium;
     font-weight: 600;
@@ -136,7 +136,7 @@
 
 .settings .p-1 {
     position: absolute;
-    left: 570px;
+    left: 480px;
     top: 238px;
     font-size: medium;
     font-weight: 500;
@@ -145,14 +145,14 @@
 
 .settings .arrow-right-dark-6 {
     position: absolute;
-    left: 1255px;
+    left: 1252px;
     top: 230px;
 }
 
 .settings .change-your-password {
     color: #000000;
     position: absolute;
-    left: 570px;
+    left: 480px;
     top: 318px;
     font-size: medium;
     font-weight: 600;
@@ -161,7 +161,7 @@
 
 .settings .p-2 {
     position: absolute;
-    left: 570px;
+    left: 480px;
     top: 358px;
     font-size: medium;
     font-weight: 500;
@@ -170,14 +170,14 @@
 
 .settings .arrow-right-dark-7 {
     position: absolute;
-    left: 1255px;
+    left: 1252px;
     top: 330px;
 }
 
 .settings .deactivate-account {
     color: #000000;
     position: absolute;
-    left: 570px;
+    left: 480px;
     top: 418px;
     font-size: medium;
     font-weight: 600;
@@ -186,7 +186,7 @@
 
 .settings .p-3 {
     position: absolute;
-    left: 570px;
+    left: 480px;
     top: 458px;
     font-size: medium;
     font-weight: 500;
@@ -195,14 +195,14 @@
 
 .settings .arrow-right-dark-8 {
     position: absolute;
-    left: 1255px;
+    left: 1252px;
     top: 430px;
 }
 
 .settings .account-info-2 {
     color: #000000;
     position: absolute;
-    left: 570px;
+    left: 480px;
     top: 218px;
     font-size: medium;
     font-weight: 700;
@@ -212,7 +212,7 @@
 .settings .phone {
     color: #000000;
     position: absolute;
-    left: 570px;
+    left: 480px;
     top: 288px;
     font-size: medium;
     font-weight: 600;
@@ -221,7 +221,7 @@
 
 .settings .phone-number {
     position: absolute;
-    left: 570px;
+    left: 480px;
     top: 328px;
     font-size: medium;
     font-weight: 500;
@@ -230,14 +230,14 @@
 
 .settings .arrow-right-dark-9 {
     position: absolute;
-    left: 1255px;
+    left: 1252px;;
     top: 300px;
 }
 
 .settings .email {
     color: #000000;
     position: absolute;
-    left: 570px;
+    left: 480px;
     top: 388px;
     font-size: medium;
     font-weight: 600;
@@ -246,7 +246,7 @@
 
 .settings .email-2 {
     position: absolute;
-    left: 570px;
+    left: 480px;
     top: 428px;
     font-size: medium;
     font-weight: 500;
@@ -255,14 +255,14 @@
 
 .settings .arrow-right-dark-10 {
     position: absolute;
-    left: 1255px;
+    left: 1252px;
     top: 400px;
 }
 
 .settings .country {
     color: #000000;
     position: absolute;
-    left: 570px;
+    left: 480px;
     top: 488px;
     font-size: medium;
     font-weight: 600;
@@ -271,7 +271,7 @@
 
 .settings .country-2 {
     position: absolute;
-    left: 570px;
+    left: 480px;
     top: 528px;
     font-size: medium;
     font-weight: 500;
@@ -280,14 +280,14 @@
 
 .settings .arrow-right-dark-11 {
     position: absolute;
-    left: 1255px;
+    left: 1252px;
     top: 500px;
 }
 
 .settings .language {
     color: #000000;
     position: absolute;
-    left: 570px;
+    left: 480px;
     top: 588px;
     font-size: medium;
     font-weight: 600;
@@ -296,7 +296,7 @@
 
 .settings .language-2 {
     position: absolute;
-    left: 570px;
+    left: 480px;
     top: 628px;
     font-size: medium;
     font-weight: 500;
@@ -305,14 +305,14 @@
 
 .settings .arrow-right-dark-12 {
     position: absolute;
-    left: 1255px;
+    left: 1132px;
     top: 600px;
 }
 
 .settings .gender {
     color: #000000;
     position: absolute;
-    left: 570px;
+    left: 480px;
     top: 688px;
     font-size: medium;
     font-weight: 600;
@@ -321,7 +321,7 @@
 
 .settings .gender-2 {
     position: absolute;
-    left: 570px;
+    left: 480px;
     top: 728px;
     font-size: medium;
     font-weight: 500;
@@ -330,25 +330,26 @@
 
 .settings .arrow-right-dark-13 {
     position: absolute;
-    left: 1255px;
+    left: 1132px;
     top: 700px;
 }
 
 .settings .cancel {
     color: #000000;
     position: absolute;
-    left: 1260px;
+    left: 1255px;
     top: 160px;
     font-size: medium;
     font-weight: 600;
     font-style: normal;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .settings .change-password {
     color: var(--main-color);
     position: absolute;
-    left: 570px;
+    left: 480px;
     top: 218px;
     font-size: medium;
     font-weight: 700;
@@ -359,7 +360,7 @@
     color: #000000;
     font-size: large;
     font-weight: 600;
-    left: 572px;
+    left: 482px;
     position: absolute;
     top: 260px;
     background-color: transparent;
@@ -379,15 +380,16 @@
     font-size: small;
     font-weight: 600;
     font-style: normal;
-    left: 1098px;
+    left: 998px;
     top: 335px;
+    cursor: pointer;
 }
 
 .settings .new-password {
     color: #000000;
     font-size: large;
     font-weight: 600;
-    left: 572px;
+    left: 482px;
     position: absolute;
     top: 400px;
     background-color: transparent;
@@ -404,7 +406,7 @@
     color: #000000;
     font-size: large;
     font-weight: 600;
-    left: 572px;
+    left: 482px;
     position: absolute;
     top: 500px;
     background-color: transparent;
@@ -423,17 +425,18 @@
     background-color: var(--second-main-color);
     padding: 15px 50px 15px 50px;
     border-radius: 15px;
-    left: 1076px;
+    left: 976px;
     top: 600px;
     font-size: large;
     font-weight: 600;
     font-style: normal;
+    cursor: pointer;
 }
 
 .settings .deactivate-your-account {
     color: #000000;
     position: absolute;
-    left: 570px;
+    left: 480px;
     top: 218px;
     font-size: medium;
     font-weight: 700;
@@ -447,7 +450,7 @@
     font-weight: 600;
     font-style: normal;
     line-height: 23px;
-    left: 570px;
+    left: 480px;
     top: 255px;
     text-align: left;
 }
@@ -455,7 +458,7 @@
 .settings .what-else {
     color: #000000;
     position: absolute;
-    left: 570px;
+    left: 480px;
     top: 380px;
     font-size: medium;
     font-weight: 700;
@@ -469,7 +472,7 @@
     font-weight: 600;
     font-style: normal;
     line-height: 23px;
-    left: 570px;
+    left: 480px;
     top: 420px;
     text-align: left;
 }
@@ -481,6 +484,37 @@
     font-size: medium;
     font-weight: 600;
     font-style: normal;
-    left: 1175px;
+    left: 1005px;
     top: 510px;
+    cursor: pointer;
+}
+
+.settings .arrow-right-dark-23 {
+    position: absolute;
+    left: 1252px;;
+    top: 300px;
+}
+
+.settings .arrow-right-dark-24 {
+    position: absolute;
+    left: 1252px;;
+    top: 400px;
+}
+
+.settings .arrow-right-dark-25 {
+    position: absolute;
+    left: 1252px;;
+    top: 500px;
+}
+
+.settings .arrow-right-dark-26 {
+    position: absolute;
+    left: 1252px;;
+    top: 600px;
+}
+
+.settings .arrow-right-dark-27 {
+    position: absolute;
+    left: 1252px;;
+    top: 700px;
 }

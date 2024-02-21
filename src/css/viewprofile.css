@@ -2,7 +2,8 @@
     background-color: #f3f3f3;
     height: 1157px;
     position: relative;
-    width: 1320px;
+    width: 100%;
+    overflow: hidden;
   }
   
   .profile .group {
@@ -18,7 +19,7 @@
     left: -11px;
     position: absolute;
     top: -50px;
-    width: 829px;
+    width: 800px;
     background-color: #ffffff;
     border-radius: 20px;
   }
@@ -58,7 +59,8 @@
     object-fit: cover;
     position: absolute;
     top: 0;
-    width: 829px;
+    width: 800px;
+    border-radius: 20px 20px 0px 0px;
   }
   
   .profile .ellipse {
@@ -111,12 +113,14 @@
     background-color: transparent;
     border: solid 1px var(--second-main-color);
     border-radius: 20px;
+    cursor: pointer;
   }
   
   .profile .group-2 {
     left: 241px;
     position: absolute;
-    top: 287px;
+    top: 460px;
+    left: 308px;
   }
   
   .profile .text-wrapper-3 {
@@ -156,6 +160,7 @@
     position: absolute;
     top: -5px;
     white-space: nowrap;
+    cursor: pointer;
   }
   
   .profile .group-wrapper {
@@ -165,7 +170,7 @@
     left: -11px;
     position: absolute;
     top: 426px;
-    width: 829px;
+    width: 800px;
   }
   
   .profile .group-3 {
@@ -205,10 +210,10 @@
     background-color: #ffffff;
     border-radius: 20px;
     height: 260px;
-    left: 1026px;
+    left: 1076px;
     position: absolute;
     top: 252px;
-    width: 255px;
+    width: 220px;
   }
   
   .profile .group-5 {
@@ -278,10 +283,10 @@
     background-color: #ffffff;
     border-radius: 20px;
     height: 112px;
-    left: 1026px;
+    left: 1076px;
     position: absolute;
     top: 544px;
-    width: 255px;
+    width: 225px;
   }
   
   .profile .group-11 {
@@ -337,10 +342,10 @@
     background-color: #ffffff;
     border-radius: 20px;
     height: 264px;
-    left: 1026px;
+    left: 1076px;
     position: absolute;
     top: 688px;
-    width: 255px;
+    width: 225px;
   }
   
   .profile .group-14 {
@@ -439,15 +444,16 @@
   .more_icon {
     position: absolute;
     top: 165px;
-    left: 1252px;
+    left: 1262px;
     height: 30px;
     width: 30px;
+    cursor: pointer;
   }
 
   .profile .view-profile-more {
     position: absolute;
     font-size: small;
-    margin-left: 1066px;
+    margin-left: 1080px;
     margin-top: 255px;
   }
 

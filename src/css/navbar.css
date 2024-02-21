@@ -14,7 +14,7 @@
     font-weight: 700;
     letter-spacing: 0;
     z-index: 100;
-    word-spacing: 30px;
+    word-spacing: 20px;
     color: #8b008b;
     display: flex;
     justify-content: space-between;
@@ -40,6 +40,8 @@
     padding: 30px;
     color: var(--main-color);
     margin-right: 13px;
+    display: flex;
+    gap: 50px;
   }
 
 .navbar .links a {
@@ -57,7 +59,12 @@
     color: #8b008b;
     font-weight: 700;
     font-size: medium;
+    cursor: pointer;
   }
+
+.me-button:hover {
+  color: var(--second-main-color);
+}
 
 #me-drop-arrow {
     position: absolute;
@@ -83,13 +90,13 @@
     font-weight: 600;
   }
 
-.me-user-name a:hover {
-    color: var(--second-main-color);
-  }
-
 .me-profile {
     color: black;
     font-weight: 600;
+  }
+
+.memenu a:hover {
+   background-color: hsl(300, 100%, 95%);
   }
 
 #me-user-profile {
@@ -97,7 +104,7 @@
     align-items: center;
     gap: 10px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 
 .me-message {
@@ -109,7 +116,8 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
 .me-notifications {
@@ -121,7 +129,8 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
 .me-gigs {
@@ -133,7 +142,8 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
 .me-community {
@@ -145,7 +155,8 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
 .me-settings {
@@ -157,6 +168,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    padding-top: 10px;
     padding-bottom: 20px;
   }
 
@@ -169,5 +181,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }

@@ -6,7 +6,7 @@ import community from './../assets/icons/community.png';
 export const Explore = () => {
     return (
     <div className="community-explore">
-      <div className="frame">
+      <div className="explore-frame">
         <div className="group">
           <div className="div">
             <div className="group-2">
@@ -126,13 +126,13 @@ export const Explore = () => {
           </div>
         </div>
       </div>
-      <div className="group-21">
+      <div className="explore-group-21">
         <img
-          className="element-tiny"
+          className="element"
           alt="Element tiny"
           src="https://c.animaapp.com/D8UwJhxt/img/28480855-tiny-business-persons-working-on-jigsaw-puzzle-together.png"
         />
-        <a href="/createcommunity"> <button className="img"> + Create </button> </a>
+        <a href="/createcommunity"> <button className="explore-img"> + Create </button> </a>
       </div>
      </div>
     );

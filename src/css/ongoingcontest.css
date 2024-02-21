@@ -1,6 +1,6 @@
 .ongoing-contests {
   height: 572px;
-  width: 1000px;
+  width: 100%;
   margin-left: -50px;
 }
 
@@ -29,7 +29,7 @@
   left: 0;
   position: absolute;
   top: 0;
-  width: 1197px;
+  width: 1057px;
 }
 
 .ongoing-contests .element-removebg {
@@ -108,7 +108,7 @@
 }
 
 .ongoing-contests .group-5 {
-  left: 981px;
+  left: 841px;
   position: absolute;
   top: 32px;
 }
@@ -122,6 +122,7 @@
   font-size: larger;
   background-color: transparent;
   border: 2px solid #8b008b;
+  cursor: pointer;
 }
 
 .ongoing-contests .open-book-icon {
@@ -136,12 +137,13 @@
   padding: 20px 60px 20px 60px;
   background-color: #8b008b;
   color: #ffffff;
-  left: 946px;
+  left: 826px;
   position: absolute;
   top: 400px;
   font-weight: 600;
   font-size: medium;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .ongoing-contests .group-6 {
@@ -181,7 +183,7 @@
 
 .ongoing-contests .group-7 {
   height: 44px;
-  left: 525px;
+  left: 465px;
   position: absolute;
   top: 528px;
   width: 148px;
@@ -202,6 +204,7 @@
   position: absolute !important;
   margin-top: -12px !important;
   width: 24px !important;
+  cursor: pointer;
 }
 
 .ongoing-contests .heroicons-outline-chevron-right-3-wrapper {

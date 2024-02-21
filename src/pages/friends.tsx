@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Popup, PopupState, PopupType } from "../core/interfaces";
 
-export const Friends = () => {
+export const Friends = ({ show, which } : PopupType) => {
     return (
-        <div className="profile-network">
+        <div className={show == PopupState.SHOW && which == Popup.FOLLOWERS ? "profile-network" : "profile-network hide"}>
       <div className="text-wrapper">My Network</div>
       <div className="group">
         <div className="div">
@@ -11,11 +12,11 @@ export const Friends = () => {
           <img className="line" alt="Line" src="https://c.animaapp.com/ZP50CPgc/img/line-31.svg" />
         </div>
         <div className="group-2">
-          <a href="/followers" className="text-wrapper-3a">Followers</a>
+          <div className="text-wrapper-3a">Followers</div>
           <img className="img" alt="Line" src="https://c.animaapp.com/ZP50CPgc/img/line-32-1@2x.png" />
         </div>
         <div className="group-3">
-          <a href="/following" className="text-wrapper-3a">Following</a>
+          <div className="text-wrapper-3a">Following</div>
           <img className="line-2" alt="Line" src="https://c.animaapp.com/ZP50CPgc/img/line-32-1@2x.png" />
         </div>
       </div>

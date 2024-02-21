@@ -4,7 +4,7 @@ export const Completed = () => {
     return (
         <div className="completed">
       <div className="group">
-        <p className="text-wrapper">Take a look at what you’ve got going on</p>
+        <p className="text-wrapper">Take a look at what you’ve got<br /> going on</p>
         <img
           className="element"
           alt="Element"

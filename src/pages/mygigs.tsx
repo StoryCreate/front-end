@@ -2,9 +2,9 @@ import React from "react";
 
 export const Mygigs = () => {
     return (
-        <div className="gig-ongoing">
+      <div className="gig-ongoing">
       <div className="group">
-        <p className="text-wrapper">Take a look at what you’ve got going on</p>
+        <p className="text-wrapper">Take a look at what you’ve got<br /> going on</p>
         <img
           className="element"
           alt="Element"

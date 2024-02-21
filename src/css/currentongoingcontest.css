@@ -2,8 +2,9 @@
     background-color: #ffffff;
     height: 1800px;
     position: relative;
-    width: 1000px;
+    width: 100%;
     margin-left: -50px;
+    overflow: hidden;
   }
 
   .ongoing-contest .text-wrapper {
@@ -20,13 +21,13 @@
     padding-left: 50px;
     padding-right: 40px;
     border-radius: 30px;
-    margin-left: 658px;
+    margin-left: 538px;
     background-color: #D9D9D9;
     font-size: medium;
   }
   
   .ongoing-contest .contest-search-icon {
-    margin-left: 1200px;
+    margin-left: 1080px;
     margin-top: -37px;
     position: absolute;
   }
@@ -35,7 +36,8 @@
     display: flex;
     align-items: center;
     gap: 6px;
-    margin-left: 11.5%;
+    margin-left: 8.5%;
+    color: #8b008b;
   }
    
   .ongoing-contest h1 {
@@ -123,16 +125,12 @@
     left: 0;
     position: absolute;
     top: 0;
-    width: 1197px;
+    width: 1057px;
   }
   
   .ongoing-contest .element-removebg {
-    height: 488px;
-    left: 617px;
     object-fit: cover;
     position: absolute;
-    top: 0;
-    width: 552px;
   }
   
   .ongoing-contest .group-5 {
@@ -247,6 +245,7 @@
     font-size: larger;
     background-color: transparent;
     border: 2px solid #8b008b;
+    cursor: pointer;
   }
   
   .ongoing-contest .group-10 {
@@ -267,12 +266,13 @@
     padding: 20px 60px 20px 60px;
     background-color: #8b008b;
     color: #ffffff;
-    right: 0px;
+    right: 145px;
     position: absolute;
     top: 580px;
     font-weight: 600;
     font-size: medium;
     border-radius: 20px;
+    cursor: pointer;
   }
   
   .ongoing-contest .overlap-2 {
@@ -299,7 +299,7 @@
   
   .ongoing-contest .overlap-group-wrapper {
     height: 236px;
-    left: 227px;
+    left: 167px;
     position: absolute;
     top: 1217px;
     width: 993px;

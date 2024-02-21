@@ -38,7 +38,7 @@ export const Community = () => {
            </div>
            <div className="group-19">
             <div className="group-20">
-              <div> <input className="text-wrapper-4" placeholder="Search" /> </div>
+              <div> <input type="text" className="text-wrapper-4" placeholder="Search" /> </div>
               <img src={search} className="search-instance" />
             </div>
           </div>

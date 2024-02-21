@@ -1,9 +1,29 @@
 .profile-network {
     background-color: #ffffff;
     border-radius: 20px;
-    height: 1424px;
-    position: relative;
-    width: 800px;
+    height: 95%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    overflow-y: auto;
+    z-index: 101;
+    overflow-x: hidden;
+  }
+
+  .hide{
+    display: none !important;
+  }
+
+  .profile-bg{
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
   }
   
   .profile-network .text-wrapper {

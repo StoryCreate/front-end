@@ -12,7 +12,7 @@ export const Footer = () => {
         <footer className="footer">
           <div className="logo"> <img
                   alt="Rectangle"
-                  src="https://c.animaapp.com/d3ZMzGnY/img/rectangle-32-1@2x.png" width="100px" height="100px"
+                  src="https://c.animaapp.com/d3ZMzGnY/img/rectangle-32-1@2x.png" width="45px" height="45px"
                 /> <a className="letterlogo">StoryCreate</a>
           </div>
 
@@ -24,7 +24,7 @@ export const Footer = () => {
            </div>
             
             <div className="about-follow">
-            <img className="line" alt="Line" src="https://c.animaapp.com/d3ZMzGnY/img/line-17.svg" width="35px" height="70px" />
+            <img className="line" alt="Line" src="https://c.animaapp.com/d3ZMzGnY/img/line-17.svg" width="30px" height="70px" />
 
             <div className="about-us">
               <div className="text-wrapper-24">About Us</div>
@@ -33,16 +33,16 @@ export const Footer = () => {
               <div className="text-wrapper-27">FAQ</div>
             </div>
 
-            <img className="line-2" alt="Line" src="https://c.animaapp.com/d3ZMzGnY/img/line-17.svg" width="35px" height="70px" />
+            <img className="line-2" alt="Line" src="https://c.animaapp.com/d3ZMzGnY/img/line-17.svg" width="30px" height="70px" />
 
             <div className="group-2">
 
               <div className="follow">Follow Us</div>
               <div className="social-media-icons">
-              <img className="image-icon" src={twitter} alt="image" width="15px" height="15px"/>
+              <img className="image-icon" src={twitter} alt="image" width="13px" height="13px"/>
               <i className='bx bxl-instagram'></i>
-              <img src={facebook} alt="image" width="22px" height="22px"/>
-              <img className="image-icon" src={youtube} alt="image" width="22px" height="22px"/>
+              <img src={facebook} alt="image" width="18px" height="18px"/>
+              <img className="image-icon" src={youtube} alt="image" width="18px" height="18px"/>
               </div>
              </div>
             </div>
@@ -50,7 +50,7 @@ export const Footer = () => {
 
           <div>
               <div className="subscribe-apple-google">
-                    <div className="input-group"> <input className="email-input" placeholder="Enter your email address" /> <button className="subscribe"> Subscribe </button> </div>
+                    <div className="input-group"> <input type="email" className="email-input" placeholder="Enter your email address" /> <button type="button" className="subscribe"> Subscribe </button> </div>
                       <div> <img className="apple" src={apple} /> </div> <div> <img className="google" src={google} /> </div>
               </div>
           </div>

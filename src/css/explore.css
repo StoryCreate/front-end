@@ -1,14 +1,14 @@
 .community-explore {
     background-color: #ffffff;
     height: 1024px;
-    overflow: hidden;
     position: relative;
-    width: 1320px;
+    width: 100%;
+    overflow: hidden;
  }
   
-  .community-explore .frame {
+  .community-explore .explore-frame {
     height: 803px;
-    left: 600px;
+    left: 460px;
     overflow: hidden;
     overflow-y: scroll;
     position: absolute;
@@ -315,26 +315,26 @@
     width: 24px !important;
   }
   
-  .community-explore .group-21 {
+  .community-explore .explore-group-21 {
     background-color: var(--white);
     box-shadow: inset 0px 2px 2px #00000040;
     height: 850px;
-    left: 0;
+    left: -140px;
     position: absolute;
     top: 174px;
     width: 601px;
   }
   
-  .community-explore .element-tiny {
-    height: 470px;
-    left: 0;
+  .community-explore .element {
+    height: 300px;
+    left: 200px;
     object-fit: cover;
     position: absolute;
     top: 128px;
-    width: 608px;
+    width: 308px;
   }
   
-  .community-explore .img {
+  .community-explore .explore-img {
     color: var(--main-color);
     background-color: transparent;
     border: 2px solid var(--main-color);
@@ -342,7 +342,7 @@
     font-size: large;
     font-weight: 600;
     padding: 15px 30px 15px 30px;
-    left: 66px;
+    left: 206px;
     position: absolute;
     top: 23px;
     box-shadow: 1.5px 1.5px #00000040;

@@ -2,8 +2,8 @@
     background-color: #ffffff;
     height: 1324px;
     position: relative;
-    width: 1300px;
-    top: -140px;
+    width: 90%;
+    top: -140px; 
 }
 
 .notifications .title {
@@ -11,7 +11,7 @@
     font-size: x-large;
     font-weight: 700;
     position: absolute;
-    margin-left: 77px;
+    margin-left: 57px;
     margin-top: 320px;
 }
 
@@ -30,7 +30,7 @@
 
 .notifications .overlap-3 {
   height: 1050px;
-  left: 426px;
+  left: 314px;
   position: absolute;
   top: 375px;
   width: 537px;
@@ -58,7 +58,7 @@
   left: 0;
   position: absolute;
   top: 0;
-  width: 904px;
+  width: 1016px;
 }
 
 .notifications .group-9 {
@@ -97,7 +97,7 @@
     color: #000000;
     font-size: medium;
     font-weight: 500;
-    left: -30px;
+    left: 90px;
     letter-spacing: var(--body-medium-18-letter-spacing);
     line-height: var(--body-medium-18-line-height);
     position: absolute;
@@ -106,7 +106,7 @@
 
 .notifications .group-12 {
   height: 30px;
-  left: -42px;
+  left: 80px;
   position: absolute;
   top: 40px;
   width: 40px;
@@ -180,9 +180,9 @@
 .notifications .rectangle-2 {
   background-color: #7f7b9b;
   height: 69px;
-  left: -17px;
+  left: -170px;
   position: absolute;
-  top: 11px;
+  top: -20px;
   width: 69px;
 }
 
@@ -226,7 +226,7 @@
   color: #000000;
   font-size: medium;
   font-weight: 500;
-  left: -32px;
+  left: 90px;
   letter-spacing: var(--body-medium-18-letter-spacing);
   line-height: var(--body-medium-18-line-height);
   position: absolute;
@@ -256,7 +256,7 @@
 
 .notifications .ellipse-4 {
   position: absolute;
-  left: -120px;
+  margin-left: -10px;
   height: 100%;
 }
 
@@ -403,7 +403,7 @@
   color: var(--main-color);
   font-size: medium;
   font-weight: 600;
-  left: 77px;
+  left: 57px;
   letter-spacing: var(--body-semibold-30-letter-spacing);
   line-height: var(--body-semibold-30-line-height);
   position: absolute;
@@ -414,7 +414,7 @@
   color: var(--dark-100);
   font-size: medium;
   font-weight: 600;
-  left: 77px;
+  left: 57px;
   letter-spacing: var(--body-semibold-30-letter-spacing);
   line-height: var(--body-semibold-30-line-height);
   position: absolute;

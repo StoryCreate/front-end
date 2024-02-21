@@ -35,14 +35,11 @@
   }
 
   .wallet .my-wallet-contest {
-    display: flex;
-    align-items: center;
-    gap: 830px;
     color: var(--dark-100);
     font-family: var(--montserrat-40-semibold-font-family);
     font-size: large;
     font-weight: 700;
-    margin-right: 20px;
+    margin-left: -50px;
     position: absolute;
     top: 20px;
   }
@@ -53,18 +50,22 @@
     color: #ffffff;
     border-radius: 25px 25px 25px 25px;
     font-size: medium;
-    margin-left: 0px;
-    position: 0;
+    left: 990px;
+    position: absolute;
+    top: 20px;
   }
 
-  .wallet .contest-arrow {
+  .wallet .arrow-right {
     position: absolute;
-    margin-left: 1110px;
+    left: 1095px;
+    top: 38px;
+    height: 20px;
   }
 
   .wallet .wallet-plus {
     position: absolute;
     margin-left: 370px;
+    cursor: pointer;
   }
 
   .wallet .wallet-convert-arrow {
@@ -133,6 +134,7 @@
     color: var(--second-main-color);
     border-radius: 10px;
     font-weight: 600;
+    cursor: pointer;
   }
   
   .wallet .text-wrapper {
@@ -340,6 +342,7 @@
     position: absolute;
     margin-top: 80px;
     border-radius: 10px;
+    cursor: pointer;
   }
   
   .wallet .text-wrapper-9 {
@@ -358,6 +361,7 @@
     background-color: var(--second-main-color);
     position: absolute;
     margin-top: 70px;
-    margin-left: -547px;
+    margin-left: -600px;
     border-radius: 15px 15px 15px 15px;
+    cursor: pointer;
   }

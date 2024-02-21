@@ -1,7 +1,9 @@
 .home {
    background-color: #ffffff;
    position: relative;
-   width: 1300px;
+   width: 100%;
+   height: 3600px;
+   overflow: hidden;
 }
 
 body {
@@ -10,10 +12,7 @@ body {
   
 .text-wrapper {
    padding-top: 150px;
-   display: flex;
-   align-items: center;
-   gap: 15px;
-   margin-left: 475px;
+   margin-left: 495px;
 }
 
 .home-search {
@@ -22,13 +21,14 @@ body {
    padding-left: 50px;
    padding-right: 40px;
    border-radius: 30px;
-   margin-left: 523px;
+   margin-left: 460px;
    background-color: #D9D9D9;
    font-size: medium;
+   cursor: pointer;
 }
 
 .home-search-icon {
-   margin-left: 1020px;
+   margin-left: 958px;
    margin-top: -36px;
    position: absolute;
 }
@@ -36,17 +36,31 @@ body {
 #bell {
    font-size: 30px;
    color: var(--second-main-color);
-   opacity: 50;
+   opacity: 0.5;
+   position: absolute;
+   top: 165px;
+   left: 1118px;
+   cursor: pointer;
 }
   
 #chat {
    font-size: 30px;
    color: var(--second-main-color);
+   opacity: 0.7;
+   position: absolute;
+   top: 165px;
+   left: 1180px;
+   cursor: pointer;
 }
   
 #group {
    font-size: 30px;
    color: var(--second-main-color);
+   opacity: 0.7;
+   position: absolute;
+   top: 165px;
+   left: 1242px;
+   cursor: pointer;
 }
   
 .home-back {
@@ -55,6 +69,8 @@ body {
    align-items: center;
    gap: 6px;
    margin-left: 4.5%;
+   color: var(--main-color);
+   cursor: pointer;
 }
   
 .home h1 {
@@ -74,7 +90,12 @@ body {
    border-radius: 5px;
    color: var(--main-color);
    box-shadow: 0px 3.66px 3.66px #00000040, inset 0px 1.83px 1.83px #00000026;
-   margin-left: 530px;
+   margin-left: 280px;
+   cursor: pointer;
+}
+
+.home .group-1 {
+   position: absolute;
 }
   
 .ellipse-1 {
@@ -84,7 +105,7 @@ body {
    padding-bottom: 20px;
    font-size: 25px;
    justify-content: left;
-   margin-left: 100px;
+   margin-left: 155px;
 }
   
 .home-p {
@@ -92,36 +113,60 @@ body {
    justify-items: left;
    font-family: 'montserrat';
    font-weight: 500;
-   margin-right: 125px;
+   margin-left: 153px;
+   position: absolute;
+   top: 95px;
+   white-space: nowrap;
 }
 
 .rectangle-1 {
-   margin-right: 500px;
+   margin-left: 155px;
+   position: absolute;
+   margin-top: 30px;
 }
 
-.home-heart-icons {
+.home-heart-icons-1 {
    display: flex;
    align-items: center;
    gap: 7px;
    font-size: 30px;
-   margin-left: 110px;
+   margin-left: 165px;
+   margin-top: 335px;
+   position: absolute;
+   cursor: pointer;
+}
+
+.home .likes-1 {
+   position: absolute;
+   margin-left: 165px;
+   top: 480px;
 }
   
 .text-wrapper-3 {
-   margin-right: 1020px;
+   margin-right: 820px;
    padding-top: 10px;
    font-weight: 500;
+   white-space: nowrap;
+   cursor: pointer;
 }
   
 .text-wrapper-4 {
-   margin-right: 903px;
+   margin-right: 703px;
    padding-top: 15px;
+   white-space: nowrap;
+   cursor: pointer;
 }
   
 .text-wrapper-5 {
-   margin-right: 982px;
+   margin-right: 782px;
    padding-top: 15px;
    padding-bottom: 50px;
+   white-space: nowrap;
+}
+
+.home .group-2 {
+   position: absolute;
+   top: 1000px;
 }
   
 .ellipse-2 {
@@ -131,42 +176,68 @@ body {
    padding-bottom: 20px;
    font-size: 25px;
    justify-content: left;
-   margin-left: 100px;
+   margin-left: 155px;
 }
   
 .home-p2 {
    padding-bottom: 20px;
+   justify-items: left;
    font-family: 'montserrat';
    font-weight: 500;
-   font-size: medium;
-   justify-content: left;
-   margin-right: 240px;
+   margin-left: 153px;
+   position: absolute;
+   top: 95px;
+   white-space: nowrap;
 }
 
 .rectangle-2 {
-   margin-right: 500px;
+   margin-left: 155px;
+   position: absolute;
+   margin-top: 30px;
+}
+
+.home-heart-icons-2 {
+   display: flex;
+   align-items: center;
+   gap: 7px;
+   font-size: 30px;
+   margin-left: 165px;
+   margin-top: 335px;
+   position: absolute;
+   cursor: pointer;
+}
+
+.home .likes-2 {
+   position: absolute;
+   margin-left: 165px;
+   top: 480px;
 }
   
 .text-wrapper-3a {
-   margin-right: 1020px;
+   margin-right: 820px;
    padding-top: 10px;
    font-weight: 500;
-   font-size: medium;
+   white-space: nowrap;
+   cursor: pointer;
 }
   
 .text-wrapper-4a {
-   margin-right: 903px;
+   margin-right: 703px;
    padding-top: 15px;
-   font-weight: 300;
-   font-size: medium;
+   white-space: nowrap;
+   cursor: pointer;
 }
   
 .text-wrapper-5a {
-   margin-right: 982px;
+   margin-right: 782px;
    padding-top: 15px;
-   font-weight: 300;
-   font-size: medium;
    padding-bottom: 50px;
+   white-space: nowrap;
+}
+
+.home .group-3 {
+   position: absolute;
+   top: 1640px;
 }
   
 .ellipse-3 {
@@ -176,16 +247,18 @@ body {
    padding-bottom: 20px;
    font-size: 25px;
    justify-content: left;
-   margin-left: 100px;
+   margin-left: 155px;
 }
 
 .home-p3 {
    padding-bottom: 20px;
+   justify-items: left;
    font-family: 'montserrat';
    font-weight: 500;
-   font-size: medium;
-   justify-content: left;
-   margin-right: 465px;
+   margin-left: 153px;
+   position: absolute;
+   top: 95px;
+   white-space: nowrap;
 }
 
 .text-wrapper-7 {
@@ -193,29 +266,58 @@ body {
 }
 
 .rectangle-3 {
-   margin-right: 500px;
+   left: 153px;
+   position: absolute;
+   margin-top: 50px;
+}
+
+.home-heart-icons-3 {
+   display: flex;
+   align-items: center;
+   gap: 7px;
+   font-size: 30px;
+   margin-left: 165px;
+   margin-top: 360px;
+   position: absolute;
+   cursor: pointer;
+}
+
+.home .likes-3 {
+   position: absolute;
+   margin-left: 165px;
+   top: 500px;
 }
 
 .text-wrapper-8 {
-   margin-right: 1020px;
+   margin-right: 820px;
    padding-top: 10px;
    font-weight: 500;
    font-size: medium;
+   white-space: nowrap;
+   cursor: pointer;
 }
 
 .text-wrapper-9 {
-   margin-right: 903px;
+   margin-right: 703px;
    padding-top: 15px;
    font-weight: 300;
    font-size: medium;
+   white-space: nowrap;
+   cursor: pointer;
 }
 
 .text-wrapper-10 {
-   margin-right: 982px;
+   margin-right: 782px;
    padding-top: 15px;
    font-weight: 300;
    font-size: medium;
    padding-bottom: 50px;
+   white-space: nowrap;
+}
+
+.home .group-4 {
+   position: absolute;
+   top: 2300px;
 }
 
 .ellipse-4 {
@@ -225,42 +327,73 @@ body {
    padding-bottom: 20px;
    font-size: 25px;
    justify-content: left;
-   margin-left: 100px;
+   margin-left: 155px;
 }
 
 .home-p4 {
    padding-bottom: 20px;
+   justify-items: left;
    font-family: 'montserrat';
    font-weight: 500;
-   font-size: medium;
-   justify-content: left;
-   margin-right: 195px;
+   margin-left: 153px;
+   position: absolute;
+   top: 95px;
+   white-space: nowrap;
 }
 
 .rectangle-4 {
-   margin-right: 500px;
+   left: 153px;
+   position: absolute;
+   margin-top: 30px;
+}
+
+.home-heart-icons-4 {
+   display: flex;
+   align-items: center;
+   gap: 7px;
+   font-size: 30px;
+   margin-left: 165px;
+   margin-top: 340px;
+   position: absolute;
+   cursor: pointer;
+}
+
+.home .likes-4 {
+   position: absolute;
+   margin-left: 165px;
+   top: 480px;
 }
 
 .text-wrapper-11 {
-   margin-right: 1020px;
+   margin-right: 820px;
    padding-top: 10px;
    font-weight: 500;
    font-size: medium;
+   white-space: nowrap;
+   cursor: pointer;
 }
 
 .text-wrapper-12 {
-   margin-right: 903px;
+   margin-right: 703px;
    padding-top: 15px;
    font-weight: 300;
    font-size: medium;
+   white-space: nowrap;
+   cursor: pointer;
 }
 
 .text-wrapper-13 {
-   margin-right: 982px;
+   margin-right: 782px;
    padding-top: 15px;
    font-weight: 300;
    font-size: medium;
    padding-bottom: 50px;
+   white-space: nowrap;
+}
+
+.home .group-5 {
+   position: absolute;
+   top: 2940px;
 }
 
 .ellipse-5 {
@@ -270,40 +403,169 @@ body {
    padding-bottom: 20px;
    font-size: 25px;
    justify-content: left;
-   margin-left: 100px;
+   margin-left: 155px;
 }
 
 .home-p5 {
    padding-bottom: 20px;
+   justify-items: left;
    font-family: 'montserrat';
    font-weight: 500;
-   font-size: medium;
-   justify-content: left;
-   margin-right: 268px;
+   margin-left: 153px;
+   position: absolute;
+   top: 95px;
+   white-space: nowrap;
 }
 
 .rectangle-5 {
-   margin-right: 500px;
+   left: 153px;
+   position: absolute;
+   margin-top: 30px;
+}
+
+.home-heart-icons-5 {
+   display: flex;
+   align-items: center;
+   gap: 7px;
+   font-size: 30px;
+   margin-left: 165px;
+   margin-top: 340px;
+   position: absolute;
+   cursor: pointer;
+}
+
+.home .likes-5 {
+   position: absolute;
+   margin-left: 165px;
+   top: 480px;
 }
 
 .text-wrapper-14 {
-   margin-right: 1020px;
+   margin-right: 820px;
    padding-top: 10px;
    font-weight: 500;
    font-size: medium;
+   white-space: nowrap;
+   cursor: pointer;
 }
 
 .text-wrapper-15 {
-   margin-right: 903px;
+   margin-right: 703px;
    padding-top: 15px;
    font-weight: 300;
    font-size: medium;
+   white-space: nowrap;
+   cursor: pointer;
 }
 
 .text-wrapper-16 {
-   margin-right: 982px;
+   margin-right: 782px;
    padding-top: 15px;
    font-weight: 300;
    font-size: medium;
    padding-bottom: 50px;
+   white-space: nowrap;
+}
+
+.homepost {
+   background-color: #ffffff;
+   position: relative;
+   height: 800px;
+   width: 100%;
+}
+
+.homepost .homepost-back {
+   display: flex;
+   justify-content: first baseline;
+   align-items: center;
+   gap: 6px;
+   margin-left: 4.5%;
+   color: var(--main-color);
+}
+
+.homepost .type-something {
+   position: absolute;
+   left: 45px;
+   top: 130px;
+   width: 650px;
+   padding-bottom: 40px;
+   color: #000000;
+   font-size: medium;
+   font-weight: 500;
+   font-style: normal;
+}
+
+.homepost .type-something::placeholder {
+   color: #00000040;
+}
+
+.homepost .jenni {
+   position: absolute;
+   left: 45px;
+   top: 30px;
+}
+
+.homepost .community-member {
+   position: absolute;
+   font-size: large;
+   font-weight: 600;
+   font-style: normal;
+   color: #000000;
+   left: 140px;
+   top: 60px;
+}
+
+.homepost .frame-2 {
+   height: 430px;
+   left: 190px;
+   overflow: hidden;
+   position: absolute;
+   top: 314px;
+   width: 784px;
+}
+
+.homepost .group-5 {
+   background-color: var(--white);
+   box-shadow: inset 2px 0px 0px 2px #00000040;
+   border-radius: 15px;
+   height: 400px;
+   position: relative;
+   width: 784px;
+}
+
+.homepost .frame-3 {
+   height: 50px;
+   left: 190px;
+   overflow: hidden;
+   position: absolute;
+   top: 614px;
+   width: 784px;
+}
+
+.homepost .group-6 {
+   background-color: var(--white);
+   box-shadow: inset 2px 0px 0px 2px #00000040;
+   border-radius: 15px;
+   height: 400px;
+   position: relative;
+   width: 784px;
+}
+
+.homepost .photo-icon {
+   position: absolute;
+   left: 50px;
+   top: 330px;
+}
+
+.homepost .home-post-button {
+   position: absolute;
+   color: #ffffff;
+   background-color: var(--main-color);
+   font-size: medium;
+   font-weight: 600;
+   font-style: normal;
+   padding: 10px 30px 10px 30px;
+   left: 660px;
+   top: 330px;
+   border-radius: 20px;
 }

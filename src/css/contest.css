@@ -1,8 +1,9 @@
 .contest {
   background-color: #ffffff;
-  height: 2740px;
+  height: 1900px;
   position: relative;
-  width: 1440px;
+  width: 96%;
+  overflow: hidden;
 }
 
 .text-wrapper {
@@ -19,13 +20,14 @@
   padding-left: 50px;
   padding-right: 40px;
   border-radius: 30px;
-  margin-left: 658px;
+  margin-left: 540px;
   background-color: #D9D9D9;
   font-size: medium;
+  cursor: pointer;
 }
 
 .contest-search-icon {
-  margin-left: 1154px;
+  margin-left: 1036px;
   margin-top: -37px;
   position: absolute;
 }
@@ -212,6 +214,7 @@
   position: absolute;
   top: 412px;
   width: 400px;
+  text-align: left;
 }
 
 .contest .text-wrapper-8 {
@@ -219,7 +222,7 @@
   font-family: "Montserrat", Helvetica;
   font-size: 18px;
   font-weight: 600;
-  left: 38px;
+  left: 25px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
@@ -245,7 +248,7 @@
 
 .contest .screenshot-3 {
   height: 50px;
-  left: 32px;
+  left: 19px;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -256,7 +259,7 @@
   color: var(--dark-100);
   font-size: medium;
   font-weight: 500;
-  margin-left: 8px;
+  margin-left: -5px;
   letter-spacing: var(--body-medium-18-letter-spacing);
   line-height: var(--body-medium-18-line-height);
   position: absolute;
@@ -274,7 +277,7 @@
 
 .contest .screenshot-4 {
   height: 50px;
-  left: 27px;
+  left: 14px;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -291,7 +294,7 @@
 
 .contest .screenshot-5 {
   height: 50px;
-  left: 26px;
+  left: 13px;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -311,7 +314,7 @@
   font-family: "Montserrat", Helvetica;
   font-size: 18px;
   font-weight: 600;
-  left: 38px;
+  left: 25px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
@@ -356,7 +359,7 @@
   font-family: "Montserrat", Helvetica;
   font-size: 18px;
   font-weight: 600;
-  left: 38px;
+  left: 25px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;

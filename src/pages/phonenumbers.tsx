@@ -36,8 +36,8 @@ export const Phonenumbers = () => {
                 <p className="text-23"> If selected, you will be able to use this number to reset your password </p>
                 <h3 className="text-24"> Make primary </h3>
                 <img src={toggle} className="toggle-icon-5" />
-                <p className="text-25"> Your phone number helps us keep your account secure by adding an additional layer of
-                    verification. It also helps others with your phone number, discover and connect with you.
+                <p className="text-25"> Your phone number helps us keep your account secure by adding an additional<br /> layer of
+                    verification. It also helps others with your phone number, discover and<br /> connect with you.
                     You can always decide how you want your phone number used.</p>
                 <h3 className="text-26"> Learn more </h3>
             </div>

@@ -2,6 +2,8 @@ import React from "react";
 import search from './../assets/icons/search.png';
 import send_icon from './../assets/icons/send_icon.png';
 import profile_picture1 from './../assets/icons/profile_picture1.png';
+import online_icon from './../assets/icons/online_icon.png';
+import offline_icon from './../assets/icons/offline_icon.png';
 import profile_picture2 from './../assets/icons/profile_picture2.png';
 
 export const Messages = () => {
@@ -12,7 +14,7 @@ export const Messages = () => {
           <div className="overlap">
             <div className="group-wrapper">
               <div className="div">
-              <div> <input className="message-search" placeholder="Search" /> <img className="messages-search-icon" src={search} width="15px" /> 
+              <div> <input type="text" className="message-search" placeholder="Search" /> <img className="messages-search-icon" src={search} width="15px" /> 
                 </div>
               </div>
             </div>
@@ -21,6 +23,7 @@ export const Messages = () => {
                 <div className="group-3">
                     <div>
                       <img className="profile-picture-1" src={profile_picture1}/>
+                      <img src={online_icon} className="online-icon" />
                     </div>
                   <div className="group-4">
                     <div className="text-wrapper-3">Austin Usman</div>
@@ -34,6 +37,7 @@ export const Messages = () => {
               <div className="group-3">
                   <div>
                   <img className="profile-picture-2" src={profile_picture2}/>
+                  <img src={offline_icon} className="offline-icon" />
                   </div>
                   <div className="group-5">
                     <div className="text-wrapper-3a">Pete Kort</div>
@@ -102,6 +106,7 @@ export const Messages = () => {
               <div>
                 <div>
                 <img className="profile-picture-1b" src={profile_picture1}/>
+                <img src={online_icon} className="online-icon-2" />
                 </div>
               </div>
               <div className="group-14">
@@ -122,6 +127,7 @@ export const Messages = () => {
               <div className="group-17">
                 <div className="overlap-group-2">
                   <img className="ellipse-4" alt="Ellipse" src="https://c.animaapp.com/crPnW2vq/img/ellipse-1973.svg" />
+                  <img src={offline_icon} className="offline-icon-2" />
                   <div className="ellipse-2" />
                 </div>
               </div>
@@ -145,6 +151,7 @@ export const Messages = () => {
               <div>
                 <div>
                 <img className="profile-picture-1b2" src={profile_picture1}/>
+                <img src={online_icon} className="online-icon-3" />
                 </div>
               </div>
               <div className="group-21">
@@ -172,7 +179,7 @@ export const Messages = () => {
       </div>
       <div className="overlap-wrapper">
         <div>
-          <input className="type-message" placeholder="Type a message ..." />
+          <input type="text" className="type-message" placeholder="Type a message ..." />
           <img className="send-icon" src={send_icon} />
           <div className="group-25">
             <div>

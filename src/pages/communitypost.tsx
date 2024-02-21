@@ -79,6 +79,12 @@ export const Communitypost = () => {
                 <button className="community-post-button"> Post </button>
                 </div>
                </div>
+
+               <div className="frame-3">
+                <div className="group-6">
+
+                </div>
+               </div>
         </div>
     );
 };

@@ -27,32 +27,32 @@ export const Accountinformation = () => {
 
             <div className="group-3">
                 <h3 className="phone"> Phone </h3>
-                <img src={arrow_right_dark} className="arrow-right-dark-9" />
+                <img src={arrow_right_dark} className="arrow-right-dark-23" />
                 <p className="phone-number"> +23411111111 </p>
             </div>
 
             <div className="group-4">
                 <h3 className="email"> Email </h3>
-                <img src={arrow_right_dark} className="arrow-right-dark-10" />
+                <img src={arrow_right_dark} className="arrow-right-dark-24" />
                 <p className="email-2"> jenni@gmail.com </p>
             </div>
    
             
             <div className="group-5">
                 <h3 className="country"> Country</h3>
-                <img src={arrow_right_dark} className="arrow-right-dark-11" />
+                <img src={arrow_right_dark} className="arrow-right-dark-25" />
                 <p className="country-2"> United States </p>
             </div>
 
             <div className="group-6">
                 <h3 className="language"> Languages </h3>
-                <img src={arrow_right_dark} className="arrow-right-dark-12" />
+                <img src={arrow_right_dark} className="arrow-right-dark-26" />
                 <p className="language-2"> English </p>
             </div>
 
             <div className="group-7">
                 <h3 className="gender"> Gender </h3>
-                <img src={arrow_right_dark} className="arrow-right-dark-13" />
+                <img src={arrow_right_dark} className="arrow-right-dark-27" />
                 <p className="gender-2"> Female </p>
             </div>
         </div>

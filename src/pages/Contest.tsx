@@ -242,7 +242,7 @@ export const Contest = (): JSX.Element => {
           </div>
 
           <a href="/wallet"> <div className="home-back">
-               <i className='bx bx-left-arrow-alt' id="left-arrow"></i> <h1> Back </h1> 
+               <i className='bx bx-left-arrow-alt' id="left-arrow"></i> <h3> Back </h3> 
              </div> </a>
 
       <div className="group-10">

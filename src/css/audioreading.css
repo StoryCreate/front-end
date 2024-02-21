@@ -1,0 +1,491 @@
+.audio-reading {
+    height: 2900px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+ }
+   
+ .audio-reading .back {
+    position: absolute;
+    left: 90px;
+    top: 173px;
+    color: var(--main-color);
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+    background-color: transparent;
+ }
+   
+ #audio-left-arrow {
+    position: absolute;
+    left: 60px;
+    top: 170px;
+    font-size: 25px;
+    color: var(--main-color);
+ }
+
+.audio-reading .audio-frame {
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 250px;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    color: #000000;
+    text-align: center;
+    border: 1px solid #00000040;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 40px 50px 220px 220px;
+    box-shadow: 4px 4px 4px #00000040, inset 4px 4px 4px #00000040;
+    width: 800px;
+}
+
+.audio-reading .audio-image {
+    position: absolute;
+    left: 190px;
+    top: 300px;
+    height: 200px;
+    width: 200px;
+}
+
+.audio-reading .chapter-number {
+    position: absolute;
+    left: 500px;
+    top: 360px;
+    font-size: large;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.audio-reading .arrow-left-long {
+    position: absolute;
+    left: 500px;
+    top: 410px;
+    height: 30px;
+}
+
+.audio-reading .play {
+    position: absolute;
+    left: 580px;
+    top: 410px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.audio-reading .arrow-right-long {
+    position: absolute;
+    left: 660px;
+    top: 410px;
+    height: 30px;
+}
+
+.audio-reading .like {
+    position: absolute;
+    left: 1255px;
+    top: 237px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.audio-reading .share {
+    position: absolute;
+    left: 1200px;
+    top: 245px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.audio-reading .plus {
+    position: absolute;
+    left: 1135px;
+    top: 237px;
+    height: 22px;
+    font-size: xx-large;
+    font-weight: 500;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.audio-reading .content {
+    position: absolute;
+    top: 325px;
+    left: 1145px;
+    padding: 35px 35px 15px 35px;
+    background-color: var(--second-main-color);
+    font-size: medium;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.audio-reading .content-icon {
+    position: absolute;
+    top: 340px;
+    left: 1203px;
+    height: 15px;
+}
+
+.audio-reading .premium {
+    position: absolute;
+    top: 445px;
+    left: 1145px;
+    padding: 35px 30px 15px 30px;
+    background-color: var(--second-main-color);
+    font-size: medium;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.audio-reading .premium-icon {
+    position: absolute;
+    top: 455px;
+    left: 1203px;
+    height: 27px;
+}
+
+.audio-reading .subscribe-to {
+    position: absolute;
+    top: 565px;
+    left: 1145px;
+    padding: 15px 21px 15px 21px;
+    background-color: var(--second-main-color);
+    font-size: small;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.audio-reading .chapter-1 {
+    position: absolute;
+    font-size: medium;
+    font-weight: 500;
+    font-style: normal;
+    color: #000000;
+    text-align: left;
+    left: 100px;
+    top: 620px;
+}
+
+.audio-reading .comments {
+    position: absolute;
+    left: 900px;
+    top: 630px;
+    height: 30px;
+}
+
+.audio-reading .comments-2 {
+    position: absolute;
+    left: 900px;
+    top: 780px;
+    height: 30px;
+}
+
+.audio-reading .previous {
+    position: absolute;
+    margin-top: 1700px;
+    left: 60px;
+    padding: 15px 25px 15px 70px;
+    border-radius: 15px;
+    color: #7c7c7e;
+    font-weight: 700;
+    font-size: medium;
+    background-color: transparent;
+    border: 1px solid #7c7c7e;
+    cursor: pointer;
+}
+
+.audio-reading .next {
+    position: absolute;
+    margin-top: 1700px;
+    left: 865px;
+    padding: 15px 70px 15px 25px;
+    border-radius: 15px;
+    color: #8b008b;
+    font-weight: 700;
+    font-size: medium;
+    background-color: transparent;
+    border: 1px solid #8b008b;
+    cursor: pointer;
+}
+
+.audio-reading .arrow-right {
+    position: absolute;
+    margin-top: 1717px;
+    left: 1015px;
+    height: 20px;
+}
+
+.audio-reading .arrow-left-chevron {
+    position: absolute;
+    margin-top: 1719px;
+    left: 100px;
+    height: 13px;
+}
+
+.audio-reading .write-comment {
+    position: absolute;
+    left: 60px;
+    top: 1850px;
+    border: 1px solid #00000040;
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 20px 790px 20px 30px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+    color: #000000;
+}
+
+.audio-reading .post-button {
+    position: absolute;
+    left: 1000px;
+    top: 1870px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--second-main-color);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.audio-reading .mercy {
+    position: absolute;
+    left: 60px;
+    top: 1990px;
+    height: 50px;
+    width: 50px;
+}
+
+.audio-reading .user {
+    position: absolute;
+    left: 130px;
+    top: 1990px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.audio-reading .comment {
+    position: absolute;
+    left: 130px;
+    top: 2020px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.audio-reading .reply {
+    position: absolute;
+    left: 130px;
+    top: 2045px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--second-main-color);
+    cursor: pointer;
+}
+
+.audio-reading .love {
+    position: absolute;
+    left: 1050px;
+    top: 2013px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.audio-reading .kindred {
+    position: absolute;
+    left: 60px;
+    top: 2120px;
+    height: 50px;
+    width: 50px;
+}
+
+.audio-reading .user-2 {
+    position: absolute;
+    left: 130px;
+    top: 2120px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.audio-reading .comment-2 {
+    position: absolute;
+    left: 130px;
+    top: 2150px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.audio-reading .reply-2 {
+    position: absolute;
+    left: 130px;
+    top: 2175px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--second-main-color);
+    cursor: pointer;
+}
+
+.audio-reading .love-2 {
+    position: absolute;
+    left: 1050px;
+    top: 2143px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.audio-reading .jojo {
+    position: absolute;
+    left: 60px;
+    top: 2250px;
+    height: 50px;
+    width: 50px;
+}
+
+.audio-reading .user-3 {
+    position: absolute;
+    left: 130px;
+    top: 2250px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.audio-reading .comment-3 {
+    position: absolute;
+    left: 130px;
+    top: 2280px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.audio-reading .reply-3 {
+    position: absolute;
+    left: 130px;
+    top: 2305px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--second-main-color);
+    cursor: pointer;
+}
+
+.audio-reading .love-3 {
+    position: absolute;
+    left: 1050px;
+    top: 2273px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.audio-reading .samson {
+    position: absolute;
+    left: 60px;
+    top: 2380px;
+    height: 50px;
+    width: 50px;
+}
+
+.audio-reading .user-4 {
+    position: absolute;
+    left: 130px;
+    top: 2380px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.audio-reading .comment-4 {
+    position: absolute;
+    left: 130px;
+    top: 2410px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.audio-reading .reply-4 {
+    position: absolute;
+    left: 130px;
+    top: 2435px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--second-main-color);
+    cursor: pointer;
+}
+
+.audio-reading .love-4 {
+    position: absolute;
+    left: 1050px;
+    top: 2403px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.audio-reading .nathaniel {
+    position: absolute;
+    left: 60px;
+    top: 2510px;
+    height: 50px;
+    width: 50px;
+}
+
+.audio-reading .user-5 {
+    position: absolute;
+    left: 130px;
+    top: 2510px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.audio-reading .comment-5 {
+    position: absolute;
+    left: 130px;
+    top: 2540px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.audio-reading .reply-5 {
+    position: absolute;
+    left: 130px;
+    top: 2565px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--second-main-color);
+    cursor: pointer;
+}
+
+.audio-reading .love-5 {
+    position: absolute;
+    left: 1050px;
+    top: 2533px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.audio-reading .view-more-comments {
+    position: absolute;
+    left: 130px;
+    top: 2650px;
+    padding: 20px 250px 20px 250px;
+    border-radius: 30px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffffff;
+    background-color: var(--second-main-color);
+    opacity: 0.5;
+    cursor: pointer;
+}
