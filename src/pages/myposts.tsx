@@ -14,9 +14,9 @@ export const Myposts = () => {
                 <div className="group-3">
                     <img src={ariana} className="ariana" />
                   <p className="p">
-                  Ariana Audrey and 2 others reacted to your
+                  Ariana Audrey and 2 others reacted to your post
                   </p>
-                  <img src={chess} className="chess" />
+                  <img src={chess} className="img" />
                   <p className="post-content"> Creativity is very important when it
                     <br />comes to creating amazing stories... </p>
 

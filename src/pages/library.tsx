@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import vanishing from './../assets/images/vanishing.png'
 import whispered from './../assets/images/whispered.png'
 import eternal from './../assets/images/eternal.png'
@@ -11,11 +11,20 @@ import enchanted from './../assets/images/enchanted.png'
 import search from './../assets/icons/search.png';
 
 export const Library = () => {
-  const [open, setOpen] = useState (false);
+    const [open, setOpen] = useState (false);
     const dropdownRef = useRef<HTMLDivElement>(null)
     const handleDropDownFocus=(state: boolean) => {
         setOpen(!state);
     };
+
+    const handleClickOutsideDropdown =(e:any)=>{
+      if(open && !dropdownRef.current?. contains(e.target as Node)){
+        setOpen(false)
+  
+      }
+    }
+  
+    window.addEventListener("click",handleClickOutsideDropdown)
     
     return (
         <div className="library">
@@ -24,9 +33,10 @@ export const Library = () => {
            <img src={search} width="15px" className="library-search-icon" />
           </div>
 
+          <div ref={dropdownRef}>
           <div className="creating-story"> <a onClick={e=>handleDropDownFocus(open)}> <button className="create-new-story"> + Create a new story </button> </a>
            <div className="create-story">
-            <div className="create" ref={dropdownRef}>
+            <div className="create">
                 { open && (
                 <dl>
                 <a id="more-Create-one-myself"> <h5 className="Create-one-myself"> Create one myself </h5> <button className="select-button"> O </button> </a>
@@ -38,6 +48,7 @@ export const Library = () => {
                 )}
               </div>
              </div>
+            </div>
             </div>
 
           <div>
@@ -77,7 +88,7 @@ export const Library = () => {
              </div>
 
              <div>
-             <img src={vanishing} height="457px" />
+             <img className="rectangle-7" src={vanishing} height="457px" />
 
              <div>
               <h3 className="library-title-3"> THE VANISHING HALF </h3>
@@ -94,7 +105,7 @@ export const Library = () => {
 
            <div className="library-group-2">
             <div>
-            <img src={whispered} height="457px" width="374px"/>
+            <img className="rectangle-7" src={whispered} height="457px" width="374px"/>
 
             <p className="p-1"> Whispered Love : A Tale of passion </p>
             <p className="p-2"> and Secrets</p>
@@ -102,7 +113,7 @@ export const Library = () => {
             </div>
 
             <div>
-            <img src={eternal} height="457px" />
+            <img className="rectangle-7" src={eternal} height="457px" />
 
             <p className="p-1b"> Eternal Embrace : Love Across </p>
             <p className="p-2b"> Time </p>
@@ -271,7 +282,7 @@ export const Library = () => {
 
             <div className="library-group-7">
             <div>
-            <img src={hidden} height="457px" width="374px"/>
+            <img className="rectangle-7" src={hidden} height="457px" width="374px"/>
 
             <h3 className="library-title-12"> THE GIVERS OF STARS </h3>
             <p className="library-author-12"> By Jenni Caldwell </p>
@@ -282,7 +293,7 @@ export const Library = () => {
             </div>
 
             <div>
-            <img src={enchanted} height="457px" width="374px"/>
+            <img className="rectangle-7" src={enchanted} height="457px" width="374px"/>
             <h3 className="library-title-13"> ENCHANTED HEARTS : A </h3>
             <h3 className="library-title-13a"> SPELLBINDING LOVE STORY </h3>
             <p className="library-author-13"> By Jenni Caldwell </p>

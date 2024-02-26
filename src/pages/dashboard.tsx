@@ -16,6 +16,15 @@ export const Dashboard = () => {
     const handleDropDownFocus=(state: boolean) => {
         setOpen(!state);
     };
+
+    const handleClickOutsideDropdown =(e:any)=>{
+      if(open && !dropdownRef.current?. contains(e.target as Node)){
+        setOpen(false)
+  
+      }
+    }
+  
+    window.addEventListener("click",handleClickOutsideDropdown)
     
     return (
         <div className="dashboard">
@@ -24,9 +33,10 @@ export const Dashboard = () => {
            <div className="dashboard-search-icon"> <img src={search} width="15px" /> </div>
           </div>
 
+          <div ref={dropdownRef}>
           <div className="creating-story"> <a onClick={e=>handleDropDownFocus(open)}> <button className="create-new-story"> + Create a new story </button> </a>
            <div className="create-story">
-            <div className="create" ref={dropdownRef}>
+            <div className="create">
                 { open && (
                 <dl>
                 <a id="more-Create-one-myself"> <h5 className="Create-one-myself"> Create one myself </h5> <input type="radio" name="select-button"/> </a>
@@ -38,6 +48,7 @@ export const Dashboard = () => {
                 )}
               </div>
              </div>
+            </div>
             </div>
 
           <div>
@@ -57,7 +68,7 @@ export const Dashboard = () => {
               <h3 className="dashboard-title"> THE FLATSHARE </h3>
               <p className="dashboard-author"> By Beth O'Leary </p>
                <div className="views">
-               <img src={eye} />
+               <img src={eye} alt=""/>
                <p> 35K </p>
                </div>
              </div>
@@ -82,7 +93,7 @@ export const Dashboard = () => {
 
             </div>
               <div>
-              <img src={rectangle} height="457px" width="374px" />
+              <img className="rectangle-8" src={rectangle} height="457px" width="374px" />
 
               <h3 className="dashboard-title-3"> THE SILENT PATIENT </h3>
               <p className="dashboard-author-3"> By Alex Michaelides </p>
@@ -414,9 +425,9 @@ export const Dashboard = () => {
              <h2 className="exciting-genre"> Some Exciting Genre You Can Check Out </h2>
 
              <div className="dashboard-group-5">
-             <img src={romance} height="457px" width="374px" />
-             <img src={humor} height="457px" width="374px" />
-             <img src={mystery} height="457px" width="374px" />
+             <img className="rectangle-7"  src={romance} height="457px" width="374px" />
+             <img className="rectangle-7"  src={humor} height="457px" width="374px" />
+             <img className="rectangle-7"  src={mystery} height="457px" width="374px" />
              </div>
 
             </div>

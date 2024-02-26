@@ -1,0 +1,447 @@
+.readingnextchapter {
+    height: 4400px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+ }
+
+.readingnextchapter .book-title {
+    position: absolute;
+    margin-left: 460px;
+    margin-top: 200px;
+    font-size: 60px;
+    font-weight: 600;
+    font-style: normal;
+    color: #000000;
+    text-align: center;
+}
+
+.readingnextchapter .like {
+    position: absolute;
+    left: 1255px;
+    top: 372px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.readingnextchapter .share {
+    position: absolute;
+    left: 1200px;
+    top: 380px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.readingnextchapter .plus {
+    position: absolute;
+    left: 1135px;
+    top: 372px;
+    height: 22px;
+    font-size: xx-large;
+    font-weight: 500;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.readingnextchapter .content {
+    position: absolute;
+    top: 460px;
+    left: 1145px;
+    padding: 35px 35px 15px 35px;
+    background-color: var(--second-main-color);
+    font-size: medium;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.readingnextchapter .content-icon {
+    position: absolute;
+    top: 475px;
+    left: 1203px;
+    height: 15px;
+}
+
+.readingnextchapter .premium {
+    position: absolute;
+    top: 580px;
+    left: 1145px;
+    padding: 35px 30px 15px 30px;
+    background-color: var(--second-main-color);
+    font-size: medium;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.readingnextchapter .premium-icon {
+    position: absolute;
+    top: 590px;
+    left: 1203px;
+    height: 27px;
+}
+
+.readingnextchapter .subscribe-to {
+    position: absolute;
+    top: 700px;
+    left: 1145px;
+    padding: 15px 21px 15px 21px;
+    background-color: var(--second-main-color);
+    font-size: small;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.readingnextchapter .chapter-name {
+    position: absolute;
+    top: 430px;
+    left: 200px;
+    color: #000000;
+}
+
+.readingnextchapter .chapter-title {
+    position: absolute;
+    top: 530px;
+    left: 200px;
+    color: #000000;
+}
+
+.readingnextchapter .chapter-1 {
+    position: absolute;
+    font-size: medium;
+    font-weight: 500;
+    font-style: normal;
+    color: #000000;
+    text-align: left;
+    left: 60px;
+    top: 380px;
+    border: 1px solid #00000040;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 240px 135px 40px 140px;
+    box-shadow: 4px 4px 4px #00000040, inset 4px 4px 4px #00000040;
+    width: 1010px;
+}
+
+.readingnextchapter .comments {
+    position: absolute;
+    left: 1000px;
+    top: 630px;
+    height: 30px;
+}
+
+.readingnextchapter .comments-2 {
+    position: absolute;
+    left: 1000px;
+    top: 780px;
+    height: 30px;
+}
+
+.readingnextchapter .previous {
+    position: absolute;
+    margin-top: 3300px;
+    left: 60px;
+    padding: 15px 25px 15px 70px;
+    border-radius: 15px;
+    color: #7c7c7e;
+    font-weight: 700;
+    font-size: medium;
+    background-color: transparent;
+    border: 1px solid #7c7c7e;
+    cursor: pointer;
+}
+
+.readingnextchapter .next {
+    position: absolute;
+    margin-top: 3300px;
+    left: 865px;
+    padding: 15px 70px 15px 25px;
+    border-radius: 15px;
+    color: #8b008b;
+    font-weight: 700;
+    font-size: medium;
+    background-color: transparent;
+    border: 1px solid #8b008b;
+    cursor: pointer;
+}
+
+.readingnextchapter .arrow-right {
+    position: absolute;
+    margin-top: 3317px;
+    left: 1015px;
+    height: 20px;
+}
+
+.readingnextchapter .arrow-left-chevron {
+    position: absolute;
+    margin-top: 3319px;
+    left: 100px;
+    height: 13px;
+}
+
+.readingnextchapter .write-comment {
+    position: absolute;
+    left: 60px;
+    top: 3450px;
+    border: 1px solid #00000040;
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 20px 790px 20px 30px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+    color: #000000;
+}
+
+.readingnextchapter .post-button {
+    position: absolute;
+    left: 1000px;
+    top: 3470px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--second-main-color);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.readingnextchapter .mercy {
+    position: absolute;
+    left: 60px;
+    top: 3590px;
+    height: 50px;
+    width: 50px;
+}
+
+.readingnextchapter .user {
+    position: absolute;
+    left: 130px;
+    top: 3590px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.readingnextchapter .comment {
+    position: absolute;
+    left: 130px;
+    top: 3620px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.readingnextchapter .reply {
+    position: absolute;
+    left: 130px;
+    top: 3650px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--second-main-color);
+    cursor: pointer;
+}
+
+.readingnextchapter .love {
+    position: absolute;
+    left: 1050px;
+    top: 3620px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.readingnextchapter .kindred {
+    position: absolute;
+    left: 60px;
+    top: 3720px;
+    height: 50px;
+    width: 50px;
+}
+
+.readingnextchapter .user-2 {
+    position: absolute;
+    left: 130px;
+    top: 3720px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.readingnextchapter .comment-2 {
+    position: absolute;
+    left: 130px;
+    top: 3750px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.readingnextchapter .reply-2 {
+    position: absolute;
+    left: 130px;
+    top: 3780px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--second-main-color);
+    cursor: pointer;
+}
+
+.readingnextchapter .love-2 {
+    position: absolute;
+    left: 1050px;
+    top: 3750px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.readingnextchapter .jojo {
+    position: absolute;
+    left: 60px;
+    top: 3850px;
+    height: 50px;
+    width: 50px;
+}
+
+.readingnextchapter .user-3 {
+    position: absolute;
+    left: 130px;
+    top: 3850px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.readingnextchapter .comment-3 {
+    position: absolute;
+    left: 130px;
+    top: 3880px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.readingnextchapter .reply-3 {
+    position: absolute;
+    left: 130px;
+    top: 3910px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--second-main-color);
+    cursor: pointer;
+}
+
+.readingnextchapter .love-3 {
+    position: absolute;
+    left: 1050px;
+    top: 3880px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.readingnextchapter .samson {
+    position: absolute;
+    left: 60px;
+    top: 3980px;
+    height: 50px;
+    width: 50px;
+}
+
+.readingnextchapter .user-4 {
+    position: absolute;
+    left: 130px;
+    top: 3980px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.readingnextchapter .comment-4 {
+    position: absolute;
+    left: 130px;
+    top: 4010px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.readingnextchapter .reply-4 {
+    position: absolute;
+    left: 130px;
+    top: 4040px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--second-main-color);
+    cursor: pointer;
+}
+
+.readingnextchapter .love-4 {
+    position: absolute;
+    left: 1050px;
+    top: 4010px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.readingnextchapter .nathaniel {
+    position: absolute;
+    left: 60px;
+    top: 4110px;
+    height: 50px;
+    width: 50px;
+}
+
+.readingnextchapter .user-5 {
+    position: absolute;
+    left: 130px;
+    top: 4110px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.readingnextchapter .comment-5 {
+    position: absolute;
+    left: 130px;
+    top: 4140px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.readingnextchapter .reply-5 {
+    position: absolute;
+    left: 130px;
+    top: 4170px;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--second-main-color);
+    cursor: pointer;
+}
+
+.readingnextchapter .love-5 {
+    position: absolute;
+    left: 1050px;
+    top: 4140px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.readingnextchapter .view-more-comments {
+    position: absolute;
+    left: 130px;
+    top: 4255px;
+    padding: 20px 250px 20px 250px;
+    border-radius: 30px;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffffff;
+    background-color: var(--second-main-color);
+    opacity: 0.5;
+    cursor: pointer;
+}

@@ -182,11 +182,11 @@ export const Viewprofile = () => {
             <div className="moremenu">
             { open && (
             <dl>
-            <a id="more-published-stories"> <img src={book_open} height="18px" /> <h5 className="published-stories"> Published Stories </h5> </a>
-              <a href="/readinglist" id="more-reading-list"> <img src={notebook} height="18px" /> <h5 className="reading-list"> Reading List </h5> </a>
-              <a id="more-saved-books"> <img src={thumbs_up} height="18px" /> <h5 className="saved-books"> Saved Books </h5> </a>
-              <a href="/subscribers" id="more-subscribers"> <img src={subscribers} height="18px" /> <h5 className="subscribers"> Subscribers </h5> </a>
-              <a href="/creators" id="more-creators"> <img src={creators} height="18px" /> <h5 className="creators"> Creators I follow </h5> </a>
+            <div id="more-published-stories"> <img src={book_open} height="18px" /> <h5 className="published-stories"> Published Stories </h5> </div>
+              <div id="more-reading-list"> <img src={notebook} height="18px" /> <h5 className="reading-list"> Reading List </h5> </div>
+              <div id="more-saved-books"> <img src={thumbs_up} height="18px" /> <h5 className="saved-books"> Saved Books </h5> </div>
+              <div id="more-subscribers"> <img src={subscribers} height="18px" /> <h5 className="subscribers"> Subscribers </h5> </div>
+              <div id="more-creators"> <img src={creators} height="18px" /> <h5 className="creators"> Creators I follow </h5> </div>
             </dl>
             )}
           </div>

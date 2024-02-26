@@ -365,6 +365,7 @@
 
 .library .submitted {
     margin-right: 110px;
+    cursor: pointer;
 }
 
 .library-title-8 {
@@ -474,6 +475,30 @@
     padding-top: 15px;
  }
 
+ .library .rectangle-6 {
+    cursor: pointer;
+ }
+
+ .library .rectangle-7 {
+    cursor: pointer;
+ }
+
+ .library .rectangle-8 {
+    cursor: pointer;
+ }
+
+ .library .books-ready {
+    cursor: pointer;
+ }
+
+ .library .dashboard-rectangle-5 {
+    cursor: pointer;
+ }
+
+ .library .dashboard-rectangle-6 {
+    cursor: pointer;
+ }
+
  .story-typing {
     height: 3500px;
     width: 100%;
@@ -509,14 +534,14 @@
     font-size: medium;
     background-color: transparent;
     border: 1px solid #8b008b;
-    margin-left: 1010px;
+    margin-left: 1020px;
     cursor: pointer;
 }
 
 .story-typing .marker-pen {
     position: absolute;
     top: 168px;
-    left: 1095px;
+    left: 1108px;
     height: 25px;
 }
 
@@ -528,12 +553,13 @@
     font-weight: 600;
     font-style: normal;
     color: #000000;
+    justify-content: center;
     text-align: center;
 }
 
 .story-typing .like {
     position: absolute;
-    left: 1135px;
+    left: 1145px;
     top: 277px;
     height: 40px;
     cursor: pointer;
@@ -541,7 +567,7 @@
 
 .story-typing .share {
     position: absolute;
-    left: 1200px;
+    left: 1210px;
     top: 285px;
     height: 22px;
     cursor: pointer;
@@ -549,22 +575,53 @@
 
 .story-typing .more-vertical {
     position: absolute;
-    left: 1255px;
+    left: 1265px;
     top: 285px;
     height: 22px;
     cursor: pointer;
 }
 
+.story-typing-more {
+    position: absolute;
+    background-color: #ffffff;
+    font-size: medium;
+    font-weight: 500;
+    padding: 20px;
+    right: 70px;
+    top: 320px;
+    box-shadow: 0px 3.66px 3.66px #00000040, inset 0px 1.83px 1.83px #00000026;
+    border-radius: 20px;
+}
+
+.story-typing .pen-book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.story-typing .eye-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-left: -70px;
+    cursor: pointer;
+}
+
 .story-typing .chapter-name {
     position: absolute;
-    top: 430px;
+    top: 480px;
     left: 200px;
     color: #000000;
 }
 
 .story-typing .chapter-title {
     position: absolute;
-    top: 530px;
+    top: 580px;
     left: 200px;
     color: #000000;
 }
@@ -577,13 +634,13 @@
     color: #000000;
     text-align: left;
     left: 60px;
-    top: 380px;
+    top: 430px;
     border: 1px solid #00000040;
     border-radius: 10px;
     background-color: transparent;
     padding: 240px 135px 40px 140px;
     box-shadow: 4px 4px 4px #00000040, inset 4px 4px 4px #00000040;
-    width: 1210px;
+    width: 1220px;
 }
 
 .story-typing .submit {
@@ -619,4 +676,5 @@
     margin-top: 3167px;
     left: 1080px;
     height: 20px;
+    cursor: pointer;
 }

@@ -39,8 +39,10 @@ import './css/privacyandsafety.css';
 import './css/hire.css';
 import './css/findgig.css';
 import './css/createnewstory.css';
+import './css/storytypingnextchapter.css';
 import './css/search.css';
 import './css/reading.css';
+import './css/readingnextchapter.css';
 import './css/audioreading.css';
 import './css/comicreading.css';
 import { Dashboard } from './pages/dashboard'
@@ -92,8 +94,12 @@ import { Savedjobs } from './pages/savedjobs';
 import { Createnewstory } from './pages/createnewstory';
 import { Search } from './pages/search';
 import { Reading } from './pages/reading';
+import { Readingnextchapter } from './pages/readingnextchapter';
+import { Readingpremium } from './pages/readingpremium';
+import { Readingpremiumnextchapter } from './pages/readingpremiumnextchapter';
 import { Audioreading } from './pages/audioreading';
 import { Comicreading } from './pages/comicreading';
+import { Storytypingnextchapter } from './pages/storytypingnextchapter';
 import PopupProvider from './context/PopupProvider';
 import { popupReducer } from './core/reducers';
 import { Popup, PopupState } from './core/interfaces';
@@ -155,8 +161,12 @@ function App() {
             <Route path="/createnewstory" element={<Createnewstory />} />
             <Route path="/search" element={<Search />} />
             <Route path="/reading" element={<Reading />} />
+            <Route path="/readingnextchapter" element={<Readingnextchapter />} />
+            <Route path="/readingpremium" element={<Readingpremium />} />
+            <Route path="/readingpremium" element={<Readingpremiumnextchapter />} />
             <Route path="/audioreading" element={<Audioreading />} />
             <Route path="/comicreading" element={<Comicreading />} />
+            <Route path="/nextchapter" element={<Storytypingnextchapter />} />
           </Routes>
           <Footer />
         </Router>

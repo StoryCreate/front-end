@@ -106,6 +106,7 @@ body {
    font-size: 25px;
    justify-content: left;
    margin-left: 155px;
+   cursor: pointer;
 }
   
 .home-p {
@@ -123,6 +124,7 @@ body {
    margin-left: 155px;
    position: absolute;
    margin-top: 30px;
+   cursor: pointer;
 }
 
 .home-heart-icons-1 {
@@ -177,6 +179,7 @@ body {
    font-size: 25px;
    justify-content: left;
    margin-left: 155px;
+   cursor: pointer;
 }
   
 .home-p2 {
@@ -194,6 +197,7 @@ body {
    margin-left: 155px;
    position: absolute;
    margin-top: 30px;
+   cursor: pointer;
 }
 
 .home-heart-icons-2 {
@@ -248,6 +252,7 @@ body {
    font-size: 25px;
    justify-content: left;
    margin-left: 155px;
+   cursor: pointer;
 }
 
 .home-p3 {
@@ -269,6 +274,7 @@ body {
    left: 153px;
    position: absolute;
    margin-top: 50px;
+   cursor: pointer;
 }
 
 .home-heart-icons-3 {
@@ -328,6 +334,7 @@ body {
    font-size: 25px;
    justify-content: left;
    margin-left: 155px;
+   cursor: pointer;
 }
 
 .home-p4 {
@@ -345,6 +352,7 @@ body {
    left: 153px;
    position: absolute;
    margin-top: 30px;
+   cursor: pointer;
 }
 
 .home-heart-icons-4 {
@@ -404,6 +412,7 @@ body {
    font-size: 25px;
    justify-content: left;
    margin-left: 155px;
+   cursor: pointer;
 }
 
 .home-p5 {
@@ -421,6 +430,7 @@ body {
    left: 153px;
    position: absolute;
    margin-top: 30px;
+   cursor: pointer;
 }
 
 .home-heart-icons-5 {
@@ -568,4 +578,5 @@ body {
    left: 660px;
    top: 330px;
    border-radius: 20px;
+   cursor: pointer;
 }

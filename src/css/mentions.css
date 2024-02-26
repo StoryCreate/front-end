@@ -26,6 +26,7 @@
   top: -46px;
   text-align: left;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .mentions .post-content {
@@ -43,6 +44,7 @@
   border: 1px solid #6d6d6e;
   border-radius: 0px 10px 10px 0px;
   padding: 15px 30px 15px 30px;
+  cursor: pointer;
 }
 
 .mentions .overlap-3 {
@@ -56,6 +58,7 @@ width: 537px;
 .mentions .ariana {
   left: 0px;
   position: absolute;
+  cursor: pointer;
 }
 
 .mentions .reactions {
@@ -65,6 +68,7 @@ width: 537px;
   font-weight: 500;
   top: 90px;
   left: 130px;
+  cursor: pointer;
 }
 
 .mentions .comments {
@@ -74,6 +78,7 @@ width: 537px;
   font-weight: 500;
   top: 90px;
   left: 230px;
+  cursor: pointer;
 }
 
 .mentions .dot {
@@ -85,13 +90,14 @@ width: 537px;
   top: 71px;
 }
 
-.mentions .chess {
+.mentions .img {
   position: absolute;
   height: 70px;
   width: 70px;
   left: 130px;
   top: 7px;
   border: 20px 0px 0px 20px;
+  cursor: pointer;
 }
 
 .mentions .overlap-4 {
@@ -164,6 +170,7 @@ width: 40px;
 .mentions .notification_more {
   width: 20px;
   height: 5px;
+  cursor: pointer;
 }
 
 .mentions .span {

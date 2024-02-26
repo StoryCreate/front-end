@@ -26,6 +26,7 @@
     top: -8px;
     text-align: left;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .notifications .overlap-3 {
@@ -115,6 +116,7 @@
 .notifications .notification_more {
     width: 20px;
     height: 5px;
+    cursor: pointer;
 }
 
 .notifications .group-13 {

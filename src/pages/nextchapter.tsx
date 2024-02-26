@@ -8,7 +8,7 @@ import share_icon from './../assets/icons/share_icon.png';
 import more_icon_vertical from './../assets/icons/more_icon_vertical.png';
 import arrow_right_pupple from './../assets/icons/arrow_right_pupple.png';
 
-export const Storytyping = () => {
+export const Nextchapter = () => {
     const [open, setOpen] = useState<boolean>(false);
     const dropdownRef = useRef<HTMLDivElement>(null)
 
@@ -22,8 +22,8 @@ export const Storytyping = () => {
       window.addEventListener("click",handleClickOutsideDropdown)
 
     return (
-        <div className="story-typing">
-            <a href="/createnewstory">
+        <div className="next-chapter">
+            <a href="/storytyping">
             <div className="library-back">
               <i className='bx bx-left-arrow-alt' id="left-arrow"></i> <h1 className="back"> Back </h1>
              </div> </a>
@@ -38,18 +38,18 @@ export const Storytyping = () => {
                 <div ref={dropdownRef}>
                 <div onClick={() => setOpen(!open)}> <img src={more_icon_vertical} className="more-vertical" />
                 { open && (
-                   <dl className="story-typing-more">
+                   <dl className="next-chapter-more">
                     <div className="pen-book"> <img src={edit_pen} height="15px"/> Edit book details </div>
                     <div className="eye-preview"> <img src={eye} height="15px"/> Preview </div>
                   </dl>
                 )}
                 </div>
                 </div>
-            </div>
+             </div>
 
              <div className="frame">
-                <h2 className="chapter-name"> Chapter one : Meeting Sebastian </h2>
-                <h3 className="chapter-title"> Malik's POV </h3>
+                <h2 className="chapter-name"> Chapter two : The Old Him </h2>
+                <h3 className="chapter-title"> Sebastian Aguilar's POV </h3>
                 <pre className="chapter-1"> A groan threatened to make its way out of my throat as my personal assistant
                     brought him in. Sebastian, the one<br /> person I had grown to hate, was standing
                     right in front of me. <br />

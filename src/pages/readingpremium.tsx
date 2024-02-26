@@ -3,7 +3,6 @@ import love from './../assets/icons/love.png';
 import share_icon from './../assets/icons/share_icon.png';
 import eye_white from './../assets/icons/eye_white.png';
 import arrow_left_chevron from './../assets/icons/arrow_left_chevron.png';
-import premium from './../assets/icons/premium.png';
 import comment from './../assets/icons/comment.png';
 import arrow_right_pupple from './../assets/icons/arrow_right_pupple.png';
 import mercy from './../assets/images/mercy.png';
@@ -12,7 +11,7 @@ import jojo from './../assets/images/jojo.png';
 import samson from './../assets/images/samson.png';
 import nathaniel from './../assets/images/nathaniel.png';
 
-export const Reading = () => {
+export const Readingpremium = () => {
     return (
         <div className="reading">
 
@@ -26,8 +25,7 @@ export const Reading = () => {
              <div>
                 <button className="content"> Content </button>
                 <img src={eye_white} className="content-icon" />
-                <button className="premium"> Premium </button>
-                <img src={premium} className="premium-icon" />
+                
                 <button className="subscribe-to"> Subscribe to<br /> creator's page </button>
              </div>
              <div className="frame">
@@ -195,7 +193,7 @@ export const Reading = () => {
              <div>
                 <button className="previous"> Previous chapter </button>
                 <img src={arrow_left_chevron} className="arrow-left-chevron" />
-                <a href="/readingnextchapter"> <button className="next"> Next chapter </button> </a>
+                <a href="/readingpremiumnextchapter"> <button className="next"> Next chapter </button> </a>
                 <img src={arrow_right_pupple} className="arrow-right" />
              </div>
              <div>

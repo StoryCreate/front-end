@@ -15,7 +15,7 @@ export const Home = () => {
                 <a href="/search"> <button className="home-search" type="button"> Search </button> </a>
                 </div>
                 <div className="home-search-icon"> <img src={search} width="15px" /> </div>
-                <i className='bx bxs-bell' id="bell"> </i> <i className='bx bx-chat' id="chat"></i> <i className='bx bx-group' id="group"> </i>
+                <a href="/notifications"> <i className='bx bxs-bell' id="bell"> </i> </a> <a href="/messages"> <i className='bx bx-chat' id="chat"></i> </a> <a href="/explore"> <i className='bx bx-group' id="group"> </i> </a>
               </div>
             </div>
           </div>
