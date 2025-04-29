@@ -1,313 +1,98 @@
 import React from "react";
 import { useRef, useState } from "react";
-import vanishing from './../assets/images/vanishing.png'
-import whispered from './../assets/images/whispered.png'
-import eternal from './../assets/images/eternal.png'
-import eye from './../assets/icons/eye.png';
-import swept from './../assets/images/swept.png'
-import moonlight from './../assets/images/moonlight.png'
-import hidden from './../assets/images/hidden.png'
-import enchanted from './../assets/images/enchanted.png'
-import search from './../assets/icons/search.png';
+import { Plus, Search } from 'lucide-react';
+import KeepReading from "@comp/page-sections/library/KeepReading";
+import ContinueWriting from "@comp/page-sections/library/ContinueWriting";
+import SavedBooks from "@comp/page-sections/library/SavedBooks";
+import BooksToPublish from "@comp/page-sections/library/BooksToPublish";
+import SubmittedForReview from "@comp/page-sections/library/SubmittedForReview";
+import ReadAgain from "@comp/page-sections/library/ReadAgain";
+import PublishedBooks from "@comp/page-sections/library/PublishedBooks";
 
 export const Library = () => {
-    const [open, setOpen] = useState (false);
-    const dropdownRef = useRef<HTMLDivElement>(null)
-    const handleDropDownFocus=(state: boolean) => {
-        setOpen(!state);
-    };
+  const [open, setOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null)
+  const handleDropDownFocus = (state: boolean) => {
+    setOpen(!state);
+  };
 
-    const handleClickOutsideDropdown =(e:any)=>{
-      if(open && !dropdownRef.current?. contains(e.target as Node)){
-        setOpen(false)
-  
-      }
+  const handleClickOutsideDropdown = (e: any) => {
+    if (open && !dropdownRef.current?.contains(e.target as Node)) {
+      setOpen(false)
+
     }
-  
-    window.addEventListener("click",handleClickOutsideDropdown)
-    
-    return (
-        <div className="library">
-          <div className="library-search-create">
-          <a href="/search"> <button className="library-search"> Search </button> </a>
-           <img src={search} width="15px" className="library-search-icon" />
-          </div>
+  }
 
-          <div ref={dropdownRef}>
-          <div className="creating-story"> <a onClick={e=>handleDropDownFocus(open)}> <button className="create-new-story"> + Create a new story </button> </a>
-           <div className="create-story">
-            <div className="create">
-                { open && (
-                <dl>
-                <a id="more-Create-one-myself"> <h5 className="Create-one-myself"> Create one myself </h5> <button className="select-button"> O </button> </a>
-                 <a id="more-Hire-a-Creator"> <h5 className="Hire-a-Creator"> Hire a Creator </h5> <button className="select-button"> O </button> </a>
-                 <a id="more-Find-who-hiring"> <h5 className="Find-who-hiring"> Find who's hiring </h5> <button className="select-button"> O </button> </a>
-                 <a id="more-Create-for-StoryCreate"> <h5 className="Create-for-StoryCreate"> Create for StoryCreate Platform </h5> <button className="select-button"> O </button> </a>
-                 <a href="/createnewstory" id="more-creators"> <h5 className="continue"> Continue </h5> </a>
-                </dl>
-                )}
-              </div>
-             </div>
-            </div>
-            </div>
+  window.addEventListener("click", handleClickOutsideDropdown)
 
-          <div>
-            <h2 className="keep-reading"> Keep Reading </h2>
-            
-            <div className="library-group-1">
-             <div>
-             <img
-                  className="rectangle-7"
-                  alt="Rectangle"
-                  src="https://c.animaapp.com/qFkmpUOx/img/rectangle-45-25@2x.png"
-                  height="457px" width="374px"
-             />
-
-             <div>
-              <h3 className="library-title-1"> THE FLATSHARE </h3>
-              <p className="library-author-1"> By Beth O'Leary </p>
-             </div>
-
-             <button className="library-continue-reading"> Continue Reading</button>
-             </div>
-
-             <div>
-             <img
-                  className="rectangle-6"
-                  alt="Rectangle"
-                  src="https://c.animaapp.com/qFkmpUOx/img/rectangle-45-23@2x.png"
-                  height="457px" width="374px"
-             />
-
-             <div>
-              <h3 className="library-title-2"> THE TESTAMENTS </h3>
-              <p className="library-author-2"> By Margaret Atwood </p>
-             </div>
-
-             <button className="library-continue-reading"> Continue Reading</button>
-             </div>
-
-             <div>
-             <img className="rectangle-7" src={vanishing} height="457px" />
-
-             <div>
-              <h3 className="library-title-3"> THE VANISHING HALF </h3>
-              <p className="library-author-3"> By Brit Bennett </p>
-             </div>
-
-             <button className="library-continue-reading"> Continue Reading</button>
-             </div>
-             </div>
-          </div>
-
-          <div>
-           <h2 className="library-continue-writing-header"> Continue Writing Your Amazing Story</h2>
-
-           <div className="library-group-2">
-            <div>
-            <img className="rectangle-7" src={whispered} height="457px" width="374px"/>
-
-            <p className="p-1"> Whispered Love : A Tale of passion </p>
-            <p className="p-2"> and Secrets</p>
-            <button className="library-continue-writing"> Continue Writing</button>
-            </div>
-
-            <div>
-            <img className="rectangle-7" src={eternal} height="457px" />
-
-            <p className="p-1b"> Eternal Embrace : Love Across </p>
-            <p className="p-2b"> Time </p>
-            <button className="library-continue-writing"> Continue Writing</button>
-            </div>
-           </div>
-
-           <div>
-            <h2 className="library-saved-books"> Saved Books </h2>
-
-            <div className="library-group-3">
-
-              <div>
-              <img
-                  className="rectangle-8"
-                  alt="Rectangle"
-                  src="https://c.animaapp.com/qFkmpUOx/img/rectangle-45-26@2x.png"
-                  height="457px" width="374px"
-              />
-
-             <div>
-              <h3 className="library-title-4"> BEACH READ </h3>
-              <p className="library-author-4"> By Emily Henry </p>
-               <div className="views">
-               <img src={eye} />
-               <p> 35K </p>
-               </div>
-             </div>
-             </div>
-
-             <div>
-              <img
-                  className="rectangle-7"
-                  alt="Rectangle"
-                  src="https://c.animaapp.com/qFkmpUOx/img/rectangle-45-25@2x.png"
-                  height="457px" width="374px"
-              />
-
-             <div>
-              <h3 className="library-title-5"> THE FLATSHARE </h3>
-              <p className="library-author-5"> By Beth O'Leary </p>
-               <div className="views">
-               <img src={eye} />
-               <p> 35K </p>
-               </div>
-             </div>
-             </div>
-
-              <div>
-              <img
-                  className="rectangle-6"
-                  alt="Rectangle"
-                  src="https://c.animaapp.com/qFkmpUOx/img/rectangle-45-23@2x.png"
-                  height="457px" width="374px"
-              />
-
-              <div>
-              <h3 className="library-title-6"> THE TESTAMENTS </h3>
-              <p className="library-author-6"> By Margaret Atwood </p>
-               <div className="views">
-               <img src={eye} />
-               <p> 35K </p>
-               </div>
-              </div>
-              </div>
-
-            </div>
-           </div>
-
-           <div>
-            <h2 className="library-books-ready"> Books Ready To Be Published</h2>
-
-            <div className="library-group-4">
-            <div>
-            <img src={swept} height="457px" width="374px" className="books-ready"/>
-            </div>
-
-            <div>
-            <h3 className="library-title-7"> SWEPT AWAY </h3>
-            <p className="library-author-7"> By Jenni Caldwell</p>
-            <button className="library-publish-now"> Publish Now</button>
-            </div>
-            </div>
-
-           </div>
-
-           <div>
-            <h2 className="library-submitted"> Submitted For Review</h2>
-
-            <div className="library-group-5">
-            <div>
-            <img src={moonlight} height="457px" width="374px" className="submitted"/>
-            </div>
-
-            <div>
-            <h3 className="library-title-8"> MOONLIGHT PROMISES </h3>
-            <p className="library-author-8"> By Jenni Caldwell</p>
-            </div>
-            </div>
-
-           </div>
-
-           <div>
-             <h2 className="library-read-again"> Read Again </h2>
-
-             <div className="library-group-6">
-              <div>
-                <img
-                  className="dashboard-rectangle-5"
-                  alt="Rectangle"
-                  src="https://c.animaapp.com/qFkmpUOx/img/rectangle-45-31@2x.png"
-                  height="457px" width="374px"
-                />
-
-                <div>
-                 <h3 className="library-title-9"> THE GIVERS OF STARS </h3>
-                 <p className="library-author-9"> By Jojo Moyes </p>
-                 <div className="views">
-                 <img src={eye} />
-                 <p> 1M </p>
-                 </div>
-                </div>
-               </div>
-
-               <div>
-                <img
-                  className="dashboard-rectangle-6"
-                  alt="Rectangle"
-                  src="https://c.animaapp.com/qFkmpUOx/img/rectangle-45-30@2x.png"
-                  height="457px" width="374px"
-                />
-
-                <div>
-                 <h3 className="library-title-10"> THE KISS QUOTIENT </h3>
-                 <p className="library-author-10"> By Helen Hoang </p>
-                 <div className="views">
-                 <img src={eye} />
-                 <p> 500K </p>
-                 </div>
-                </div>
-               </div>
-
-               <div>
-                <img
-                  className="rectangle-7"
-                  alt="Rectangle"
-                  src="https://c.animaapp.com/qFkmpUOx/img/rectangle-45-28@2x.png"
-                  height="457px" width="374px"
-                />
-
-                <div>
-                 <h3 className="library-title-11"> THE WEDDING DAY </h3>
-                 <p className="library-author-11"> By Jasmine Guillory </p>
-                 <div className="views">
-                 <img src={eye} />
-                 <p> 800K </p>
-                 </div>
-                </div>
-               </div>
-
-             </div>
-            </div>
-
-          <div>
-          <h2 className="library-published"> Published Books</h2>
-
-            <div className="library-group-7">
-            <div>
-            <img className="rectangle-7" src={hidden} height="457px" width="374px"/>
-
-            <h3 className="library-title-12"> THE GIVERS OF STARS </h3>
-            <p className="library-author-12"> By Jenni Caldwell </p>
-            <div className="views">
-              <img src={eye} />
-              <p> 1M </p>
-            </div>
-            </div>
-
-            <div>
-            <img className="rectangle-7" src={enchanted} height="457px" width="374px"/>
-            <h3 className="library-title-13"> ENCHANTED HEARTS : A </h3>
-            <h3 className="library-title-13a"> SPELLBINDING LOVE STORY </h3>
-            <p className="library-author-13"> By Jenni Caldwell </p>
-            <div className="views">
-              <img src={eye} />
-              <p> 500K </p>
-            </div>
-            </div>
-
-            </div>
-            </div>
-          
-          </div>
-
+  return (
+    <div className="px-6 lg:px-16 py-8 bg-gray-100 min-h-screen">
+      <div className="flex gap-6 justify-end items-center mb-6">
+        <a href="/search">
+          <button className="flex items-center px-4 py-4 bg-gray-400 text-white rounded-full hover:bg-gray-500 cursor-pointer">
+            <Search className="w-4 h-4 mr-2" /> Search
+          </button>
+        </a>
+        <div ref={dropdownRef} className="relative">
+          <button
+            onClick={() => handleDropDownFocus(open)}
+            className="flex items-center px-4 py-4 bg-white text-primary rounded-full border-primary hover:bg-purple-900 hover:text-white cursor-pointer"
+          >
+            <Plus className="w-4 h-4 mr-2 hover:text-white style={{ color: 'primary' }}" /> Create a new story
+          </button>
+          {open && (
+            <ul className="absolute text-left text-sm py-4 right-0 mt-2 w-60 bg-white border border-gray-200 rounded-md shadow-lg">
+              <li className="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                <label htmlFor="create-myself" className="text-gray-700">Create one myself</label>
+                <input id="create-myself" type="radio" name="createOption" className="mr-2" />
+              </li>
+              <li className="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                <label htmlFor="hire-creator" className="text-gray-700">Hire a Creator</label>
+                <input id="hire-creator" type="radio" name="createOption" className="mr-2" />
+              </li>
+              <li className="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                <a href="/findgig" className="text-gray-700">Find who's hiring</a>
+                <input id="find-hiring" type="radio" name="createOption" className="mr-2" />
+              </li>
+              <li className="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                <label htmlFor="storycreate-platform" className="text-gray-700">Create for StoryCreate Platform</label>
+                <input id="storycreate-platform" type="radio" name="createOption" className="mr-2" />
+              </li>
+              <li className="pt-4 pb-2 text-center">
+                <a href="/createnewstory" className="py-2 px-[70px] min-w-full text-white bg-primary rounded hover:bg-purple-900">Continue</a>
+              </li>
+            </ul>
+          )}
         </div>
-    )
+      </div>
+
+      <section className="mb-8 pt-6">
+        <KeepReading />
+      </section>
+
+      <section className="mb-8 pt-6">
+        <ContinueWriting />
+      </section>
+
+      <section className="mb-8 pt-6">
+        <SavedBooks />
+      </section>
+
+      <section className="mb-8 pt-6">
+        <BooksToPublish />
+      </section>
+
+      <section className="mb-8 pt-6">
+        <SubmittedForReview />
+      </section>
+
+      <section className="mb-8 pt-6">
+        <ReadAgain />
+      </section>
+
+      <section className="mb-8 pt-6">
+        <PublishedBooks />
+      </section>
+    </div>
+  )
 }

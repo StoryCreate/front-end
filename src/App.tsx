@@ -1,9 +1,9 @@
 import React, { useReducer } from 'react';
-import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
+import { Toaster } from 'react-hot-toast';
+import { Provider } from 'react-redux';
+import { store } from './components/lib/store';
 import './css/App.css';
-import './css/navbar.css';
-import './css/home.css';
-import './css/footer.css';
 import './css/dashboard.css';
 import './css/library.css';
 import './css/responsiveness.css';
@@ -45,6 +45,8 @@ import './css/reading.css';
 import './css/readingnextchapter.css';
 import './css/audioreading.css';
 import './css/comicreading.css';
+import Login from '@pages/(auth)/Login';
+import Signup from '@pages/(auth)/Signup';
 import { Dashboard } from './pages/dashboard'
 import { Home } from './pages/home'
 import { Homepost } from './pages/homepost'
@@ -103,78 +105,107 @@ import { Storytypingnextchapter } from './pages/storytypingnextchapter';
 import PopupProvider from './context/PopupProvider';
 import { popupReducer } from './core/reducers';
 import { Popup, PopupState } from './core/interfaces';
-
+import RequireAuth from './components/lib/RequireAuth';
+import { fetchProfile } from '@comp/lib/features/authSlice';
+import Cookies from 'js-cookie';
 
 function App() {
   const [popupState, dispatchPopup] = useReducer(popupReducer, {
     show: PopupState.HIDE,
-    which : Popup.NONE
+    which: Popup.NONE
   });
-  
+
+  const token = Cookies.get('token');
+  if (token) {
+    store.dispatch(fetchProfile());
+  }
+
   return (
-    <PopupProvider state={popupState} dispatch={dispatchPopup}>
-      <div className="App">
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/" element={<Home />} />
-            <Route path="/library" element={<Library />} />
-            <Route path="/wallet" element={<Wallet />} />
-            <Route path="/viewprofile" element={<Viewprofile />} />
-            <Route path="/creds" element={<Creds />} />
-            <Route path="/coins" element={<Coins />} />
-            <Route path="/contest" element={<Contest />} />
-            <Route path="/ongoingcontest" element={<Ongoingcontest />} />
-            <Route path="/creators" element={<Creators />} />
-            <Route path="/subscribers" element={<Subscribers />} />
-            <Route path="/readinglist" element={<Readinglist />} />
-            <Route path="/messages" element={<Messages />} />
-            <Route path="/notifications" element={<Notifications />} />
-            <Route path="/myposts" element={<Myposts />} />
-            <Route path="/mentions" element={<Mentions />} />
-            <Route path="/mygigs" element={<Mygigs />} />
-            <Route path="/completed" element={<Completed />} />
-            <Route path="/explore" element={<Explore />} />
-            <Route path="/mycommunity" element={<Mycommunity />} />
-            <Route path="/community" element={<Community />} />
-            <Route path="/joincommunity" element={<Joincommunity />} />
-            <Route path="/communitypost" element={<Communitypost />} />
-            <Route path="/settings" element={<Settings />} />
-            <Route path="/signinandsecurity" element={<Signinandsecurity />} />
-            <Route path="/subscriptions" element={<Subscriptions />} />
-            <Route path="/notification" element={<Notification />} />
-            <Route path="/privacyandsafety" element={<Privacyandsafety />} />
-            <Route path="/accountinformation" element={<Accountinformation />} />
-            <Route path="/changepassword" element={<Changepassword />} />
-            <Route path="/deactivateaccount" element={<Deactivateaccount />} />
-            <Route path="/emailaddress" element={<Emailaddress />} />
-            <Route path="/phonenumbers" element={<Phonenumbers />} />
-            <Route path="/activesessions" element={<Activesessions />} />
-            <Route path="/twostepverification" element={<Twostepverification />} />
-            <Route path="/allownotifications" element={<Allownotifications />} />
-            <Route path="/homepost" element={<Homepost />} />
-            <Route path="/storytyping" element={<Storytyping />} />
-            <Route path="/hire" element={<Hire />} />
-            <Route path="/findgig" element={<Findgig />} />
-            <Route path="/savedjobs" element={<Savedjobs />} />
-            <Route path="/createnewstory" element={<Createnewstory />} />
-            <Route path="/search" element={<Search />} />
-            <Route path="/reading" element={<Reading />} />
-            <Route path="/readingnextchapter" element={<Readingnextchapter />} />
-            <Route path="/readingpremium" element={<Readingpremium />} />
-            <Route path="/readingpremium" element={<Readingpremiumnextchapter />} />
-            <Route path="/audioreading" element={<Audioreading />} />
-            <Route path="/comicreading" element={<Comicreading />} />
-            <Route path="/nextchapter" element={<Storytypingnextchapter />} />
-          </Routes>
-          <Footer />
-        </Router>
-        <Friends show={popupState.show} which={popupState.which} />
-        <Followers show={popupState.show} which={popupState.which} />
-        <Following show={popupState.show} which={popupState.which} />
-      </div>
-    </PopupProvider>
+    <Provider store={store}>
+      <PopupProvider state={popupState} dispatch={dispatchPopup}>
+        <div className="App">
+          <Router>
+            <Toaster
+              position="top-right"
+              toastOptions={{
+                duration: 4000,
+                style: {
+                  background: '#363636',
+                  color: '#fff',
+                },
+                success: {
+                  duration: 3000,
+                },
+                error: {
+                  duration: 4000,
+                },
+              }}
+            />
+            <Navbar />
+            <Routes>
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
+              <Route element={<RequireAuth><Outlet /></RequireAuth>}>
+                <Route path="/" element={<Home />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/library" element={<Library />} />
+                <Route path="/wallet" element={<Wallet />} />
+                <Route path="/viewprofile" element={<Viewprofile />} />
+                <Route path="/creds" element={<Creds />} />
+                <Route path="/coins" element={<Coins />} />
+                <Route path="/contest" element={<Contest />} />
+                <Route path="/ongoingcontest" element={<Ongoingcontest />} />
+                <Route path="/creators" element={<Creators />} />
+                <Route path="/subscribers" element={<Subscribers />} />
+                <Route path="/readinglist" element={<Readinglist />} />
+                <Route path="/messages" element={<Messages />} />
+                <Route path="/notifications" element={<Notifications />} />
+                <Route path="/myposts" element={<Myposts />} />
+                <Route path="/mentions" element={<Mentions />} />
+                <Route path="/mygigs" element={<Mygigs />} />
+                <Route path="/completed" element={<Completed />} />
+                <Route path="/explore" element={<Explore />} />
+                <Route path="/mycommunity" element={<Mycommunity />} />
+                <Route path="/community" element={<Community />} />
+                <Route path="/joincommunity" element={<Joincommunity />} />
+                <Route path="/communitypost" element={<Communitypost />} />
+                <Route path="/settings" element={<Settings />} />
+                <Route path="/signinandsecurity" element={<Signinandsecurity />} />
+                <Route path="/subscriptions" element={<Subscriptions />} />
+                <Route path="/notification" element={<Notification />} />
+                <Route path="/privacyandsafety" element={<Privacyandsafety />} />
+                <Route path="/accountinformation" element={<Accountinformation />} />
+                <Route path="/changepassword" element={<Changepassword />} />
+                <Route path="/deactivateaccount" element={<Deactivateaccount />} />
+                <Route path="/emailaddress" element={<Emailaddress />} />
+                <Route path="/phonenumbers" element={<Phonenumbers />} />
+                <Route path="/activesessions" element={<Activesessions />} />
+                <Route path="/twostepverification" element={<Twostepverification />} />
+                <Route path="/allownotifications" element={<Allownotifications />} />
+                <Route path="/homepost" element={<Homepost />} />
+                <Route path="/storytyping" element={<Storytyping />} />
+                <Route path="/hire" element={<Hire />} />
+                <Route path="/findgig" element={<Findgig />} />
+                <Route path="/savedjobs" element={<Savedjobs />} />
+                <Route path="/createnewstory" element={<Createnewstory />} />
+                <Route path="/search" element={<Search />} />
+                <Route path="/reading" element={<Reading />} />
+                <Route path="/readingnextchapter" element={<Readingnextchapter />} />
+                <Route path="/readingpremium" element={<Readingpremium />} />
+                <Route path="/readingpremium" element={<Readingpremiumnextchapter />} />
+                <Route path="/audioreading" element={<Audioreading />} />
+                <Route path="/comicreading" element={<Comicreading />} />
+                <Route path="/nextchapter" element={<Storytypingnextchapter />} />
+              </Route>
+            </Routes>
+            <Footer />
+          </Router>
+          <Friends show={popupState.show} which={popupState.which} />
+          <Followers show={popupState.show} which={popupState.which} />
+          <Following show={popupState.show} which={popupState.which} />
+        </div>
+      </PopupProvider>
+    </Provider>
   );
 }
 
