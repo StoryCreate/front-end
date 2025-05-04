@@ -4,47 +4,10 @@ import { Toaster } from 'react-hot-toast';
 import { Provider } from 'react-redux';
 import { store } from './components/lib/store';
 import './css/App.css';
-import './css/dashboard.css';
-import './css/library.css';
-import './css/responsiveness.css';
-import './css/wallet.css';
-import './css/creds.css';
-import './css/coins.css';
-import './css/contest.css';
-import './css/ongoingcontest.css';
-import './css/currentongoingcontest.css';
-import './css/viewprofile.css';
 import './css/friends.css';
 import './css/followers.css';
 import './css/following.css';
-import './css/creators.css';
-import './css/subscribers.css';
 import './css/readinglist.css';
-import './css/messages.css';
-import './css/notifications.css';
-import './css/myposts.css';
-import './css/mentions.css';
-import './css/mygigs.css';
-import './css/completed.css';
-import './css/explore.css';
-import './css/mycommunity.css'
-import './css/community.css';
-import './css/joincommunity.css';
-import './css/settings.css';
-import './css/signinandsecurity.css';
-import './css/settings.css';
-import './css/subscriptions.css';
-import './css/notification.css';
-import './css/privacyandsafety.css';
-import './css/hire.css';
-import './css/findgig.css';
-import './css/createnewstory.css';
-import './css/storytypingnextchapter.css';
-import './css/search.css';
-import './css/reading.css';
-import './css/readingnextchapter.css';
-import './css/audioreading.css';
-import './css/comicreading.css';
 import Login from '@pages/(auth)/Login';
 import Signup from '@pages/(auth)/Signup';
 import { Dashboard } from './pages/dashboard'
@@ -78,7 +41,6 @@ import { Community } from './pages/community'
 import { Joincommunity } from './pages/joincommunity'
 import { Communitypost } from './pages/communitypost';
 import { Signinandsecurity } from './pages/signinandsecurity'
-import { Subscriptions } from './pages/subscriptions'
 import { Notification } from './pages/notification'
 import { Privacyandsafety } from './pages/privacyandsafety';
 import { Accountinformation } from './pages/accountinformation';
@@ -106,8 +68,8 @@ import PopupProvider from './context/PopupProvider';
 import { popupReducer } from './core/reducers';
 import { Popup, PopupState } from './core/interfaces';
 import RequireAuth from './components/lib/RequireAuth';
-import { fetchProfile } from '@comp/lib/features/authSlice';
-import Cookies from 'js-cookie';
+// import { fetchProfile } from '@comp/lib/features/authSlice';
+// import Cookies from 'js-cookie';
 
 function App() {
   const [popupState, dispatchPopup] = useReducer(popupReducer, {
@@ -115,10 +77,10 @@ function App() {
     which: Popup.NONE
   });
 
-  const token = Cookies.get('token');
-  if (token) {
-    store.dispatch(fetchProfile());
-  }
+  // const token = Cookies.get('token');
+  // if (token) {
+  //   store.dispatch(fetchProfile());
+  // }
 
   return (
     <Provider store={store}>
@@ -171,7 +133,6 @@ function App() {
                 <Route path="/communitypost" element={<Communitypost />} />
                 <Route path="/settings" element={<Settings />} />
                 <Route path="/signinandsecurity" element={<Signinandsecurity />} />
-                <Route path="/subscriptions" element={<Subscriptions />} />
                 <Route path="/notification" element={<Notification />} />
                 <Route path="/privacyandsafety" element={<Privacyandsafety />} />
                 <Route path="/accountinformation" element={<Accountinformation />} />

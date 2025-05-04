@@ -40,7 +40,7 @@ export const Dashboard = () => {
         <div ref={dropdownRef} className="relative">
           <button
             onClick={() => handleDropDownFocus(open)}
-            className="flex items-center px-4 py-4 bg-white text-primary rounded-full border-primary hover:bg-purple-900 hover:text-white cursor-pointer"
+            className="flex items-center px-4 py-4 bg-transparent font-medium text-primary rounded-full border border-solid border-primary hover:bg-primary hover:text-white cursor-pointer"
           >
             <Plus className="w-4 h-4 mr-2 hover:text-white style={{ color: 'primary' }}" /> Create a new story
           </button>

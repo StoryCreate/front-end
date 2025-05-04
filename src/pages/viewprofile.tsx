@@ -57,7 +57,7 @@ export const Viewprofile = () => {
   if (error) return <div className="flex flex-col gap-4 items-center justify-center">
     <p className="h-screen mt-10 space-x-4" style={{ color: 'red' }}>
     {error}
-    <span className="text-purple-600 cursor-pointer" onClick={() => navigate('/login')}>Login</span>
+    <span className="text-purple-600 cursor-pointer" onClick={() => navigate('/login')}> Login</span>
     </p>
   </div>;
   if (!user) return <p className="h-screen mt-10">No user data available.</p>;

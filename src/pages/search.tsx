@@ -1,330 +1,132 @@
 import React from "react";
 
 export const Search = () => {
-    return (
-      <div className="search">
-       <div className="group">
+  return (
+    <div className="main-padding bg-white min-h-screen w-full pb-16">
+      <a href="/">
+        <div className="flex items-center gap-2 mb-8 mt-12">
+          <i className="bx bx-left-arrow-alt text-2xl"></i>
+          <h3 className="text-lg text-primary font-semibold">Back</h3>
+        </div>
+      </a>
 
-        <div className="search-back">
-              <i className='bx bx-left-arrow-alt' id="left-arrow"></i> <h3> Back </h3>
+      <div className="max-w-6xl w-full flex items-center gap-0">
+        <input
+          type="text"
+          placeholder="Type anything..."
+          className="flex-grow border border-solid border-primary rounded-l-full w-full py-4 px-6 text-black font-medium focus:outline-none"
+        />
+        <button className="bg-primary text-white rounded-r-full py-4 px-8 font-medium hover:opacity-90 transition cursor-pointer">
+          Search
+        </button>
+      </div>
+
+      <h2 className="text-base mt-10 text-black text-left font-bold text-dark-100 mb-10">Search Book Categories</h2>
+
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
+        {/* Example group item */}
+        <div className="bg-white shadow-md rounded-lg flex items-center p-4">
+          <img
+            className="h-24 w-24 object-cover rounded"
+            alt="Rectangle"
+            src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
+          />
+          <div className="ml-4 text-center flex-1">
+            <div className="text-black font-semibold text-base">Fiction</div>
+          </div>
         </div>
 
-        <div className="group-wrapper">
-          <div className="div">
-            <div className="text-wrapper">Fiction</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
+        {/* Repeat similar groups with different text */}
+        <div className="bg-white shadow-md rounded-lg flex items-center p-4">
+          <img
+            className="h-24 w-24 object-cover rounded"
+            alt="Rectangle"
+            src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
+          />
+          <div className="ml-4 text-center flex-1">
+            <div className="text-black font-semibold text-base">Fiction</div>
           </div>
         </div>
-        <div className="div-wrapper">
-          <div className="div">
-            <div className="text-wrapper">Fiction</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
+
+        <div className="bg-white shadow-md rounded-lg flex items-center p-4">
+          <img
+            className="h-24 w-24 object-cover rounded"
+            alt="Rectangle"
+            src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
+          />
+          <div className="ml-4 text-center flex-1">
+            <div className="text-dark-100 font-semibold text-base">Sci-Fi</div>
           </div>
         </div>
-        <div className="group-2">
-          <div className="group-3">
-            <div className="text-wrapper-2">Sci-Fi</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
+
+        <div className="bg-white shadow-md rounded-lg flex items-center p-4">
+          <img
+            className="h-24 w-24 object-cover rounded"
+            alt="Rectangle"
+            src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
+          />
+          <div className="ml-4 text-center flex-1">
+            <div className="text-dark-100 font-semibold text-base">Sci-Fi</div>
           </div>
         </div>
-        <div className="group-4">
-          <div className="group-3">
-            <div className="text-wrapper-2">Sci-Fi</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
+
+        <div className="bg-white shadow-md rounded-lg flex items-center p-4">
+          <img
+            className="h-24 w-24 object-cover rounded"
+            alt="Rectangle"
+            src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
+          />
+          <div className="ml-4 text-center flex-1">
+            <div className="text-dark-100 font-semibold text-base">Sci-Fi</div>
           </div>
         </div>
-        <div className="group-5">
-          <div className="group-3">
-            <div className="text-wrapper-2">Sci-Fi</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
+
+        <div className="bg-white shadow-md rounded-lg flex items-center p-4">
+          <img
+            className="h-24 w-24 object-cover rounded"
+            alt="Rectangle"
+            src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
+          />
+          <div className="ml-4 text-center flex-1">
+            <div className="text-dark-100 font-semibold text-base">Sci-Fi</div>
           </div>
         </div>
-        <div className="group-6">
-          <div className="group-3">
-            <div className="text-wrapper-2">Sci-Fi</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
+
+        <div className="bg-white shadow-md rounded-lg flex items-center p-4">
+          <img
+            className="h-24 w-24 object-cover rounded"
+            alt="Rectangle"
+            src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
+          />
+          <div className="ml-4 text-center flex-1">
+            <div className="text-dark-100 font-semibold text-base">Mystery</div>
           </div>
         </div>
-        <div className="group-7">
-          <div className="group-8">
-            <div className="text-wrapper-2">Mystery</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
+
+        <div className="bg-white shadow-md rounded-lg flex items-center p-4">
+          <img
+            className="h-24 w-24 object-cover rounded"
+            alt="Rectangle"
+            src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
+          />
+          <div className="ml-4 text-center flex-1">
+            <div className="text-dark-100 font-semibold text-base">Mystery</div>
           </div>
         </div>
-        <div className="group-9">
-          <div className="group-8">
-            <div className="text-wrapper-2">Mystery</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
+
+        <div className="bg-white shadow-md rounded-lg flex items-center p-4">
+          <img
+            className="h-24 w-24 object-cover rounded"
+            alt="Rectangle"
+            src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
+          />
+          <div className="ml-4 text-center flex-1">
+            <div className="text-dark-100 font-semibold text-base">Non-fiction</div>
           </div>
         </div>
-        <div className="group-10">
-          <div className="group-11">
-            <div className="text-wrapper-2">Non-fiction</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-12">
-          <div className="group-11">
-            <div className="text-wrapper-2">Non-fiction</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-13">
-          <div className="group-11">
-            <div className="text-wrapper-2">Non-fiction</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-14">
-          <div className="group-11">
-            <div className="text-wrapper-2">Non-fiction</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-15">
-          <div className="group-16">
-            <div className="text-wrapper-2">Horror</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-17">
-          <div className="group-16">
-            <div className="text-wrapper-2">Horror</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-18">
-          <div className="group-19">
-            <div className="text-wrapper-2">Humor</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-20">
-          <div className="group-19">
-            <div className="text-wrapper-2">Humor</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-21">
-          <div className="group-19">
-            <div className="text-wrapper-2">Humor</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-22">
-          <div className="group-19">
-            <div className="text-wrapper-2">Humor</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-23">
-          <div className="group-24">
-            <div className="text-wrapper-2">Fantasy</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-25">
-          <div className="group-24">
-            <div className="text-wrapper-2">Fantasy</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-26">
-          <div className="group-27">
-            <div className="text-wrapper-2">Young Adult</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-28">
-          <div className="group-27">
-            <div className="text-wrapper-2">Young Adult</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-29">
-          <div className="group-27">
-            <div className="text-wrapper-2">Young Adult</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-30">
-          <div className="group-27">
-            <div className="text-wrapper-2">Young Adult</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-31">
-          <div className="group-32">
-            <div className="text-wrapper-2">Romance</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-33">
-          <div className="group-32">
-            <div className="text-wrapper-2">Romance</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-34">
-          <div className="group-35">
-            <div className="text-wrapper-2">Crime</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-36">
-          <div className="group-35">
-            <div className="text-wrapper-2">Crime</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-37">
-          <div className="group-35">
-            <div className="text-wrapper-2">Crime</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
-        <div className="group-38">
-          <div className="group-35">
-            <div className="text-wrapper-2">Crime</div>
-            <img
-              className="rectangle"
-              alt="Rectangle"
-              src="https://c.animaapp.com/wZjSQnlU/img/rectangle-2336-29@2x.png"
-            />
-          </div>
-        </div>
+
+        {/* Add more groups as needed, following the same pattern */}
       </div>
-      <div className="text-wrapper-3">Search Book Categories</div>
-      <div className="overlap-wrapper">
-        <div className="overlap">
-          <div className="overlap-group-wrapper">
-            <div className="overlap-group">
-              <button className="text-wrapper-4">Search</button>
-            </div>
-          </div>
-          <div className="group-39">
-            <div className="overlap-2">
-              <input className="text-wrapper-5" placeholder="Type anything..." />
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    );
+    </div>
+  );
 };

@@ -1,13 +1,14 @@
 import React from "react";
 import SearchSection from "@comp/page-sections/home/SearchSection";
 import PostSection from "@comp/page-sections/home/PostSection";
+import { Plus } from 'lucide-react';
 
 export const Home = () => {
 
   return (
     <div className="main-padding h-full w-full">
       <div>
-        <div className="home-group">
+        <div>
           <SearchSection />
         </div>
         <a>
@@ -18,7 +19,7 @@ export const Home = () => {
 
         {/* home post */}
 
-        <a href="/homepost"> <button id="post"> + </button></a>
+        <a href="/homepost" className="w-6 h-6 ml-72 bg-white"> <Plus className="shadow-md text-primary rounded-md hover:text-purple-600" /></a>
 
         <div className="lg:ml-24 pb-12">
           <PostSection />

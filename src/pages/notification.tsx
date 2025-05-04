@@ -1,55 +1,104 @@
 import React from "react";
 import settings_line from './../assets/images/settings_line.png';
-import arrow_right_pupple from './../assets/icons/arrow_right_pupple.png';
+import arrow_right_purple from './../assets/icons/arrow_right_pupple.png';
 import arrow_right_dark from './../assets/icons/arrow_right_dark.png';
-
+import { Delete } from 'lucide-react';
 
 export const Notification = () => {
     return (
-        <div className="settings">
-            <div>
-            <h1 className="title"> Settings </h1>
+        <div className="main-padding bg-white w-full h-full pb-20">
+            <h1 className="text-black text-left text-2xl font-semibold mt-6 mb-10">Settings</h1>
+            <div className="flex flex-col lg:flex-row gap-24">
+                <div className="space-y-8">
+                    <a href="/settings" className="flex items-center justify-between w-[300px]">
+                        <h3 className="text-black text-base font-medium pr-4">Account preferences</h3>
+                        <img src={arrow_right_dark} alt="Arrow Right" className="w-5 h-5 ml-4" />
+                    </a>
+                    <a href="/signinandsecurity" className="flex items-center justify-between w-[300px]">
+                        <h3 className="text-black text-base font-medium">Sign in and security</h3>
+                        <img src={arrow_right_dark} alt="Arrow Right" className="w-5 h-5" />
+                    </a>
+                    <a className="flex items-center justify-between w-[300px]">
+                        <h3 className="text-black text-base font-medium">Subscriptions</h3>
+                        <img src={arrow_right_dark} alt="Arrow Right" className="w-5 h-5" />
+                    </a>
+                    <a className="flex items-center justify-between w-[300px]">
+                        <h3 className="text-primary text-base font-semibold">Notifications</h3>
+                        <img src={arrow_right_purple} alt="Arrow Right" className="w-5 h-5" />
+                    </a>
+                    <a href="/privacyandsafety" className="flex items-center justify-between w-[300px]">
+                        <h3 className="text-black text-base font-medium">Privacy and safety</h3>
+                        <img src={arrow_right_dark} alt="Arrow Right" className="w-5 h-5" />
+                    </a>
+                    <a className="flex items-center justify-between w-[300px]">
+                        <h3 className="text-black text-base font-medium">Additional resources</h3>
+                        <img src={arrow_right_dark} alt="Arrow Right" className="w-5 h-5" />
+                    </a>
+                </div>
+                <img src={settings_line} alt="Settings Line" className="absolute top-40 left-[300px] lg:left-[400px] h-[400px] invisible lg:visible" />
+                <div className="space-y-6 text-left w-full -mt-12">
+                    <div className="flex justify-between">
+                        <h3 className="text-black text-base font-semibold">Notifications you receive</h3>
+                        <a href="/settings"><Delete className="text-primary rounded-md hover:bg-opacity-70" /></a>
+                    </div>
+
+                    <a href="/allownotifications">
+                        <div className="flex justify-between mt-6">
+                            <p className="text-black text-sm font-medium">Hiring someone</p>
+                            <img src={arrow_right_dark} className="arrow-right-dark-15" />
+                        </div>
+                    </a>
+
+                    <a href="/allownotifications">
+                        <div className="flex justify-between mt-6">
+                            <p className="text-black text-sm font-medium">Messaging</p>
+                            <img src={arrow_right_dark} className="arrow-right-dark-16" />
+                        </div>
+                    </a>
+
+                    <a href="/allownotifications">
+                        <div className="flex justify-between mt-6">
+                            <p className="text-black text-sm font-medium">Connecting with others</p>
+                            <img src={arrow_right_dark} className="arrow-right-dark-17" />
+                        </div>
+                    </a>
+
+                    <a href="/allownotifications">
+                        <div className="flex justify-between mt-6">
+                            <p className="text-black text-sm font-medium">Posting and commenting</p>
+                            <img src={arrow_right_dark} className="arrow-right-dark-18" />
+                        </div>
+                    </a>
+
+                    <a href="/allownotifications">
+                        <div className="flex justify-between mt-6">
+                            <p className="text-black text-sm font-medium">Pages</p>
+                            <img src={arrow_right_dark} className="arrow-right-dark-19" />
+                        </div>
+                    </a>
+
+                    <a href="/allownotifications">
+                        <div className="flex justify-between mt-6">
+                            <p className="text-black text-sm font-medium">News and report</p>
+                            <img src={arrow_right_dark} className="arrow-right-dark-20" />
+                        </div>
+                    </a>
+
+                    <a href="/allownotifications">
+                        <div className="flex justify-between mt-6">
+                            <p className="text-black text-sm font-medium">Updating your profile</p>
+                            <img src={arrow_right_dark} className="arrow-right-dark-21" />
+                        </div>
+                    </a>
+
+                    <a href="/allownotifications">
+                        <div className="flex justify-between mt-6">
+                            <p className="text-black text-sm font-medium">Verifications</p>
+                            <img src={arrow_right_dark} className="arrow-right-dark-22" />
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div className="settings-list">
-                    <a href="/settings"> <h3 className="account-preferences-2"> Account preferences </h3> <img src={arrow_right_dark} className="arrow-right" /> </a>
-                    <a href="/signinandsecurity">  <h3 className="sign-in"> Sign in and security </h3> <img src={arrow_right_dark} className="arrow-right-dark-1" />  </a>
-                    <a> <h3 className="subscriptions"> Subscriptions </h3> <img src={arrow_right_dark} className="arrow-right-dark-2" /> </a>
-                     <h3 className="notification-2"> Notifications </h3> <img src={arrow_right_pupple} className="arrow-right-dark-3" />
-                    <a href="/privacyandsafety"> <h3 className="privacy"> Privacy and safety </h3> <img src={arrow_right_dark} className="arrow-right-dark-4" /> </a>
-                    <a> <h3 className="additonal"> Additonal resources </h3> <img src={arrow_right_dark} className="arrow-right-dark-5" /> </a>
-            </div>
-            <img src={settings_line} className="settings-line" />
-
-            <a href="/settings"> <button className="cancel"> X </button> </a>
-
-            <div className="group-3">
-                <h3 className="text-45"> Notifications you receive </h3>
-
-                <a href="/allownotifications"> <img src={arrow_right_dark} className="arrow-right-dark-15" />
-                <p className="text-46"> Hiring someone </p> </a>
-
-                <a href="/allownotifications"> <img src={arrow_right_dark} className="arrow-right-dark-16" />
-                <p className="text-47"> Messaging </p> </a>
-
-                <a href="/allownotifications"> <img src={arrow_right_dark} className="arrow-right-dark-17" />
-                <p className="text-48"> Connecting with others </p> </a>
-
-                <a href="/allownotifications"> <img src={arrow_right_dark} className="arrow-right-dark-18" />
-                <p className="text-49"> Posting and commenting </p> </a>
-
-                <a href="/allownotifications"> <img src={arrow_right_dark} className="arrow-right-dark-19" />
-                <p className="text-50"> Pages </p> </a>
-
-                <a href="/allownotifications"> <img src={arrow_right_dark} className="arrow-right-dark-20" />
-                <p className="text-51"> News and report </p> </a>
-
-                <a href="/allownotifications"> <img src={arrow_right_dark} className="arrow-right-dark-21" />
-                <p className="text-52"> Updating your profile </p> </a>
-
-                <a href="/allownotifications"> <img src={arrow_right_dark} className="arrow-right-dark-22" />
-                <p className="text-53"> Verifications </p> </a>
-            </div>
-
         </div>
     );
 };

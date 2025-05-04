@@ -22,7 +22,7 @@
 }
 
 #bell {
-  font-size: 30px;
+  font-size: 20px;
   color: var(--second-main-color);
   opacity: 0.5;
   position: absolute;
@@ -31,7 +31,7 @@
 }
  
 #chat {
-  font-size: 30px;
+  font-size: 20px;
   color: var(--second-main-color);
   opacity: 0.7;
   position: absolute;
@@ -40,7 +40,7 @@
 }
  
 #group {
-  font-size: 30px;
+  font-size: 20px;
   color: var(--second-main-color);
   opacity: 0.7;
   position: absolute;
@@ -103,6 +103,7 @@
   font-weight: 600;
   font-size: medium;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .me-button-mobile {

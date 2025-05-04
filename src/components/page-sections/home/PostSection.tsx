@@ -1,5 +1,4 @@
 import React from 'react'
-import imageToAdd from '../../../assets/icons/Frame 10.png';
 import { Heart, Share2 } from 'lucide-react';
 
 const PostSection = () => {

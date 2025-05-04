@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Popup, PopupState, PopupType } from "../core/interfaces";
 
-export const Following = ({show, which} : PopupType) => {
-    return (
-        <div className={show == PopupState.SHOW && which == Popup.FOLLOWERS ? "profile-network" : "profile-network hide"}>
+export const Following = ({ show, which }: PopupType) => {
+  return (
+    <div className={show == PopupState.SHOW && which == Popup.FOLLOWERS ? "profile-network" : "profile-network hide"}>
       <div className="text-wrapper">My Network</div>
       <div className="group">
         <div className="div">
@@ -71,5 +70,5 @@ export const Following = ({show, which} : PopupType) => {
         </div>
       </div>
     </div>
-    );
+  );
 };
