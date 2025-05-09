@@ -14,10 +14,12 @@ export const Wallet = () => {
           MY WALLET
         </h2>
         <a href="/contest">
-          <button className="px-8 py-5 bg-primary text-white rounded-[25px] text-base cursor-pointer">
-            Contest
-          </button>
-          <img src={arrowup} className="h-5" alt="Arrow up" />
+          <div className="flex items-center">
+            <button className="px-12 py-5 pl-5 bg-primary text-white rounded-[25px] text-base cursor-pointer">
+              Contest
+            </button>
+            <img src={arrowup} className="h-4 w-4 -ml-10" alt="Arrow up" />
+          </div>
         </a>
       </div>
       <div className="max-w-[965px] mx-auto mt-10 lg:ml-10">

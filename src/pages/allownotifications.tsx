@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import settings_line from './../assets/images/settings_line.png';
 import arrow_right_purple from './../assets/icons/arrow_right_pupple.png';
 import arrow_right_dark from './../assets/icons/arrow_right_dark.png';
 import { Delete } from 'lucide-react';
 import toggle from './../assets/icons/toggle.png';
+import { NotificationSettingsContext } from "../context/NotificationSettingsContext";
 
 export const Allownotifications = () => {
+    const { settings, toggleSetting } = useContext(NotificationSettingsContext);
+
     return (
         <div className="main-padding bg-white w-full h-full pb-20 lg:pb-36">
             <h1 className="text-black text-left text-2xl font-semibold mt-6 mb-10">Settings</h1>
@@ -43,25 +46,31 @@ export const Allownotifications = () => {
                         <a href="/notification"><Delete className="text-primary rounded-md hover:bg-opacity-70" /></a>
                     </div>
 
-                    <div className="flex justify-between pt-6">
-                        <h3 className="text-black text-sm font-semibold"> Allow all notifications </h3>
-                        <img src={toggle} className="cursor-pointer" />
-                    </div>
-
-                    <div className="flex justify-between pt-6">
-                        <h3 className="text-black text-sm font-medium"> Push </h3>
-                        <img src={toggle} className="cursor-pointer" />
-                    </div>
-
-                    <div className="flex justify-between pt-6">
-                        <h3 className="text-black text-sm font-medium"> In-app </h3>
-                        <img src={toggle} className="cursor-pointer" />
-                    </div>
-
-                    <div className="flex justify-between pt-6">
-                        <h3 className="text-black text-sm font-medium"> Email </h3>
-                        <img src={toggle} className="cursor-pointer" />
-                    </div>
+                    {settings.length === 0 ? (
+                        <p>Loading notification settings...</p>
+                    ) : (
+                        settings.map(setting => (
+                            <div key={setting.id} className="pt-6 border-b border-gray-300 pb-4">
+                                <h4 className="text-black font-semibold mb-2">{setting.category}</h4>
+                                <div className="flex justify-between items-center cursor-pointer" onClick={() => toggleSetting(setting.id, 'allowAll')}>
+                                    <p className="text-black text-sm font-semibold">Allow all notifications</p>
+                                    <img src={toggle} className={`cursor-pointer ${setting.allowAll ? 'opacity-100' : 'opacity-40'}`} />
+                                </div>
+                                <div className="flex justify-between items-center cursor-pointer mt-2" onClick={() => toggleSetting(setting.id, 'push')}>
+                                    <p className="text-black text-sm">Push</p>
+                                    <img src={toggle} className={`cursor-pointer ${setting.push ? 'opacity-100' : 'opacity-40'}`} />
+                                </div>
+                                <div className="flex justify-between items-center cursor-pointer mt-2" onClick={() => toggleSetting(setting.id, 'inApp')}>
+                                    <p className="text-black text-sm">In-app</p>
+                                    <img src={toggle} className={`cursor-pointer ${setting.inApp ? 'opacity-100' : 'opacity-40'}`} />
+                                </div>
+                                <div className="flex justify-between items-center cursor-pointer mt-2" onClick={() => toggleSetting(setting.id, 'email')}>
+                                    <p className="text-black text-sm">Email</p>
+                                    <img src={toggle} className={`cursor-pointer ${setting.email ? 'opacity-100' : 'opacity-40'}`} />
+                                </div>
+                            </div>
+                        ))
+                    )}
                 </div>
             </div>
         </div>

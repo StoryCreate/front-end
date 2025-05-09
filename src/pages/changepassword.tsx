@@ -1,11 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
 import settings_line from './../assets/images/settings_line.png';
 import arrow_right_pupple from './../assets/icons/arrow_right_pupple.png';
 import arrow_right_dark from './../assets/icons/arrow_right_dark.png';
 import { Delete } from 'lucide-react';
 import { Button } from "@comp/ui/button";
+import API from "../services/axiosInstance";
+import { useSelector } from "react-redux";
 
 export const Changepassword = () => {
+    const token = useSelector((state: any) => state.auth.token);
+    const [currentPassword, setCurrentPassword] = useState("");
+    const [newPassword, setNewPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
+    const [error, setError] = useState<string | null>(null);
+    const [success, setSuccess] = useState<string | null>(null);
+    const [loading, setLoading] = useState(false);
+
+    const handleSubmit = async () => {
+        setError(null);
+        setSuccess(null);
+
+        if (newPassword !== confirmPassword) {
+            setError("New password and confirm password do not match.");
+            return;
+        }
+
+        if (!token) {
+            setError("User not authenticated.");
+            return;
+        }
+
+        setLoading(true);
+        try {
+            const response = await API.patch('profile/password/change', {
+                currentPassword,
+                newPassword,
+            }, {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+            });
+            setSuccess(response.data.message || "Password updated successfully.");
+            setCurrentPassword("");
+            setNewPassword("");
+            setConfirmPassword("");
+        } catch (err: any) {
+            setError(err.response?.data?.message || "Failed to update password.");
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return (
         <div className="main-padding bg-white w-full h-full pb-14">
             <h1 className="text-black text-left text-2xl font-semibold mt-6 mb-10">Settings</h1>
@@ -44,16 +89,37 @@ export const Changepassword = () => {
                     </div>
 
                     <div className="flex flex-col gap-10">
-                        <div className="flex flex-col">
-                    <input type="password" className="p-4 py-4 px-5 w-80 lg:w-[700px] border-solid border border-gray-400 rounded-xl text-black text-left text-sm" placeholder="Current password" />
-                    <button className="mt-2 pr-6 lg:pr-32 text-sm text-primary bg-transparent font-medium text-right">Forgot password?</button>
-                    </div>
+                        <input
+                            type="password"
+                            className="p-4 py-4 px-5 w-80 lg:w-[700px] border-solid border border-gray-400 rounded-xl text-black text-left text-sm"
+                            placeholder="Current password"
+                            value={currentPassword}
+                            onChange={(e) => setCurrentPassword(e.target.value)}
+                        />
+                        <button className="mt-2 pr-6 lg:pr-32 text-sm text-primary bg-transparent font-medium text-right">Forgot password?</button>
 
-                    <input type="password" className="p-4 py-4 px-5 w-80 lg:w-[700px] border-solid border border-gray-400 rounded-xl text-black text-left text-sm" placeholder="New password" />
+                        <input
+                            type="password"
+                            className="p-4 py-4 px-5 w-80 lg:w-[700px] border-solid border border-gray-400 rounded-xl text-black text-left text-sm"
+                            placeholder="New password"
+                            value={newPassword}
+                            onChange={(e) => setNewPassword(e.target.value)}
+                        />
 
-                    <input type="password" className="p-4 py-4 px-5 w-80 lg:w-[700px] border-solid border border-gray-400 rounded-xl text-black text-left text-smd" placeholder="Confirm password" />
+                        <input
+                            type="password"
+                            className="p-4 py-4 px-5 w-80 lg:w-[700px] border-solid border border-gray-400 rounded-xl text-black text-left text-sm"
+                            placeholder="Confirm password"
+                            value={confirmPassword}
+                            onChange={(e) => setConfirmPassword(e.target.value)}
+                        />
 
-                    <Button className="text-sm w-24 cursor-pointer"> Save </Button>
+                        {error && <p className="text-red-600">{error}</p>}
+                        {success && <p className="text-green-600">{success}</p>}
+
+                        <Button className="text-sm w-24 cursor-pointer" onClick={handleSubmit} disabled={loading}>
+                            {loading ? 'Saving...' : 'Save'}
+                        </Button>
                     </div>
                 </div>
             </div>

@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useAppSelector, useAppDispatch } from "@comp/lib/hooks";
+import { RootState, AppDispatch } from '@comp/lib/store';
+import { fetchProfile } from "@comp/lib/features/authSlice";
 import settings_line from './../assets/images/settings_line.png';
 import arrow_right_purple from './../assets/icons/arrow_right_pupple.png';
 import arrow_right_dark from './../assets/icons/arrow_right_dark.png';
 import { Delete } from 'lucide-react';
 
 export const Accountinformation = () => {
+    const dispatch: AppDispatch = useAppDispatch();
+
+    // Fetch profile on component mount
+    useEffect(() => {
+        dispatch(fetchProfile() as any);
+    }, [dispatch]);
+
+    // Use useAppSelector to get user, loading, and error
+    const { user } = useAppSelector((state: RootState) => state.auth);
+
     return (
         <div className="main-padding bg-white w-full h-full pb-20">
             <h1 className="text-black text-left text-2xl font-semibold mt-6 mb-10">Settings</h1>
@@ -41,26 +54,26 @@ export const Accountinformation = () => {
                         <h3 className="text-black text-base font-semibold">Account information</h3>
                         <a href="/settings"><Delete className="text-primary rounded-md hover:bg-opacity-70" /></a>
                     </div>
-                    <h3 className="flex items-center justify-between w-full">
+                    {/* <h3 className="flex items-center justify-between w-full">
                         <h3 className="text-black text-base font-semibold">Phone</h3>
                         <img src={arrow_right_dark} alt="Arrow Right" className="w-5 h-5" />
                     </h3>
-                    <p className="text-black text-sm max-w-[300px]">+23411111111</p>
+                    <p className="text-black text-sm max-w-[300px]">+23411111111</p> */}
                     <h3 className="flex items-center justify-between w-full">
                         <h3 className="text-black text-base font-semibold">Email</h3>
                         <img src={arrow_right_dark} alt="Arrow Right" className="w-5 h-5" />
                     </h3>
-                    <p className="text-black text-sm max-w-[300px]">jenni@gmail.com</p>
+                    <p className="text-black text-sm max-w-[300px]">{user.email}</p>
                     <h3 className="flex items-center justify-between w-full">
-                        <h3 className="text-black text-base font-semibold">Country</h3>
+                        <h3 className="text-black text-base font-semibold">Location</h3>
                         <img src={arrow_right_dark} alt="Arrow Right" className="w-5 h-5" />
                     </h3>
-                    <p className="text-black text-sm max-w-[300px]">Languages</p>
+                    <p className="text-black text-sm max-w-[300px]">{user.creator?.location}</p>
                     <h3 className="flex items-center justify-between w-full">
-                        <h3 className="text-black text-base font-semibold">English</h3>
+                        <h3 className="text-black text-base font-semibold">Languages</h3>
                         <img src={arrow_right_dark} alt="Arrow Right" className="w-5 h-5" />
                     </h3>
-                    <p className="text-black text-sm max-w-[300px]">United States</p>
+                    <p className="text-black text-sm max-w-[300px]">English</p>
                     {/* <h3 className="flex items-center justify-between w-full">
                         <h3 className="text-black text-base font-semibold">Gender</h3>
                         <img src={arrow_right_dark} alt="Arrow Right" className="w-5 h-5" />

@@ -1,25 +1,38 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Delete } from 'lucide-react';
 import { Popup, PopupState, PopupType } from "../core/interfaces";
+import { PopupContext } from "../context/PopupProvider";
 
 export const Friends = ({ show, which }: PopupType) => {
+  const popupContext = useContext(PopupContext);
+  const closeModal = () => {
+    popupContext?.dispatch({
+      type: PopupState.HIDE,
+      payload: {
+        show: PopupState.HIDE,
+        which: Popup.NONE
+      }
+    });
+  };
+
   return (
     <div className={show == PopupState.SHOW && which == Popup.FOLLOWERS ? "profile-network" : "profile-network hide"}>
-      <div className="text-wrapper">My Network</div>
-      <div className="group">
-        <div className="div">
-          <div className="text-wrapper-2">Friends</div>
-          <img className="line" alt="Line" src="https://c.animaapp.com/ZP50CPgc/img/line-31.svg" />
+      <div className="flex items-center justify-between px-6">
+        <h3 className="text-black text-left text-base pt-8 pl-2 font-semibold">My Network</h3>
+        <Delete onClick={closeModal} className="text-primary rounded-md hover:bg-opacity-70 cursor-pointer" />
+      </div>
+      <div className="flex items-center justify-between px-8 pt-7">
+        <div className="">
+          <div className="text-black text-sm font-bold">Friends</div>
         </div>
-        <div className="group-2">
-          <div className="text-wrapper-3a">Followers</div>
-          <img className="img" alt="Line" src="https://c.animaapp.com/ZP50CPgc/img/line-32-1@2x.png" />
+        <div className="">
+          <div className="text-black text-sm font-medium cursor-pointer">Followers</div>
         </div>
-        <div className="group-3">
-          <div className="text-wrapper-3a">Following</div>
-          <img className="line-2" alt="Line" src="https://c.animaapp.com/ZP50CPgc/img/line-32-1@2x.png" />
+        <div className="">
+          <div className="text-black text-sm font-medium cursor-pointer">Following</div>
         </div>
       </div>
-      <div className="flex flex-col space-y-2 lg:space-y-8 ml-4 w-80 lg:w-[502px]">
+      <div className="flex flex-col space-y-2 pt-6 px-4 lg:space-y-8 ml-4 w-80 lg:w-[502px]">
         <div className="flex items-center h-20 w-full">
           <img
             className="h-14 w-14 object-cover rounded-full"

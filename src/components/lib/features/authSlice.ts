@@ -59,7 +59,7 @@ export const signUp = createAsyncThunk(
                 formData.append('id_upload', payload.identityFile);
             }
 
-            const response = await API.post('/api/v1/creators/auth/signup', formData, {
+            const response = await API.post('/creators/auth/signup', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
@@ -76,7 +76,7 @@ export const signIn = createAsyncThunk(
     'auth/signIn',
     async (payload: { email: string; password: string }, thunkAPI) => {
         try {
-            const response = await API.post('/api/v1/creators/auth/login', payload);
+            const response = await API.post('/creators/auth/login', payload);
             // Return the nested data payload containing token and user
             return response.data.data || response.data;
         } catch (err: any) {
@@ -128,7 +128,7 @@ export const updateProfile = createAsyncThunk(
     ) => {
         try {
             // Assuming backend accepts JSON for profile updates
-            const res = await API.patch('/api/v1/users/profile', payload);
+            const res = await API.patch('/users/profile', payload);
             return res.data.data || res.data;
         } catch (err: any) {
             console.error('Update profile error:', err.response?.data || err.message);

@@ -45,7 +45,7 @@ export const Navbar = () => {
         setOpenthree(false);
       }
     };
-  
+
     window.addEventListener("click", handleClick);
     return () => window.removeEventListener("click", handleClick);
   }, [open, opentwo, openthree]);
@@ -76,7 +76,10 @@ export const Navbar = () => {
                   <Link to="/library"> <div className="text-primary font-semibold hover:text-[#C710C7] text-xs"> Library </div> </Link>
                   <Link to="/wallet"> <div className="text-primary font-semibold hover:text-[#C710C7] text-xs"> Wallet </div> </Link>
                   <div ref={dropdownthreeRef}>
-                    <button className='me-button-mobile'> <div onClick={e => handleDropDownFocusthree(openthree)}> Me <i className='bx bx-chevron-down' id="me-drop-arrow-mobile"></i> </div>
+                    <button className='me-button-mobile'> <div onClick={e => {
+                      e.stopPropagation();
+                      handleDropDownFocusthree(openthree);
+                    }}> Me <i className='bx bx-chevron-down' id="me-drop-arrow-mobile"></i> </div>
                       <div className="nav-me-mobile">
                         <div className="memenu-mobile">
                           {openthree && (

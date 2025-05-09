@@ -29,7 +29,7 @@
   top: 165px;
   cursor: pointer;
 }
- 
+
 #chat {
   font-size: 20px;
   color: var(--second-main-color);
@@ -38,7 +38,7 @@
   top: 165px;
   cursor: pointer;
 }
- 
+
 #group {
   font-size: 20px;
   color: var(--second-main-color);
@@ -60,7 +60,7 @@
 }
 
 #post:hover {
-  color:#ffffff;
+  color: #ffffff;
   background-color: #8b008b;
 }
 
@@ -115,7 +115,7 @@
 }
 
 .me-button:hover {
-color: var(--second-main-color);
+  color: var(--second-main-color);
 }
 
 #me-drop-arrow {
@@ -128,22 +128,22 @@ color: var(--second-main-color);
 }
 
 .nav-me {
-font-size: small;
-margin-left: -112px;
-margin-top: 10px;
+  font-size: small;
+  margin-left: -112px;
+  margin-top: 10px;
 }
 
 .nav-me-mobile {
   font-size: small;
   margin-left: 12px;
   margin-top: 5px;
-  }
+}
 
 .memenu {
-background-color: #FFFEFD;
-padding: 20px 30px 20px 30px;
-position: absolute;
-border-radius: 10px;
+  background-color: #FFFEFD;
+  padding: 20px 30px 20px 30px;
+  position: absolute;
+  border-radius: 10px;
 }
 
 .memenu-mobile {
@@ -151,7 +151,7 @@ border-radius: 10px;
   padding: 20px 30px 20px 30px;
   position: absolute;
   border-radius: 10px;
-  }
+}
 
 #me-user-profile {
   display: flex;
@@ -207,4 +207,48 @@ border-radius: 10px;
   gap: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.profile-network {
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 95%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55%;
+  overflow-y: auto;
+  z-index: 101;
+  overflow-x: hidden;
+}
+
+.hide {
+  display: none !important;
+}
+
+.profile-bg {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+
+@media screen and (min-width: 320px) and (max-width: 725px) {
+  .profile-network {
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 95% !important;
+    position: fixed !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    width: 100% !important;
+    overflow-y: auto;
+    z-index: 101;
+    overflow-x: hidden !important;
+  }
 }

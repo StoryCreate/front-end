@@ -67,7 +67,7 @@ export const Viewprofile = () => {
   const firstName = personData.firstName || '';
   const lastName = personData.lastName || '';
   const fullName = `${firstName} ${lastName}`.trim() || user.name || '';
-  const tagline = user.profession || 'Creator';
+  const tagline = (user.creator?.profession) || 'Creator';
 
   // Popup handling functions
   const showPopup = (which: Popup) => {
@@ -164,9 +164,9 @@ export const Viewprofile = () => {
               <h1 className="text-xl text-black lg:text-2xl font-semibold mb-2">{fullName}</h1>
               <p className="text-gray-600 text-sm">{tagline}</p>
               <div className="flex gap-8 pt-6 text-sm">
-                <div className="text-primary font-medium" onClick={showFriends}> 1000 Friends</div>
-                <div className="text-primary font-medium" onClick={showFollowers}>900 Followers</div>
-                <div className="text-primary font-medium" onClick={showFollowing}>500 Following</div>
+                <div className="text-primary font-medium cursor-pointer" onClick={showFriends}> 1000 Friends</div>
+                <div className="text-primary font-medium cursor-pointer" onClick={showFollowers}>900 Followers</div>
+                <div className="text-primary font-medium cursor-pointer" onClick={showFollowing}>500 Following</div>
               </div>
               <button
                 onClick={handleOpenEditModal}
@@ -181,14 +181,14 @@ export const Viewprofile = () => {
           <div className="bg-white max-w-4xl left mt-14 p-6 rounded-2xl shadow">
             <h2 className="text-xl text-left font-semibold mb-4">About Me</h2>
             <p className="text-gray-700 text-left text-sm leading-relaxed">
-              {user.bio || 'No bio added yet.'}
+              {user.creator?.bio}
             </p>
           </div>
         </div>
 
         <div>
           {/* More Menu */}
-          <div className="max-w-4xl mx-auto mt-8 pl-80 lg:pl-44" ref={dropdownRef}>
+          <div className="max-w-4xl mx-auto -mt-1 lg:-mt-6 float-right" ref={dropdownRef}>
             <button onClick={() => setOpen(!open)} className="relative">
               <img src={moreIcon} alt="More" className="w-6 h-6" />
               {open && (
@@ -218,12 +218,12 @@ export const Viewprofile = () => {
           {/* Interests */}
           <div className="bg-white max-w-4xl mx-auto mt-8 p-6 rounded-2xl shadow">
             <h2 className="text-xl text-left font-semibold mb-4">Interests</h2>
-            {user.interests && user.interests.length > 0 ? (
-              <ul className="flex flex-col text-sm">
-                {user.interests.map((intr: string) => (
+            {user.creator?.interests && user.creator.interests.length > 0 ? (
+              <ul className="flex flex-col gap-1 text-sm">
+                {user.creator.interests.map((intr: string) => (
                   <li key={intr} className="flex items-center space-x-1">
                     <span className="text-purple-600">●</span>
-                    <span className="text-gray-700">{intr || 'No interest added yet.'}</span>
+                    <span className="text-gray-700">{intr}</span>
                   </li>
                 ))}
               </ul>
@@ -238,7 +238,7 @@ export const Viewprofile = () => {
               <h2 className="text-xl text-left font-semibold flex-shrink-0">Location</h2>
               <div className="flex flex-row gap-2 items-center">
                 <img src={locationIcon} alt="Location" className="w-5 h-5" />
-                <span className="text-gray-700 text-sm">{user.location || 'No location added.'}</span>
+                <span className="text-gray-700 text-sm">{user.creator?.location}</span>
               </div>
             </div>
           </div>
@@ -249,15 +249,15 @@ export const Viewprofile = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3 overflow-hidden max-w-[300px]">
                 <img src={instagramIcon} alt="Instagram" className="w-6 h-6" />
-                <span className="text-gray-700">{user.instagram}</span>
+                <span className="text-gray-700">{user.creator?.instagram}</span>
               </div>
               <div className="flex items-center space-x-3 overflow-hidden max-w-[300px]">
                 <img src={facebookIcon} alt="Facebook" className="w-6 h-6" />
-                <span className="text-gray-700">{user.facebook}</span>
+                <span className="text-gray-700">{user.creator?.facebook}</span>
               </div>
               <div className="flex items-center space-x-3 overflow-hidden max-w-[300px]">
                 <img src={linkedInIcon} alt="LinkedIn" className="w-6 h-6" />
-                <span className="text-gray-700 text-left">{user.linkedin}</span>
+                <span className="text-gray-700 text-left">{user.creator?.linkedin}</span>
               </div>
             </div>
           </div>
@@ -271,13 +271,13 @@ export const Viewprofile = () => {
         initialValues={{
           firstName: firstName,
           lastName: lastName,
-          profession: user.profession,
-          bio: user.bio,
-          location: user.location,
-          interests: user.interests,
-          instagram: user.instagram,
-          facebook: user.facebook,
-          linkedin: user.linkedin,
+          profession: user.creator?.profession,
+          bio: user.creator?.bio,
+          location: user.creator?.location,
+          interests: user.creator?.interests,
+          instagram: user.creator?.instagram,
+          facebook: user.creator?.facebook,
+          linkedin: user.creator?.linkedin,
         }}
         onCancel={handleCancelEdit}
         onSubmit={handleSubmitEdit}
